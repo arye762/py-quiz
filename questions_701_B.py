@@ -479,8 +479,8 @@ questions_701_B = [
             "Hardening",
             "Decommissioning"
         ],
-        "correct_answer": 1,
-        "description": "Hardening involves applying security measures to protect a legacy server and the critical applications it hosts, reducing vulnerabilities."
+        "correct_answer": 2,
+        "description": "HIsolation minimizes security risks by separating the legacy server from the rest of the network while allowing the critical application to function."
     },
     {
         "question": "Which of the following vulnerabilities is exploited when an attacker overwrites a register with a malicious address?",
@@ -788,7 +788,7 @@ questions_701_B = [
             "Risk tolerance"
         ],
         "correct_answer": 2,
-        "description": "Patch availability directly affects whether a CVE can be mitigated, as patches are needed to fix vulnerabilities identified in CVEs."
+        "description": "Patch availability directly affects whether a CVE (Common Vulnerabilities and Exposures) can be mitigated, as patches are needed to fix vulnerabilities identified in CVEs."
     },
     {
         "question": "Which of the following describes effective change management procedures?",
@@ -1096,8 +1096,8 @@ questions_701_B = [
             "Attestation",
             "External examination"
         ],
-        "correct_answer": 4,
-        "description": "An internal audit allows the CISO to assess the organization's security policies against regulatory requirements and identify any gaps."
+        "correct_answer": 2,
+        "description": "An internal audit allows the CISO to assess how the company's security policies align with the requirements imposed by external regulators. This process involves reviewing and evaluating the effectiveness of the internal controls, policies, and procedures to ensure compliance."
     },
     {
         "question": "A systems administrator notices that the research and development department is not using the company VPN when accessing various company-related services and systems. Which of the following scenarios describes this activity?",
