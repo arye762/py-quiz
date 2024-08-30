@@ -2,19 +2,18 @@ import random
 import os
 import time
 import subprocess
-import webbrowser  # Import the webbrowser module
-from PIL import Image  # Import the PIL library to handle images
-from questions_701_A import questions_701_A  # Import the first set of questions
-from questions_701_B import questions_701_B  # Import the second set of questions
-from questions_701_C import questions_701_C  # Import the third set of questions
-from questions_701_images import questions_701_images  # Import the set of questions with images
+import webbrowser
+from PIL import Image
+from questions_701_A import questions_701_A
+from questions_701_B import questions_701_B
+from questions_701_C import questions_701_C
+from questions_701_images import questions_701_images
 
 def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None):
     os.system('clear')  # Clear the screen before each question
 
     print(f"Score: {score} | Time: {time_elapsed()}")
 
-    # Randomize the correct answer position
     indices = list(range(len(options)))
     random.shuffle(indices)
     shuffled_options = [options[i] for i in indices]
@@ -27,20 +26,13 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     print(f"\nQuestion {question_num} of {total_questions}\n")
     print(f"{question}\n")
 
-    # Display the image if provided and enabled
     if image and image_enabled:
         try:
-            print(f"Loading image: {image}")  # Debugging: print the image path
+            print(f"Loading image: {image}")
 
-            # Close the Preview app before showing the new image
             subprocess.call(["osascript", "-e", 'tell application "Preview" to quit'])
-
-            # Open the image directly with Preview
             subprocess.call(["open", image])
-
-            time.sleep(1)  # Give time for the image to display
-
-            # Bring terminal back to the foreground
+            time.sleep(1)
             subprocess.call(["osascript", "-e", 'tell application "Terminal" to activate'])
 
         except Exception as e:
@@ -48,13 +40,12 @@ def ask_question(question_num, total_questions, question, options, correct_answe
 
     for idx, option in enumerate(shuffled_options, 1):
         print(f"{idx}. {option}")
-    print()  # Add a blank line for spacing
+    print()
     
     answer = input("Choose the correct option (e.g., '1 4' for multiple answers), or 'b' to go back: ").strip()
     
-    # Handle back navigation
     if answer.lower() == 'b':
-        return None, False  # Go back without saving an answer
+        return None, False
 
     try:
         user_answers = list(map(int, answer.split()))
@@ -73,9 +64,8 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     
     print(f"Description: {description}\n")
 
-    input("Press Enter to continue...")  # Pause before moving to the next question
+    input("Press Enter to continue...")
 
-    # Close the image before moving to the next question if images are enabled
     if image_enabled:
         subprocess.call(["osascript", "-e", 'tell application "Preview" to quit'])
 
@@ -132,6 +122,22 @@ def enable_images():
         print("Invalid choice. Defaulting to images enabled.")
         return True
 
+def select_question_range(total_questions):
+    print(f"\nSelect the range of questions you want to be asked (1-{total_questions}):")
+    start = input("Enter the starting question number: ").strip()
+    end = input("Enter the ending question number: ").strip()
+    
+    try:
+        start = int(start)
+        end = int(end)
+        if start < 1 or end > total_questions or start > end:
+            raise ValueError
+    except ValueError:
+        print("Invalid range. Defaulting to the entire set of questions.")
+        return 1, total_questions
+
+    return start, end
+
 def time_elapsed():
     elapsed_time = time.time() - start_time
     hours = int(elapsed_time // 3600)
@@ -149,38 +155,38 @@ def main():
 
     selected_questions = select_questions_set()
 
-    # Choose whether to randomize the questions or keep them in order
     randomize_order = choose_ordering()
-
-    # Enable or disable images
     image_enabled = enable_images()
 
     if randomize_order:
         random.shuffle(selected_questions)
 
-    answers = [None] * len(selected_questions)  # To keep track of user answers
-    total_questions = len(selected_questions)  # Total number of questions
+    total_questions = len(selected_questions)
+    start, end = select_question_range(total_questions)
+    selected_questions = selected_questions[start-1:end]
+
+    answers = [None] * len(selected_questions)
     current_question = 0 
 
     while current_question < len(selected_questions):
         q = selected_questions[current_question]
         answer, is_correct = ask_question(
             current_question + 1, 
-            total_questions, 
+            len(selected_questions), 
             q["question"], 
             q["options"], 
             q["correct_answer"], 
             q["description"],
-            q.get("image", None)  # Pass the image path if it exists
+            q.get("image", None)
         )
         
         if answer is not None:
-            if answers[current_question] is None:  # Only add to score if it's the first attempt at the question
+            if answers[current_question] is None:
                 if is_correct:
                     score += 1
                 else:
                     wrong_questions.append(current_question)
-            elif answers[current_question] != answer:  # Adjust the score if the answer changes on retry
+            elif answers[current_question] != answer:
                 previous_correct = answers[current_question] == str(q["correct_answer"])
                 if is_correct and not previous_correct:
                     score += 1
@@ -188,13 +194,12 @@ def main():
                     score -= 1
 
             answers[current_question] = answer
-            current_question += 1  # Move to the next question
+            current_question += 1
         elif current_question > 0:
-            current_question -= 1  # Go back to the previous question
+            current_question -= 1
 
-    print(f"\nYour final score is {score}/{total_questions}")
+    print(f"\nYour final score is {score}/{len(selected_questions)}")
 
-    # Offer to retry wrong questions
     if wrong_questions:
         print(f"\nYou got {len(wrong_questions)} questions wrong. Would you like to try them again? (y/n)")
         retry = input().strip().lower()
@@ -204,15 +209,14 @@ def main():
                 q = selected_questions[i]
                 answer, is_correct = ask_question(
                     i + 1, 
-                    total_questions, 
+                    len(selected_questions), 
                     q["question"], 
                     q["options"], 
                     q["correct_answer"], 
                     q["description"],
-                    q.get("image", None)  # Pass the image path if it exists
+                    q.get("image", None)
                 )
                 
-                # Allow re-answering the question
                 if answer is not None:
                     previous_answer = answers[i]
                     previous_correct = previous_answer == str(q["correct_answer"])
@@ -223,7 +227,7 @@ def main():
                             score -= 1
                     answers[i] = answer
 
-            print(f"\nYour final score after retry is {score}/{total_questions}")
+            print(f"\nYour final score after retry is {score}/{len(selected_questions)}")
 
 if __name__ == "__main__":
     main()

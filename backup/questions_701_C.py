@@ -99,6 +99,14 @@ questions_701_C = [
         "correct_answer": 1,
         "description": "Maintaining an asset inventory is crucial for tracking which systems are in place and ensuring that all relevant systems are patched when necessary."
     },
+
+
+
+
+
+
+
+
     {
         "question": "Which of the following should a security operations center use to improve its incident response procedure?",
         "options": [
@@ -167,6 +175,15 @@ questions_701_C = [
         "correct_answer": [2, 6],
         "description": "Deterrent controls discourage potential attackers by signaling that security measures are in place, while detective controls help to identify and record unauthorized activities."
     },
+
+
+
+
+
+
+
+
+
     {
         "question": "Which of the following examples would be best mitigated by input sanitization?",
         "options": [
@@ -288,6 +305,14 @@ questions_701_C = [
         "correct_answer": 2,
         "description": "Containerization allows multiple applications to run on a single operating system while isolating each application in its own container, reducing the need for multiple OS instances."
     },
+
+
+
+
+
+
+
+
     {
         "question": "An administrator needs to perform server hardening before deployment. Which of the following steps should the administrator take? (Choose two.)",
         "options": [
@@ -644,17 +669,6 @@ questions_701_C = [
     "description": "The correct answer is Kerberoasting, which is a type of attack that targets service accounts in Active Directory. The large amount of received traffic on the 'Down' systems indicates that they may have been compromised by such an attack."
 },
     {
-        "question": "A systems administrator notices that a testing system is down. While investigating, the systems administrator finds that the servers are online and accessible from any device on the server network. The administrator reviews the following information from the monitoring system: \n\n[Monitoring system data]\n\nWhich of the following is the most likely cause of the outage?",
-        "options": [
-            "Denial of service",
-            "ARP poisoning",
-            "Jamming",
-            "Kerberoasting"
-        ],
-        "correct_answer": 1,
-        "description": "Kerberoasting is an attack that extracts service account credentials, which may explain why the system is down despite the servers being online."
-    },
-    {
         "question": "A security team has been alerted to a flood of incoming emails that have various subject lines and are addressed to multiple email inboxes. Each email contains a URL shortener link that is redirecting to a dead domain. Which of the following is the best step for the security team to take?",
         "options": [
             "Create a blocklist for all subject lines.",
@@ -766,6 +780,10 @@ questions_701_C = [
         "correct_answer": 2,
         "description": "Installing the server certificate into the local truststore resolves the certificate errors by establishing trust between the client and server."
     },
+
+
+
+
     {
         "question": "Which of the following is the most important security concern when using legacy systems to provide production service?",
         "options": [
@@ -878,6 +896,12 @@ questions_701_C = [
         "correct_answer": 1,
         "description": "Whaling is a form of spear phishing that specifically targets high-profile individuals like CEOs."
     },
+
+
+
+
+
+    
     {
         "question": "During a penetration test, a flaw in the internal PKI was exploited to gain domain administrator rights using specially crafted certificates. Which of the following remediation tasks should be completed as part of the cleanup phase?",
         "options": [

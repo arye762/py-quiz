@@ -402,17 +402,18 @@ questions_701_B = [
         "correct_answer": 3,
         "description": "Encryption is commonly used to render sensitive data unreadable when it is stored (data at rest) by converting it into an encrypted format.\n\n- Hashing: A process to ensure data integrity.\n- Tokenization: Replacing sensitive data with unique tokens.\n- Encryption: Converting data into a secure format.\n- Segmentation: Dividing the network into separate parts.\n\n**Domain 2: Architecture and Design**"
     },
-    {
-        "question": "A legacy device is being decommissioned and is no longer receiving updates or patches. Which of the following describes this scenario?",
-        "options": [
-            "End of business",
-            "End of testing",
-            "End of support",
-            "End of life"
-        ],
-        "correct_answer": 3,
-        "description": "End of life refers to the point at which a product is no longer supported or updated by the manufacturer, requiring decommissioning.\n\n- End of business: The closing of a business.\n- End of testing: The completion of the testing phase.\n- End of support: When a product is no longer supported by the vendor.\n- End of life: When a product is no longer sold or updated.\n\n**Domain 3: Implementation**"
-    },
+{
+    "question": "A legacy device is being decommissioned and is no longer receiving updates or patches. Which of the following describes this scenario?",
+    "options": [
+        "End of business",
+        "End of testing",
+        "End of support",
+        "End of life"
+    ],
+    "correct_answer": 4,
+    "description": "End of life refers to the stage where a product or device is no longer manufactured, sold, supported, or updated by the manufacturer. At this stage, the product may still function, but it will not receive any further patches, updates, or technical support, making it vulnerable to security risks and other issues.\n\n- End of business: Refers to the closing or cessation of business operations, not applicable to a device's lifecycle.\n- End of testing: Indicates the completion of the testing phase in a product's development, unrelated to the decommissioning of a device.\n- End of support: Refers to the point when the manufacturer no longer provides support, but the product may still be in use. It's closely related to end of life but doesn't necessarily mean the product is decommissioned.\n- End of life: Indicates that the product is no longer sold, updated, or supported, leading to decommissioning.\n\n**Domain 3: Implementation**"
+},
+
     {
         "question": "A bank insists all of its vendors must prevent data loss on stolen laptops. Which of the following strategies is the bank requiring?",
         "options": [
@@ -657,7 +658,7 @@ questions_701_B = [
             "Disable unnecessary ports.",
             "Conduct a site survey."
         ],
-        "correct_answer": 3,
+        "correct_answer": 4,
         "description": "Disabling unnecessary ports on the security camera reduces the attack surface and helps prevent unauthorized access.\n\n- VLAN (Virtual Local Area Network): A network segmentation technique.\n- Vulnerability scan: A security assessment of a system.\n- Unnecessary ports: Network ports that are not required for operation.\n- Site survey: An assessment of a location for network deployment.\n\n**Domain 3: Implementation**"
     },
     {
@@ -874,7 +875,7 @@ questions_701_B = [
         "description": "Ransomware is a type of malware that encrypts files and displays a message demanding payment, often changing file extensions like .ryk.\n\n- Virus: Malicious software that replicates itself.\n- Trojan: Malicious software disguised as legitimate software.\n- Spyware: Software that secretly collects information about a user.\n- Ransomware: Malicious software that encrypts files and demands payment.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
     },
     {
-        "question": "A systems administrator is advised that an external web server is not functioning properly. The administrator reviews the following firewall logs containing traffic going to the web server: Date         | Time        | SourceIP       | SPort | Flag | DestIP     | DPort 2023-01-25   | 01:45:09.102 | 98.123.45.100  | 4560  | SYN  | 100.50.20.7 | 443 2023-01-25   | 01:45:09.102 | 95.123.45.101  | 3361  | SYN  | 100.50.20.7 | 443 2023-01-25   | 01:45:09.102 | 99.123.45.102  | 3662  | SYN  | 100.50.20.7 | 443 2023-01-25   | 01:45:09.104 | 99.123.45.103  | 5663  | SYN  | 100.50.20.7 | 443 2023-01-25   | 01:45:09.104 | 80.123.45.105  | 4064  | SYN  | 100.50.20.7 | 443 2023-01-25   | 01:45:09.102 | 80.123.45.106  | 4365  | SYN  | 100.50.20.7 | 443 Which of the following attacks is likely occurring?",
+        "question": "A systems administrator is advised that an external web server is not functioning properly. The administrator reviews the following firewall logs containing traffic going to the web server: \n\nDate         | Time         | SourceIP       | SPort | Flag | DestIP      | DPort \n2023-01-25   | 01:45:09.102 | 98.123.45.100  | 4560  | SYN  | 100.50.20.7 | 443 \n2023-01-25   | 01:45:09.102 | 95.123.45.101  | 3361  | SYN  | 100.50.20.7 | 443 \n2023-01-25   | 01:45:09.102 | 99.123.45.102  | 3662  | SYN  | 100.50.20.7 | 443 \n2023-01-25   | 01:45:09.104 | 99.123.45.103  | 5663  | SYN  | 100.50.20.7 | 443 \n2023-01-25   | 01:45:09.104 | 80.123.45.105  | 4064  | SYN  | 100.50.20.7 | 443 \n2023-01-25   | 01:45:09.102 | 80.123.45.106  | 4365  | SYN  | 100.50.20.7 | 443 \n\nWhich of the following attacks is likely occurring?",
         "options": [
             "DDoS",
             "Directory traversal",
