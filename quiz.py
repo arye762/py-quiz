@@ -134,9 +134,10 @@ def enable_images():
 
 def time_elapsed():
     elapsed_time = time.time() - start_time
-    minutes = int(elapsed_time // 60)
+    hours = int(elapsed_time // 3600)
+    minutes = int((elapsed_time % 3600) // 60)
     seconds = int(elapsed_time % 60)
-    return f"{minutes}m {seconds}s"
+    return f"{hours:02}:{minutes:02}:{seconds:02}"
 
 def main():
     global score
