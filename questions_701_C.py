@@ -203,9 +203,15 @@ questions_701_C = [
                 "Impersonating",
                 "Whaling"
             ],
-            "correct_answer": 4,
-            "description": "Social engineering techniques involve tricking individuals into giving up information or performing actions.\n\n-g Smishing involves using SMS text messages to deceive individuals, not phone calls.\n- Disinformation is the deliberate spread of false information, unrelated to this scenario.\n- Impersonating involves pretending to be someone else, which is part of the whaling technique but not the specific term used here.\n- Whaling is a type of phishing attack targeted at high-profile individuals, fitting the scenario described.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+            "correct_answer": 3,
+            "description": "Impersonating involves the attacker pretending to be someone else, in this case, the Chief Executive Officer, to deceive the employee into performing actions such as buying gift cards. This technique is part of social engineering attacks, where the attacker uses manipulation rather than technical hacking to achieve their goals.\n\n-g Smishing involves using SMS text messages to deceive individuals, not phone calls.\n- Disinformation is the deliberate spread of false information, unrelated to this scenario.\n- Impersonating involves pretending to be someone else, which is part of the whaling technique but not the specific term used here.\n- Whaling is a type of phishing attack targeted at high-profile individuals, fitting the scenario described.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
         },
+
+
+
+
+
+        
         {
             "question": "After conducting a vulnerability scan, a systems administrator notices that one of the identified vulnerabilities is not present on the systems that were scanned. Which of the following describes this example?",
             "options": [
@@ -883,7 +889,7 @@ questions_701_C = [
         "Identity fraud"
     ],
     "correct_answer": 1,
-    "description": "Whaling is a form of spear phishing that specifically targets high-profile individuals like CEOs.\n\n- Spear phishing: Targets specific individuals, but whaling is more specific to executives.\n- Impersonation: Pretending to be someone else, a broader category.\n- Identity fraud: Stealing identity for fraud, broader than phishing.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "Whaling is a form of spear phishing that specifically targets high-profile individuals like CEOs.\n- Spear phishing: Targets specific individuals, but whaling is more specific to executives.\n- Impersonation: Pretending to be someone else, a broader category.\n- Identity fraud: Stealing identity for fraud, broader than phishing.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 },
 
 
@@ -900,7 +906,7 @@ questions_701_C = [
         "Implementing SOAR"
     ],
     "correct_answer": 2,
-    "description": "After exploiting the PKI, the following steps should be considered:\n\n- Updating the CRL (Certificate Revocation List) is important but only invalidates compromised certificates.\n- Patching the CA (Certificate Authority), which is the correct answer, addresses the root vulnerability in the PKI infrastructure.\n- Changing passwords is important but does not address the certificate flaw.\n- Implementing SOAR (Security Orchestration, Automation, and Response) helps automate responses but is not specific to the PKI issue.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "After exploiting the PKI, the following steps should be considered:\n- Updating the CRL (Certificate Revocation List) is important but only invalidates compromised certificates.\n- Patching the CA (Certificate Authority), which is the correct answer, addresses the root vulnerability in the PKI infrastructure.\n- Changing passwords is important but does not address the certificate flaw.\n- Implementing SOAR (Security Orchestration, Automation, and Response) helps automate responses but is not specific to the PKI issue.\n\n**Domain 4: Operations and Incident Response**"
 },
 {
     "question": "A company wants to implement MFA. Which of the following enables the additional factor while using a smart card?",
@@ -911,7 +917,7 @@ questions_701_C = [
         "SMS"
     ],
     "correct_answer": 1,
-    "description": "For multi-factor authentication (MFA) involving smart cards:\n\n- A PIN (Personal Identification Number), which is the correct answer, is often required along with a smart card to authenticate the user, serving as the second factor.\n- A hardware token could be used as an alternative second factor, but not specifically with smart cards.\n- A User ID is used for identification, not as an authentication factor.\n- SMS is typically used for sending codes, but not in combination with smart cards.\n\n**Domain 3: Implementation**"
+    "description": "For multi-factor authentication (MFA) involving smart cards:\n- A PIN (Personal Identification Number), which is the correct answer, is often required along with a smart card to authenticate the user, serving as the second factor.\n- A hardware token could be used as an alternative second factor, but not specifically with smart cards.\n- A User ID is used for identification, not as an authentication factor.\n- SMS is typically used for sending codes, but not in combination with smart cards.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "A company hired an external consultant to assist with required system upgrades to a critical business application. A systems administrator needs to secure the consultant's access without sharing passwords to critical systems. Which of the following solutions should most likely be utilized?",
@@ -923,7 +929,7 @@ questions_701_C = [
         "PAM software"
     ],
     "correct_answer": 5,
-    "description": "To secure access for an external consultant:\n TACACS+ is a protocol for network access control but does not manage privileged access.\n\n- SAML (Security Assertion Markup Language) is used for single sign-on but is not specific to privileged access.\n- An SSO platform helps with centralized authentication but does not manage elevated privileges.\n- Role-based access control (RBAC) defines user roles but does not specifically manage external access.\n- PAM (Privileged Access Management) software, which is the correct answer, allows secure, temporary access to critical systems without sharing passwords.\n\n**Domain 3: Implementation**"
+    "description": "To secure access for an external consultant:\n TACACS+ is a protocol for network access control but does not manage privileged access.\n- SAML (Security Assertion Markup Language) is used for single sign-on but is not specific to privileged access.\n- An SSO platform helps with centralized authentication but does not manage elevated privileges.\n- Role-based access control (RBAC) defines user roles but does not specifically manage external access.\n- PAM (Privileged Access Management) software, which is the correct answer, allows secure, temporary access to critical systems without sharing passwords.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "A newly implemented wireless network is designed so that visitors can connect to the wireless network for business activities. The legal department is concerned that visitors might connect to the network and perform illicit activities. Which of the following should the security team implement to address this concern?",
@@ -934,7 +940,7 @@ questions_701_C = [
         "Allow for new devices to be connected via WPS."
     ],
     "correct_answer": 3,
-    "description": "To manage visitor access to a wireless network:\n- Configuring a RADIUS server manages device authentication but does not specifically address visitor activities.\n\n- Using 802.1X provides port-based network access control but is complex for guest access.\n- A guest captive portal, which is the correct answer, requires visitors to accept terms and conditions before accessing the network, setting legal boundaries for use.\n- WPS (Wi-Fi Protected Setup) is not secure and should not be used for guest access.\n\n**Domain 2: Architecture and Design**"
+    "description": "To manage visitor access to a wireless network:\n- Configuring a RADIUS server manages device authentication but does not specifically address visitor activities.\n- Using 802.1X provides port-based network access control but is complex for guest access.\n- A guest captive portal, which is the correct answer, requires visitors to accept terms and conditions before accessing the network, setting legal boundaries for use.\n- WPS (Wi-Fi Protected Setup) is not secure and should not be used for guest access.\n\n**Domain 2: Architecture and Design**"
 },
 {
     "question": "Which of the following data roles is responsible for identifying risks and appropriate access to data?",
@@ -945,7 +951,7 @@ questions_701_C = [
         "Controller"
     ],
     "correct_answer": 1,
-    "description": "In data management, roles have distinct responsibilities:\n- The Owner, which is the correct answer, is responsible for identifying risks, defining access controls, and ensuring proper data management.\n\n- The Custodian manages data storage and backups but does not define access.\n- The Steward oversees data quality and policy compliance but does not define access or identify risks.\n- The Controller handles data protection laws and regulations but does not define internal access controls.\n\n**Domain 5: Governance, Risk, and Compliance**"
+    "description": "In data management, roles have distinct responsibilities:\n- The Owner, which is the correct answer, is responsible for identifying risks, defining access controls, and ensuring proper data management.\n- The Custodian manages data storage and backups but does not define access.\n- The Steward oversees data quality and policy compliance but does not define access or identify risks.\n- The Controller handles data protection laws and regulations but does not define internal access controls.\n\n**Domain 5: Governance, Risk, and Compliance**"
 },
 {
     "question": "Which of the following physical controls can be used to both detect and deter? (Choose two.)",
@@ -969,7 +975,7 @@ questions_701_C = [
         "Disk multipathing"
     ],
     "correct_answer": 1,
-    "description": "To ensure accessibility during peak times:\n\n- A Load balancer, which is the correct answer, distributes incoming network traffic across multiple servers, ensuring the application remains responsive during high demand.\n- Cloud backups protect data but do not help with real-time accessibility.\n- Geographic dispersal increases redundancy and disaster recovery capabilities but does not directly address load management.\n- Disk multipathing improves storage reliability but does not manage application traffic.\n\n**Domain 2: Architecture and Design**"
+    "description": "To ensure accessibility during peak times:\n- A Load balancer, which is the correct answer, distributes incoming network traffic across multiple servers, ensuring the application remains responsive during high demand.\n- Cloud backups protect data but do not help with real-time accessibility.\n- Geographic dispersal increases redundancy and disaster recovery capabilities but does not directly address load management.\n- Disk multipathing improves storage reliability but does not manage application traffic.\n\n**Domain 2: Architecture and Design**"
 },
 {
     "question": "The author of a software package is concerned about bad actors repackaging and inserting malware into the software. The software download is hosted on a website, and the author exclusively controls the website's contents. Which of the following techniques would best ensure the software's integrity?",
@@ -980,7 +986,7 @@ questions_701_C = [
         "Fuzzing"
     ],
     "correct_answer": 2,
-    "description": "To ensure software integrity:\n- Input validation protects against malicious inputs but does not prevent tampering with the software itself.\n\n- Code signing, which is the correct answer, digitally signs the software, allowing users to verify its authenticity and that it has not been altered.\n- Secure cookies protect session data in web applications but are unrelated to software integrity.\n- Fuzzing tests software for vulnerabilities but does not protect against tampering.\n\n**Domain 3: Implementation**"
+    "description": "To ensure software integrity:\n- Input validation protects against malicious inputs but does not prevent tampering with the software itself.\n- Code signing, which is the correct answer, digitally signs the software, allowing users to verify its authenticity and that it has not been altered.\n- Secure cookies protect session data in web applications but are unrelated to software integrity.\n- Fuzzing tests software for vulnerabilities but does not protect against tampering.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "A third-party vendor is moving a particular application to the end-of-life stage at the end of the current year. Which of the following is the most critical risk if the company chooses to continue running the application?",
@@ -991,7 +997,7 @@ questions_701_C = [
         "Lack of source code access"
     ],
     "correct_answer": 1,
-    "description": "When continuing to use end-of-life software:\n- The lack of security updates, which is the correct answer, is the most critical risk, as it leaves the application vulnerable to new threats.\n\n- The lack of new features is a disadvantage but does not pose a security risk.\n- The lack of support means troubleshooting may be difficult, but it is not as critical as security updates.\n- The lack of source code access limits customization but is not the primary security concern.\n\n**Domain 5: Governance, Risk, and Compliance**"
+    "description": "When continuing to use end-of-life software:\n- The lack of security updates, which is the correct answer, is the most critical risk, as it leaves the application vulnerable to new threats.\n- The lack of new features is a disadvantage but does not pose a security risk.\n- The lack of support means troubleshooting may be difficult, but it is not as critical as security updates.\n- The lack of source code access limits customization but is not the primary security concern.\n\n**Domain 5: Governance, Risk, and Compliance**"
 },
 {
     "question": "A security analyst recently read a report about a flaw in several of the organization's printer models that causes credentials to be sent over the network in cleartext, regardless of the encryption settings. Which of the following would be best to use to validate this finding?",
@@ -1002,7 +1008,7 @@ questions_701_C = [
         "Nmap"
     ],
     "correct_answer": 1,
-    "description": "To validate if credentials are being sent in cleartext:\n- Wireshark, which is the correct answer, captures and analyzes network traffic, making it ideal for verifying whether credentials are exposed in transit.\n\n- netcat is a networking tool but does not analyze traffic content.\n- Nessus scans for vulnerabilities but does not capture network traffic.\n- Nmap identifies open ports and services but does not inspect traffic content.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "To validate if credentials are being sent in cleartext:\n- Wireshark, which is the correct answer, captures and analyzes network traffic, making it ideal for verifying whether credentials are exposed in transit.\n- netcat is a networking tool but does not analyze traffic content.\n- Nessus scans for vulnerabilities but does not capture network traffic.\n- Nmap identifies open ports and services but does not inspect traffic content.\n\n**Domain 4: Operations and Incident Response**"
 },
 {
     "question": "A development team is launching a new public-facing web product. The Chief Information Security Officer has asked that the product be protected from attackers who use malformed or invalid inputs to destabilize the system. Which of the following practices should the development team implement?",
@@ -1013,7 +1019,7 @@ questions_701_C = [
         "Manual peer review"
     ],
     "correct_answer": 1,
-    "description": "To protect against attacks using malformed inputs:\n- Fuzzing, which is the correct answer, tests the product by inputting unexpected or malformed data to uncover potential vulnerabilities.\n\n- Continuous deployment automates the release of new code but does not specifically protect against malformed inputs.\n- Static code analysis examines the code for security issues but may not catch runtime vulnerabilities like malformed input attacks.\n- Manual peer review helps identify coding errors but may not focus on input handling.\n\n**Domain 3: Implementation**"
+    "description": "To protect against attacks using malformed inputs:\n- Fuzzing, which is the correct answer, tests the product by inputting unexpected or malformed data to uncover potential vulnerabilities.\n- Continuous deployment automates the release of new code but does not specifically protect against malformed inputs.\n- Static code analysis examines the code for security issues but may not catch runtime vulnerabilities like malformed input attacks.\n- Manual peer review helps identify coding errors but may not focus on input handling.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "During an annual review of the system design, an engineer identified a few issues with the currently released design. Which of the following should be performed next according to best practices?",
@@ -1024,7 +1030,7 @@ questions_701_C = [
         "Change control process"
     ],
     "correct_answer": 4,
-    "description": "When issues are identified in a design:\n- The Risk management process assesses and mitigates risks but does not address design changes directly.\n\n- The Product design process involves creating the design, not reviewing it.\n- The Design review process identifies issues but does not implement changes.\n- The Change control process, which is the correct answer, manages how changes are introduced to the design to address identified issues.\n\n**Domain 2: Architecture and Design**"
+    "description": "When issues are identified in a design:\n- The Risk management process assesses and mitigates risks but does not address design changes directly.\n- The Product design process involves creating the design, not reviewing it.\n- The Design review process identifies issues but does not implement changes.\n- The Change control process, which is the correct answer, manages how changes are introduced to the design to address identified issues.\n\n**Domain 2: Architecture and Design**"
 },
 {
     "question": "Which of the following is best to use when determining the severity of a vulnerability?",
@@ -1035,7 +1041,7 @@ questions_701_C = [
         "CVSS"
     ],
     "correct_answer": 4,
-    "description": "To determine the severity of a vulnerability:\n- CVE (Common Vulnerabilities and Exposures) lists known vulnerabilities but does not provide a severity score.\n\n- OSINT (Open Source Intelligence) gathers publicly available information but does not assess vulnerability severity.\n- SOAR (Security Orchestration, Automation, and Response) automates security operations but does not score vulnerabilities.\n- CVSS (Common Vulnerability Scoring System), which is the correct answer, provides a standardized method for assessing the severity of security vulnerabilities.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "To determine the severity of a vulnerability:\n- CVE (Common Vulnerabilities and Exposures) lists known vulnerabilities but does not provide a severity score.\n- OSINT (Open Source Intelligence) gathers publicly available information but does not assess vulnerability severity.\n- SOAR (Security Orchestration, Automation, and Response) automates security operations but does not score vulnerabilities.\n- CVSS (Common Vulnerability Scoring System), which is the correct answer, provides a standardized method for assessing the severity of security vulnerabilities.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 
 },
 
@@ -1049,7 +1055,7 @@ questions_701_C = [
         "Common Vulnerabilities and Exposures"
     ],
     "correct_answer": 1,
-    "description": "For information on common application exploitation methods:\n- OWASP (Open Web Application Security Project), which is the correct answer, provides detailed resources on application security, including common vulnerabilities.\n\n- STIX (Structured Threat Information eXpression) is a language for sharing threat intelligence but not specific to application exploits.\n- OVAL (Open Vulnerability and Assessment Language) standardizes security content but does not focus on application exploits.\n- A Threat intelligence feed provides up-to-date information on threats but is not as focused on application vulnerabilities.\n- CVE lists known vulnerabilities but does not provide detailed exploitation methods.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "For information on common application exploitation methods:\n- OWASP (Open Web Application Security Project), which is the correct answer, provides detailed resources on application security, including common vulnerabilities.\n- STIX (Structured Threat Information eXpression) is a language for sharing threat intelligence but not specific to application exploits.\n- OVAL (Open Vulnerability and Assessment Language) standardizes security content but does not focus on application exploits.\n- A Threat intelligence feed provides up-to-date information on threats but is not as focused on application vulnerabilities.\n- CVE lists known vulnerabilities but does not provide detailed exploitation methods.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 },
 {
     "question": "A security analyst is reviewing the logs on an organization’s DNS server and notices the following unusual snippet: \n\nLog from named: post-processed 20230102 0045L \n... \nqry_source: 124.22.158.37 TCP/53 \nqry_dest: 52.165.16.154 TCP/53 \nqry_dest: 10.100.50.5 TCP/53 \nqry_type: AXFR \n| zone int.comptia.org \n------------------------| www A 10.100.50.21 \n------------------------| dns A 10.100.5.5 \n------------------------| adds A 10.101.10.10 \n------------------------| fshare A 10.101.10.20 \n------------------------| sip A 10.100.5.11 \n... \n\nWhich of the following attack techniques was most likely used?",
@@ -1061,7 +1067,7 @@ questions_701_C = [
         "Exfiltrating data from fshare.int.complia.org"
     ],
     "correct_answer": 3,
-    "description": "To analyze the DNS server log activity:\n- Determining the ISP-assigned address space identifies the external network range but does not explain the log details.\n\n- Bypassing DNS sinkholing avoids redirection but is unrelated to the internal network footprint.\n- Footprinting the internal network, which is the correct answer, involves mapping the internal network, fitting the DNS queries observed.\n- Attempting to achieve initial access to the DNS server would involve exploiting vulnerabilities but is not evident here.\n- Exfiltrating data describes stealing information but does not match the DNS queries in the log.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "To analyze the DNS server log activity:\n- Determining the ISP-assigned address space identifies the external network range but does not explain the log details.\n- Bypassing DNS sinkholing avoids redirection but is unrelated to the internal network footprint.\n- Footprinting the internal network, which is the correct answer, involves mapping the internal network, fitting the DNS queries observed.\n- Attempting to achieve initial access to the DNS server would involve exploiting vulnerabilities but is not evident here.\n- Exfiltrating data describes stealing information but does not match the DNS queries in the log.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 },
 {
     "question": "A security analyst at an organization observed several user logins from outside the organization's network. The analyst determined that these logins were not performed by individuals within the organization. Which of the following recommendations would reduce the likelihood of future attacks? (Choose two.)",
@@ -1074,7 +1080,7 @@ questions_701_C = [
         "A review of user account permissions"
     ],
     "correct_answer": [2, 4],
-    "description": "To prevent unauthorized logins:\n- Disciplinary actions are important for policy violations but do not prevent external attacks.\n\n- Conditional access policies, which are correct, restrict access based on conditions like location or device, reducing the risk of unauthorized logins.\n- Regular account audits help monitor activity but do not prevent unauthorized logins.\n- Additional authentication factors, also correct, such as MFA, make it harder for attackers to gain access.\n- Content filtering prevents access to harmful content but does not directly address unauthorized logins.\n- Reviewing user account permissions ensures proper access but is not a direct preventative measure.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "To prevent unauthorized logins:\n- Disciplinary actions are important for policy violations but do not prevent external attacks.\n- Conditional access policies, which are correct, restrict access based on conditions like location or device, reducing the risk of unauthorized logins.\n- Regular account audits help monitor activity but do not prevent unauthorized logins.\n- Additional authentication factors, also correct, such as MFA, make it harder for attackers to gain access.\n- Content filtering prevents access to harmful content but does not directly address unauthorized logins.\n- Reviewing user account permissions ensures proper access but is not a direct preventative measure.\n\n**Domain 4: Operations and Incident Response**"
 },
 {
     "question": "A security team is addressing a risk associated with the attack surface of the organization's web application over port 443. Currently, no advanced network security capabilities are in place. Which of the following would be best to set up? (Choose two.)",
@@ -1087,7 +1093,7 @@ questions_701_C = [
         "SIEM"
     ],
     "correct_answer": [5, 1],
-    "description": "To protect a web application on port 443:\n- NIDS (Network Intrusion Detection System) monitors network traffic and can detect attacks, making it one correct answer.\n\n- A Honeypot attracts attackers but does not directly protect the application.\n- A Certificate revocation list invalidates compromised certificates but does not protect against attacks.\n- HIPS (Host Intrusion Prevention System) protects the host but may not cover the entire web application.\n- WAF (Web Application Firewall), which is the other correct answer, specifically protects web applications by filtering and monitoring HTTP traffic.\n- SIEM (Security Information and Event Management) provides centralized logging and alerts but is not a direct protective measure.\n\n**Domain 3: Implementation**"
+    "description": "To protect a web application on port 443:\n- NIDS (Network Intrusion Detection System) monitors network traffic and can detect attacks, making it one correct answer.\n- A Honeypot attracts attackers but does not directly protect the application.\n- A Certificate revocation list invalidates compromised certificates but does not protect against attacks.\n- HIPS (Host Intrusion Prevention System) protects the host but may not cover the entire web application.\n- WAF (Web Application Firewall), which is the other correct answer, specifically protects web applications by filtering and monitoring HTTP traffic.\n- SIEM (Security Information and Event Management) provides centralized logging and alerts but is not a direct protective measure.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "A systems administrator would like to create a point-in-time backup of a virtual machine. Which of the following should the administrator use?",
@@ -1098,7 +1104,7 @@ questions_701_C = [
         "Containerization"
     ],
     "correct_answer": 3,
-    "description": "For a point-in-time backup of a virtual machine:\n- Replication creates copies of data but not necessarily a snapshot of a specific moment.\n\n- Simulation tests scenarios and does not create backups.\n- A Snapshot, which is the correct answer, captures the state of a virtual machine at a specific point in time.\n- Containerization isolates applications but does not relate to virtual machine backups.\n\n**Domain 3: Implementation**"
+    "description": "For a point-in-time backup of a virtual machine:\n- Replication creates copies of data but not necessarily a snapshot of a specific moment.\n- Simulation tests scenarios and does not create backups.\n- A Snapshot, which is the correct answer, captures the state of a virtual machine at a specific point in time.\n- Containerization isolates applications but does not relate to virtual machine backups.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "A security administrator notices numerous unused, non-compliant desktops are connected to the network. Which of the following actions would the administrator most likely recommend to the management team?",
@@ -1109,7 +1115,7 @@ questions_701_C = [
         "Isolating"
     ],
     "correct_answer": 2,
-    "description": "To handle unused, non-compliant desktops:\n- Monitoring tracks activity but does not address the non-compliance.\n\n- Decommissioning, which is the correct answer, removes non-compliant systems from the network, reducing security risks.\n- Patching updates systems but does not resolve the issue of unused or non-compliant desktops.\n- Isolating prevents interaction with other systems but does not fully mitigate the risk.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "To handle unused, non-compliant desktops:\n- Monitoring tracks activity but does not address the non-compliance.\n- Decommissioning, which is the correct answer, removes non-compliant systems from the network, reducing security risks.\n- Patching updates systems but does not resolve the issue of unused or non-compliant desktops.\n- Isolating prevents interaction with other systems but does not fully mitigate the risk.\n\n**Domain 4: Operations and Incident Response**"
 },
 {
     "question": "Which of the following is a common data removal option for companies that want to wipe sensitive data from hard drives in a repeatable manner but allow the hard drives to be reused?",
@@ -1120,7 +1126,7 @@ questions_701_C = [
         "Defragmentation"
     ],
     "correct_answer": 1,
-    "description": "For data removal while allowing reuse of hard drives:\n- Sanitization, which is the correct answer, securely wipes data from storage devices, making the data unrecoverable while preserving the drive for reuse.\n\n- Formatting erases the file system but may not completely remove data.\n- Degaussing uses magnetic fields to erase data but can render the drive unusable.\n- Defragmentation reorganizes data on a drive but does not remove it.\n\n**Domain 3: Implementation**"
+    "description": "For data removal while allowing reuse of hard drives:\n- Sanitization, which is the correct answer, securely wipes data from storage devices, making the data unrecoverable while preserving the drive for reuse.\n- Formatting erases the file system but may not completely remove data.\n- Degaussing uses magnetic fields to erase data but can render the drive unusable.\n- Defragmentation reorganizes data on a drive but does not remove it.\n\n**Domain 3: Implementation**"
 },
 {
     "question": "An organization wants to improve the company's security authentication method for remote employees. Given the following requirements:\n\n• Must work across SaaS and internal network applications\n• Must be device manufacturer agnostic\n• Must have offline capabilities\n\nWhich of the following would be the most appropriate authentication method?",
@@ -1131,7 +1137,7 @@ questions_701_C = [
         "Time-based tokens"
     ],
     "correct_answer": 4,
-    "description": "For secure remote authentication:\n- Username and password are common but do not meet the criteria for enhanced security.\n\n- Biometrics offer strong security but may not be device-agnostic or work offline.\n- SMS verification adds a second factor but relies on network connectivity.\n- Time-based tokens, which are the correct answer, provide a secure, device-agnostic method of authentication that works across platforms and offline.\n\n**Domain 3: Implementation**"
+    "description": "For secure remote authentication:\n- Username and password are common but do not meet the criteria for enhanced security.\n- Biometrics offer strong security but may not be device-agnostic or work offline.\n- SMS verification adds a second factor but relies on network connectivity.\n- Time-based tokens, which are the correct answer, provide a secure, device-agnostic method of authentication that works across platforms and offline.\n\n**Domain 3: Implementation**"
 },
 
 
@@ -1147,7 +1153,7 @@ questions_701_C = [
         "Risk assessment"
     ],
     "correct_answer": 3,
-    "description": "In a security awareness program:\n- A Password policy defines password requirements but is not directly related to awareness training.\n\n- Access badges control physical entry but are not part of a security awareness program.\n- A Phishing campaign, which is the correct answer, educates employees on recognizing and avoiding phishing attacks, fitting the program’s goals.\n- A Risk assessment evaluates potential risks but is not an awareness activity.\n\n**Domain 5: Governance, Risk, and Compliance**"
+    "description": "In a security awareness program:\n- A Password policy defines password requirements but is not directly related to awareness training.\n- Access badges control physical entry but are not part of a security awareness program.\n- A Phishing campaign, which is the correct answer, educates employees on recognizing and avoiding phishing attacks, fitting the program’s goals.\n- A Risk assessment evaluates potential risks but is not an awareness activity.\n\n**Domain 5: Governance, Risk, and Compliance**"
 },
 {
     "question": "A malicious update was distributed to a common software platform and disabled services at many organizations. Which of the following best describes this type of vulnerability?",
@@ -1158,7 +1164,7 @@ questions_701_C = [
         "Supply chain"
     ],
     "correct_answer": 4,
-    "description": "To understand the vulnerability caused by a malicious update:\n- A DDoS (Distributed Denial of Service) attack overwhelms a service with traffic but is not caused by a software update.\n\n- A Rogue employee might introduce threats but does not explain the widespread impact of the update.\n- An Insider threat involves someone within the organization causing harm but does not fit this scenario.\n- A Supply chain attack, which is the correct answer, compromises a trusted third-party service or software, leading to widespread issues.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "To understand the vulnerability caused by a malicious update:\n- A DDoS (Distributed Denial of Service) attack overwhelms a service with traffic but is not caused by a software update.\n- A Rogue employee might introduce threats but does not explain the widespread impact of the update.\n- An Insider threat involves someone within the organization causing harm but does not fit this scenario.\n- A Supply chain attack, which is the correct answer, compromises a trusted third-party service or software, leading to widespread issues.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 },
 {
     "question": "A company web server is initiating outbound traffic to a low-reputation, public IP on a non-standard port. The web server is used to present an unauthenticated page to clients who upload images to the company. An analyst notices a suspicious process running on the server that was not created by the company development team. Which of the following is the most likely explanation for this security incident?",
@@ -1169,7 +1175,7 @@ questions_701_C = [
         "Attackers have deployed a rootkit Trojan to the server over an exposed RDP port."
     ],
     "correct_answer": 1,
-    "description": "To identify the cause of suspicious server activity:\n- A web shell, which is the correct answer, is a script uploaded to a web server that allows remote command execution, fitting the scenario.\n\n- A worm spreads across networks but does not explain the specific suspicious process.\n- Malicious insiders may mine cryptocurrency, but this scenario involves external traffic and unauthorized processes.\n- A rootkit Trojan compromises systems at a deeper level but does not match the web shell description.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
+    "description": "To identify the cause of suspicious server activity:\n- A web shell, which is the correct answer, is a script uploaded to a web server that allows remote command execution, fitting the scenario.\n- A worm spreads across networks but does not explain the specific suspicious process.\n- Malicious insiders may mine cryptocurrency, but this scenario involves external traffic and unauthorized processes.\n- A rootkit Trojan compromises systems at a deeper level but does not match the web shell description.\n\n**Domain 1: Attacks, Threats, and Vulnerabilities**"
 },
 {
     "question": "An organization requests a third-party full-spectrum analysis of its supply chain. Which of the following would the analysis team use to meet this requirement?",
@@ -1180,7 +1186,7 @@ questions_701_C = [
         "Illumination tool"
     ],
     "correct_answer": 4,
-    "description": "For a comprehensive supply chain analysis:\n- A Vulnerability scanner identifies potential weaknesses but does not provide a full-spectrum analysis.\n\n- A Penetration test simulates attacks but focuses on security, not the entire supply chain.\n- SCAP (Security Content Automation Protocol) standardizes vulnerability management but is not a full-spectrum tool.\n- An Illumination tool, which is the correct answer, maps and analyzes the supply chain, identifying potential risks and vulnerabilities.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "For a comprehensive supply chain analysis:\n- A Vulnerability scanner identifies potential weaknesses but does not provide a full-spectrum analysis.\n- A Penetration test simulates attacks but focuses on security, not the entire supply chain.\n- SCAP (Security Content Automation Protocol) standardizes vulnerability management but is not a full-spectrum tool.\n- An Illumination tool, which is the correct answer, maps and analyzes the supply chain, identifying potential risks and vulnerabilities.\n\n**Domain 4: Operations and Incident Response**"
 },
 {
     "question": "A systems administrator deployed a monitoring solution that does not require installation on the endpoints that the solution is monitoring. Which of the following is described in this scenario?",
@@ -1191,8 +1197,9 @@ questions_701_C = [
         "File-based solution"
     ],
     "correct_answer": 1,
-    "description": "For monitoring without endpoint installation:\n- An Agentless solution, which is the correct answer, monitors systems and networks without needing software agents on endpoints.\n\n- A Client-based solution requires installation on each endpoint.\n- An Open port is a network port that is available for communication but does not describe a monitoring solution.\n- A File-based solution deals with file storage but not monitoring.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "An Agentless solution, which is the correct answer, monitors systems and networks without requiring software agents on the endpoints being monitored.\n\n- A Client-based solution requires installation of monitoring software on each endpoint.\n- An Open port refers to a network port that allows communication but does not describe a monitoring solution.\n- A File-based solution involves managing or storing files and is not related to system monitoring.\n\n**Domain 4: Operations and Incident Response**"
 },
+
 {
     "question": "A security analyst is reviewing the source code of an application in order to identify misconfigurations and vulnerabilities. Which of the following kinds of analysis best describes this review?",
     "options": [
@@ -1202,6 +1209,7 @@ questions_701_C = [
         "Impact"
     ],
     "correct_answer": 2,
-    "description": "To identify issues in application source code:\n- Dynamic analysis tests the application in runtime but does not involve reviewing the source code.\n\n- Static analysis, which is the correct answer, examines the code without executing it to identify vulnerabilities and misconfigurations.\n- Gap analysis compares current processes with desired standards but is not specific to code review.\n- Impact analysis assesses the potential consequences of changes but does not involve code review.\n\n**Domain 4: Operations and Incident Response**"
+    "description": "Static analysis involves examining the application's source code without executing it to identify vulnerabilities, coding errors, and misconfigurations early in the development process.\n\n- Dynamic analysis involves evaluating the application while it's running, focusing on its behavior during execution rather than its source code.\n- Static analysis involves reviewing the source code itself without executing the application to uncover potential misconfigurations and vulnerabilities.\n- Gap analysis identifies discrepancies between current processes and desired outcomes, but it doesn't involve examining \n\n**Domain 3: Implementation.**"
 }
+
 ]
