@@ -534,7 +534,7 @@ questions_701_A = [
                 "Reputation damage"
             ],
             "correct_answer": 2,
-            "description": "Failure to comply with PCI DSS (Payment Card Industry Data Security Standard) can lead to significant fines and penalties for financial institutions. \n- Audit findings document non-compliance. \n- Sanctions may be imposed for violations. \n- Reputation damage results from public disclosure of non-compliance.\n\n**Domain 5: Governance, Risk, and Compliance**"
+            "description": "Audit findings (Company mistakes will stay inside the company) As an example, you work in a company and you made a mistakes that will lose your job. Are you going to tell them or are you just going to keep it to yourself? Its kinda same scenario as the question. \n- Audit findings document non-compliance. \n- Sanctions may be imposed for violations. \n- Reputation damage results from public disclosure of non-compliance.\n\n**Domain 5: Governance, Risk, and Compliance**"
         },
         {
             "question": "A company is developing a business continuity strategy and needs to determine how many staff members would be required to sustain the business in the case of a disruption. Which of the following best describes this step?",
