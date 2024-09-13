@@ -838,7 +838,6 @@ questions_701_B = [
         "description": "The correct answer is **Reseat the power cable and confirm the outlet is providing energy**. Before investigating internal components, it’s important to ensure that the power cable is properly connected and that the outlet is working.\n\n- Checking the **output voltages**, **replacing the power button**, or **reconnecting cables** would be the next steps if the basic power connections are confirmed to be functional."
     },
 #286-299
-[
     {
         "question": "Which of the following cables should be used to terminate ST connectors on each end?",
         "options": [
@@ -975,8 +974,8 @@ questions_701_B = [
         ],
         "correct_answer": 1,
         "description": "The correct answer is **High latency**. Audio breaking up during a VoIP call is typically caused by high latency, where there is a significant delay in data transmission."
-    }
-#
+    },
+
 
 
 
