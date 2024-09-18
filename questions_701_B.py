@@ -455,7 +455,7 @@ questions_701_B = [
             "The touch-screen digitizer is malfunctioning.",
             "The inverter is misconfigured."
         ],
-        "correct_answer": 0,
+        "correct_answer": 1,
         "description": "The correct answer is **The screen rotation is locked**. If a tablet's screen orientation isn't adjusting correctly, it is most likely due to screen rotation being locked, which prevents automatic changes in orientation.\n\n- **The screen protector on the tablet is damaged** would more likely affect touch sensitivity, not screen orientation.\n- **The touch-screen digitizer is malfunctioning** would generally affect touch functionality, not orientation.\n- **The inverter is misconfigured** is not relevant for touch-screen devices, as it pertains to the backlight of LCD screens."
     },
     {
@@ -466,7 +466,7 @@ questions_701_B = [
             "Disabling Wi-Fi connections",
             "Utilizing a third-party map application"
         ],
-        "correct_answer": 0,
+        "correct_answer": 1,
         "description": "The correct answer is **Enabling high-accuracy mode**. High-accuracy mode utilizes GPS, Wi-Fi, and mobile networks to improve location accuracy, which is the best approach for resolving GPS reliability issues.\n\n- **Replacing the battery** is unlikely to affect GPS performance.\n- **Disabling Wi-Fi connections** would likely reduce the accuracy of location services rather than improve it.\n- **Utilizing a third-party map application** does not directly address the GPS accuracy issue."
     },
     {
@@ -477,7 +477,7 @@ questions_701_B = [
             "Drive failure",
             "Windows updates"
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is **Drive failure**. A S.M.A.R.T. error indicates that the hard drive has potential issues, which is consistent with an error stating that no OS is found, likely due to a failing or failed drive.\n\n- **Boot order** issues would prevent the system from finding the OS but wouldn’t be indicated by a S.M.A.R.T. error.\n- **Malware** could cause boot issues but isn’t typically indicated by S.M.A.R.T. errors.\n- **Windows updates** are less likely to cause an OS not found error, especially when accompanied by S.M.A.R.T. warnings."
     },
     {
@@ -489,7 +489,7 @@ questions_701_B = [
             "Airplane mode is disabled.",
             "The battery is charging."
         ],
-        "correct_answer": 0,
+        "correct_answer": 1,
         "description": "The correct answer is **The internal antennas are connected**. After a screen replacement, it's possible that internal Wi-Fi antennas were disconnected or not properly reconnected, affecting the Wi-Fi signal strength.\n\n- **The device has the latest OS updates** is less likely to cause a sudden change in Wi-Fi connectivity after hardware replacement.\n- **The wireless device drivers are the latest version** is important but less likely to be the immediate cause if the problem arose directly after hardware work.\n- **Airplane mode is disabled** is not directly related to the issue if the laptop was functioning previously.\n- **The battery is charging** does not affect Wi-Fi performance."
     },
     {
@@ -500,7 +500,7 @@ questions_701_B = [
             "Risk analysis",
             "Rollback plan"
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is **Risk analysis**. Risk analysis is used to identify and evaluate potential issues that might arise during a change implementation. It helps in understanding the risks associated with the change and planning accordingly.\n\n- **Scope change** refers to modifications in the project scope, not specifically to addressing potential issues.\n- **End-user acceptance** involves ensuring that users are satisfied with the changes, rather than addressing potential issues.\n- **Rollback plan** is a strategy to revert changes if something goes wrong, but risk analysis is used to predict potential issues before they occur."
     },
 #251-260
@@ -975,14 +975,658 @@ questions_701_B = [
         "correct_answer": 1,
         "description": "The correct answer is **High latency**. Audio breaking up during a VoIP call is typically caused by high latency, where there is a significant delay in data transmission."
     },
+#305-315
+
+    {
+        "question": "A network technician is working to locate an end user's Cat 6 cable within a network rack. The server rack is poorly documented, and a cable management system has not been implemented. Which of the following would be the BEST tool to BEST identify the correct cable?",
+        "options": [
+            "Cable tester",
+            "Network tap",
+            "Toner probe",
+            "Loopback plug"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Toner probe**. A toner probe is used to trace the cable from one end to the other, especially in environments where cables are not labeled or documented."
+    },
+    {
+        "question": "A technician connects a new computer to the internet and then opens the wiring closet. Even though all of the wires are terminated, nothing in the wiring closet is labeled. Which of the following tools should the technician use to complete the task?",
+        "options": [
+            "Cable tester",
+            "Loopback plug",
+            "Toner probe",
+            "Punchdown tool"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Toner probe**. The toner probe helps identify which wire corresponds to which port or device, making it ideal in situations where wires are not labeled."
+    },
+    {
+        "question": "An IT technician is inspecting the internal components of a desktop computer to assess a suspected power issue with the motherboard. Which of the following connectors should the IT technician inspect further?",
+        "options": [
+            "RJ45",
+            "Straight tip",
+            "DB9",
+            "Molex"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Molex**. Molex connectors provide power to the internal components of a desktop, such as hard drives and optical drives."
+    },
+{
+    "question": "A systems administrator is attempting to resolve a ticket regarding an issue with an email server. The administrator is covering for a coworker who was previously working on the ticket. The coworker already gathered facts about the issue and spoke with users concerning their missing emails. The coworker also discovered the email server's retention policy was updated shortly before users first noticed the issue. Which of the following should the systems administrator do NEXT to resolve the email issue?",
+    "options": [
+        "Escalate the ticket to a higher level to resolve the email server issue.",
+        "Test a theory to determine the cause of the email server issue.",
+        "Establish a theory of probable cause for the email server issue.",
+        "Create a plan of action to resolve the email server issue."
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is **Establish a theory of probable cause for the email server issue**. After gathering facts, the next step is to establish a theory of probable cause before testing it or taking further actions."
+},
+    {
+        "question": "A user uploads a file to a storage location that is accessible via a web browser and a client application. The user's coworkers can access the file as well. The service that the file is stored with is provided by a third party for a monthly fee. The third party's service is available to any business or consumer who would like to use the service. Which of the following BEST describes the type of service that is in use?",
+        "options": [
+            "Hybrid cloud",
+            "Infrastructure as a service",
+            "Public cloud",
+            "Private cloud"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Public cloud**. A public cloud is a service offered by third parties and available to businesses or consumers for a fee."
+    },
+    {
+        "question": "Which of the following frequency bands do 802.11b and 802.11g operate in?",
+        "options": [
+            "1GHz",
+            "2.4GHz",
+            "5GHz",
+            "6GHz"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **2.4GHz**. Both 802.11b and 802.11g operate in the 2.4GHz frequency band."
+    },
+    {
+        "question": "Which of the following protocols operates without a port number assignment?",
+        "options": [
+            "SNMP",
+            "TCP",
+            "SSH",
+            "DHCP"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **TCP**. TCP is a transport protocol and does not have a specific port number assigned to it. Instead, it is used in conjunction with various port numbers for specific applications."
+    },
+    {
+        "question": "A desktop support technician receives an escalated ticket regarding a computer that displays the following message upon booting up: The amount of system memory has changed. Which of the following components is failing?",
+        "options": [
+            "GPU",
+            "HDD",
+            "RAM",
+            "CPU"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **RAM**. This message typically indicates an issue with the system memory (RAM), such as a faulty or improperly seated RAM module."
+    },
+    {
+        "question": "Using the output below:\n\nIPv4 Address: 172.25.1.39 -\n\nSubnet Mask: 255.255.255.0 -\n\nRouter: 172.25.1.252 -\n\nName Server: 172.25.1.4 -\n\nWhich of the following is the default gateway?",
+        "options": [
+            "172.25.1.252",
+            "172.25.1.39",
+            "172.25.1.4",
+            "255.255.255.0"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **172.25.1.252**. The default gateway is the IP address that routes traffic to other networks, and in this case, it is the router."
+    },
+    {
+        "question": "A technician is working on a critical warehouse machine that will not turn on. The technician has determined the power supply for the machine failed. The warehouse manager is looking for a solution that will prevent downtime in the future. Which of the following devices should the technician install to meet this requirement?",
+        "options": [
+            "Grounded power supply",
+            "Modular power supply",
+            "220V power supply",
+            "Redundant power supply"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Redundant power supply**. A redundant power supply provides backup power in case of a failure, preventing downtime."
+    },
+    {
+        "question": "A help desk technician receives a ticket stating a printer has jammed several times today. The technician removes the jammed paper and notices the paper supply is low and the paper in the tray is wrinkled. Which of the following MOST likely caused the paper jams?",
+        "options": [
+            "High latency",
+            "Page orientation",
+            "Driver mismatch",
+            "Multipage misfeed"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Multipage misfeed**. Wrinkled and low paper supplies can lead to multiple pages feeding incorrectly into the printer, causing jams."
+    },
+#316-329
 
 
+    {
+        "question": "A user reported that a laptop would no longer turn on after the battery was depleted, even though the laptop was charged the night before. An on-site technician was dispatched with a spare laptop and verified that the AC adapter and power cord were functional. Which of the following was the MOST likely cause of the issue?",
+        "options": [
+            "Swollen battery",
+            "Calibration corruption",
+            "Excessive wattage",
+            "Damaged port"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Swollen battery**. A swollen battery can cause power issues and prevent the laptop from turning on."
+    },
+    {
+        "question": "A technician installed a new SSD in a computer that needed additional storage. The technician properly formatted and partitioned the drive. The BIOS recognizes the drive, but the drive does not appear as an available drive in My Computer. Which of the following should the technician do to resolve the issue?",
+        "options": [
+            "Replace the defective drive.",
+            "Make sure a drive letter has been assigned.",
+            "Check Device Manager.",
+            "Initialize the disk in Disk Management."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Initialize the disk in Disk Management**. If the drive is not appearing in My Computer, it may need to be initialized in Disk Management."
+    },
+    {
+        "question": "A user is unable to access the internet on a PC. A technician examines the PC and runs the following commands: ipconfig /all, ping 8.8.8.8, ping comptia.org. Which of the following steps in the troubleshooting process does this series of commands represent?",
+        "options": [
+            "Establish a theory.",
+            "Verify full system functionality.",
+            "Establish a plan of action.",
+            "Identify the problem."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Identify the problem**. Running these commands helps in identifying where the issue might be occurring in the network connectivity."
+    },
+    {
+        "question": "A technician installed a new router at a small office. After the installation, the technician notices that all devices have a 169.254.x.x IP address. Printers and fileshares are still working, but PCs cannot access the internet. Which of the following should the technician configure on the router to enable devices to connect to the internet?",
+        "options": [
+            "APIPA",
+            "DNS",
+            "DHCP",
+            "SMB"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **DHCP**. Devices with a 169.254.x.x IP address indicate that they are not receiving an IP address from the DHCP server. Configuring DHCP on the router will resolve this issue."
+    },
+    {
+        "question": "A technician is troubleshooting a laptop that shuts down intermittently. When the laptop is repositioned, the technician notices a noise coming from inside of it. The technician removes the bottom cover. Which of the following should the technician do NEXT?",
+        "options": [
+            "Turn on the laptop and move it again to replicate the issue.",
+            "Reseat the memory modules and the SSD.",
+            "Remove the internal battery and look for loose parts.",
+            "Inspect the connections for a damaged cable."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Remove the internal battery and look for loose parts**. The noise could be due to loose or damaged components inside the laptop."
+    },
+    {
+        "question": "Which of the following would MOST likely be used to extend the life of a device?",
+        "options": [
+            "Battery backup",
+            "Electrostatic discharge mat",
+            "Proper ventilation",
+            "Green disposal"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Proper ventilation**. Proper ventilation helps prevent overheating and extends the life of the device."
+    },
+    {
+        "question": "A user is attempting to connect a streaming media device to a hotel's free wireless internet. However, the user is unable to pass through the captive portal. Which of the following would MOST likely allow the user to connect the device to the internet?",
+        "options": [
+            "Connecting to the hotspot on the user's device",
+            "Disabling the Wi-Fi security on the device",
+            "Asking the hotel to disable the captive portal on the Wi-Fi",
+            "Adjusting the date and time stamps on the device to reflect another country"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Connecting to the hotspot on the user's device**. This can bypass the captive portal on the hotel's network by using an alternative connection method."
+    },
+    {
+        "question": "A user working in the field reported the GPS stopped working on a phone. The user's older, in-car GPS continued to function. Later, the user reported that the phone's GPS started working again. Which of the following MOST likely caused the phone's GPS to fail?",
+        "options": [
+            "The cell phone was in conservation mode.",
+            "The cell phone had lost service to the carrier.",
+            "The cell phone received a firmware update.",
+            "The cell phone had overheated."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **The cell phone had lost service to the carrier**. Loss of service can impact GPS functionality, and it might be restored once the service is re-established."
+    },
+    {
+        "question": "A technician responds to a user who has reported that a laptop is too hot. The technician notices the laptop is not able to sit level on the workspace. Which of the following BEST describes the issue with the laptop?",
+        "options": [
+            "The docking station is improperly installed.",
+            "The hard drive is disconnected.",
+            "The CPU fan is too powerful.",
+            "The battery is damaged."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **The battery is damaged**. A damaged battery can cause the laptop to become uneven and potentially overheat."
+    },
+    {
+        "question": "Users report that all copies produced on a copier have a solid black line, but printing is unaffected. Which of the following is the MOST likely cause?",
+        "options": [
+            "Failing imaging drum",
+            "A scratch on the scanning bed",
+            "Bad output tray",
+            "Damaged fuser"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **A scratch on the scanning bed**. A solid black line on copies is typically caused by a scratch or other defect on the scanning bed."
+    },
+    {
+        "question": "A desktop technician has received reports that a user's PC is slow to load programs and saved files. The technician investigates and discovers an older HDD with adequate free space. Which of the following should the technician use to alleviate the issue first?",
+        "options": [
+            "Disk Management",
+            "Disk Defragment",
+            "Disk Cleanup",
+            "Device Manager"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **Disk Defragment**. Fragmented files on an HDD can slow down system performance, so defragmenting the disk can help improve speed."
+    },
+#331-350
+    {
+        "question": "A user is experiencing an issue when trying to use a camera on a corporate mobile device to take pictures. The camera on the device is working. However, when the user tries to access the pictures via a USB cable connected to a PC, the user is unable to copy the pictures to the PC. Which is the following BEST describes the likely cause of the issue?",
+        "options": [
+            "Settings are preventing the transfer of data from the device's camera.",
+            "A technician needs to change the camera settings on the device.",
+            "The device has corrupted picture files due to an update.",
+            "The device needs to have the OS reinstalled."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Settings are preventing the transfer of data from the device's camera**. The issue likely stems from settings that restrict data transfer, even though the camera itself is functioning."
+    },
+    {
+        "question": "A technician who works in a high-security environment needs to set up a laptop with triple monitors for a new security employee. All USB ports are disabled due to security policies. Which of the following should the technician do to BEST meet the requirements?",
+        "options": [
+            "Install a splitter cable.",
+            "Install a discrete graphics card.",
+            "Use an HDMI switch.",
+            "Implement a docking station."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Implement a docking station**. A docking station can support multiple monitors and does not require USB ports if it connects through other interfaces like DisplayPort or HDMI."
+    },
+    {
+        "question": "A technician is upgrading a desktop’s storage with the fastest option available. The desktop's motherboard is equipped with SATA III, NVMe, and IDE. Which of the following should the technician choose for the best performance?",
+        "options": [
+            "PCIe SSD connected via NVMe interface",
+            "3.5in (8.9cm) 10.000rpm HDD connected via IDE interface",
+            "M.2 SSD connected via SATA interface",
+            "2.5in (6.35cm) SSD connected via SATA interface"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **PCIe SSD connected via NVMe interface**. NVMe SSDs provide the highest performance compared to SATA and IDE interfaces."
+    },
+    {
+        "question": "A technician needs to provide data redundancy on a user’s workstation. Which of the following RAID levels provides redundancy with the FEWEST disks?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 10"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **RAID 1**. RAID 1 provides redundancy with only two disks by mirroring the data."
+    },
+    {
+        "question": "A user's wireless laptop stopped working. A technician replaced the wireless card, but the wireless range is now limited. Which of the following should the technician perform NEXT?",
+        "options": [
+            "Verify the antenna's connection.",
+            "Switch from a 2.4GHz band to a 5GHz band.",
+            "Change the channels of the Wi-Fi card settings.",
+            "Upgrade the wireless driver."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Verify the antenna's connection**. Limited range after a wireless card replacement often indicates an issue with the antenna connection."
+    },
+    {
+        "question": "A technician installed a Cat 5 UTP cable approximately 275ft (84m) from a network switch in an office to a workstation located on a factory floor. The technician sees both a flashing green LED and a flashing orange LED on the workstation's NIC. Which of the following should the technician do FIRST?",
+        "options": [
+            "Check for loose connections, pinched bends, and physical damage.",
+            "Install a powered hub as close as possible to the halfway point in the Cat 5 UTP cable run.",
+            "Replace the entire run of Cat 5 UTP cable with Cat 5 STP cable.",
+            "Upgrade the entire cable run to multimode fiber."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Check for loose connections, pinched bends, and physical damage**. This is the first step to ensure there are no physical issues with the cable installation."
+    },
+    {
+        "question": "In a SOHO environment, a user wants to make sensitive scanned documents available to other users on the domain. The logs need to indicate who accessed the documents and at what time they were accessed. Which of the following settings should a technician set up on the MFP device?",
+        "options": [
+            "Scan to email",
+            "ADF tray",
+            "PCL",
+            "SMB share"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **SMB share**. Setting up an SMB share will allow access control and logging for document access."
+    },
+    {
+        "question": "A user reports that a display is slow to turn on, and the colors are distorted and discolored. Once the display turns on, it appears to have lines going through the image and intermittently goes blank. Which of the following is the most likely cause of the issue?",
+        "options": [
+            "Incorrect data source",
+            "Incorrect resolution settings",
+            "Physical cabling issues",
+            "Incorrect refresh rate",
+            "Display burn-in"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Physical cabling issues**. Problems with the display’s physical connections can cause the symptoms described."
+    },
+    {
+        "question": "A regularly used laser printer is printing vertical lines on each page. Which of the following should the technician do first?",
+        "options": [
+            "Lower the printing contrast.",
+            "Change the paper type.",
+            "Install a new fuser.",
+            "Replace the toner cartridge."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Replace the toner cartridge**. Vertical lines on prints often indicate a problem with the toner cartridge."
+    },
+    {
+        "question": "A technician recently installed a new printer that is being shared over the network via a 64-bit Windows Print Server. Two users, who have computers with a legacy OS, are unable to print to this new printer. Which of the following should the technician do to resolve this issue?",
+        "options": [
+            "Enable 32-bit drivers on the Print Server.",
+            "Enable Print Spooler and restart the computer.",
+            "Run Windows Update on the users' computers.",
+            "Update the computers to a 64-bit driver."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Enable 32-bit drivers on the Print Server**. Legacy OS systems require 32-bit drivers to print to a 64-bit print server."
+    },
+    {
+        "question": "A technician is replacing a failed drive in a RAID 5 array. Which of the following is the first step the technician should take before hot swapping the drive out of the array?",
+        "options": [
+            "Document the replacement date.",
+            "Shut down the array.",
+            "Safely dispose of the failed drive.",
+            "Perform a full backup."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Perform a full backup**. Ensuring that a full backup is completed is crucial before performing any hardware replacements in a RAID array."
+    },
+    {
+        "question": "An administrator notices that on an intermittent basis the virtual machines are running slowly. The virtual machines are correctly sized, and the hardware has enough free resources to cope with demand. Which of the following is most likely the cause?",
+        "options": [
+            "The physical servers are not able to draw enough power.",
+            "The physical servers do not have enough network bandwidth.",
+            "The physical servers are throttling due to overheating.",
+            "The physical servers are contending for resources."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **The physical servers are throttling due to overheating**. Intermittent performance issues may occur when the physical servers are overheating and throttling their performance."
+    },
+        {
+            "question": "Which of the following technologies can be used to harden guest virtual machines?",
+            "options": [
+                "Containerization",
+                "Network isolation",
+                "Resource reservation",
+                "vTPM"
+            ],
+            "correct_answer": 4,
+            "description": "The correct answer is **vTPM**. Virtual Trusted Platform Module (vTPM) helps in hardening virtual machines by providing a secure cryptographic foundation."
+        },
+    #351-380
+    {
+        "question": "A technician is attempting to connect the wired LANs at two nearby buildings by installing a wireless point-to-point connection. Which of the following should the technician consider?",
+        "options": [
+            "NFC protocol data rate",
+            "RFID frequency range",
+            "Bluetooth version compatibility",
+            "Allowable limits for transmit power"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Allowable limits for transmit power**. For a wireless point-to-point connection between buildings, it is important to ensure that the transmit power complies with local regulations and is sufficient to cover the distance between the two points.\n\n- **NFC protocol data rate**: NFC is designed for close-range communication (within a few centimeters), making it irrelevant for connecting LANs over a distance.\n- **RFID frequency range**: RFID is used primarily for tracking and identification, not for establishing wireless LAN connections.\n- **Bluetooth version compatibility**: Bluetooth is designed for short-range communication, generally within a few meters, and is not suitable for long-distance LAN connections."
+    },
+    {
+        "question": "An analyst has replaced the motherboard in a desktop computer that previously overheated. The analyst presses the power button, hears three beeps, and sees the screen is black. Which of the following is the best action for the analyst to take to fix this issue?",
+        "options": [
+            "Replace the power supply.",
+            "Reseat the RAM.",
+            "Reattach the hard drive.",
+            "Flash the BIOS."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **Reseat the RAM**. The three beeps typically indicate a memory-related issue, such as improperly seated RAM, so reseating the RAM is the best course of action.\n\n- **Replace the power supply**: If the power supply were the issue, the system likely wouldn’t power on at all.\n- **Reattach the hard drive**: The hard drive isn’t involved in POST, so this isn’t related to the issue.\n- **Flash the BIOS**: This step wouldn’t be necessary for a memory error, which is the likely cause based on the beep code."
+    },
+    {
+        "question": "A technician is troubleshooting a network issue and needs to check the status of a local network device in the least disruptive manner possible. Which of the following tools should the technician use to accomplish this task?",
+        "options": [
+            "Network tap",
+            "Cable tester",
+            "Multimeter",
+            "Tone generator"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Network tap**. A network tap allows monitoring of network traffic without disrupting communication on the network.\n\n- **Cable tester**: This is used to check the functionality of network cables, not to monitor a device's network status.\n- **Multimeter**: A multimeter is used for electrical testing, not for network diagnostics.\n- **Tone generator**: This helps trace cables, but it doesn’t monitor network status."
+    },
+    {
+        "question": "A technician is working to replace a single DDR3 RAM module on a laptop that has two occupied slots. When the technician tries to turn on the laptop, the computer starts beeping and does not pass POST. The technician double-checks the newly installed RAM and notices a motherboard message indicating low voltage. Which of the following is the most likely cause of this issue?",
+        "options": [
+            "Faulty power adapter",
+            "Incorrect BIOS settings",
+            "Failing CMOS battery",
+            "Unsupported memory"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Unsupported memory**. A voltage mismatch can indicate that the RAM is not supported by the laptop’s motherboard.\n\n- **Faulty power adapter**: This would cause power issues, not low memory voltage errors.\n- **Incorrect BIOS settings**: BIOS settings typically don’t cause this specific error unless overclocking is involved.\n- **Failing CMOS battery**: A dead CMOS battery would affect the system clock and BIOS settings, not cause memory voltage issues."
+    },
+    {
+        "question": "A technician is creating a new RAID array for a customer. After interviewing the customer, the technician decides to implement a RAID array of striping without parity. Which of the following reasons would lead the technician to choose striping without parity instead of striping with parity?",
+        "options": [
+            "Uptime is the customer's biggest concern.",
+            "Speed is the most important consideration.",
+            "Redundancy and speed are equally important.",
+            "Available storage space needs to be maximized."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **Speed is the most important consideration**. RAID 0 (striping without parity) improves read/write speed but offers no redundancy.\n\n- **Uptime is the customer's biggest concern**: If uptime were critical, RAID 1 or RAID 5 with redundancy would be a better choice.\n- **Redundancy and speed are equally important**: RAID 1 or RAID 5 would provide both redundancy and speed.\n- **Available storage space needs to be maximized**: While RAID 0 maximizes available space, speed is its primary benefit."
+    },
+    {
+        "question": "A classroom projector, which is turned on, displays a flashing LED code but does not have any video output. Which of the following should a technician do to resolve the issue?",
+        "options": [
+            "Replace the bulb.",
+            "Adjust the input resolution.",
+            "Clean the air filter.",
+            "Change the input source."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Replace the bulb**. A flashing LED code often indicates that the projector bulb has failed and needs to be replaced.\n\n- **Adjust the input resolution**: This would affect the quality of the image, not the absence of video output.\n- **Clean the air filter**: While important for maintenance, this wouldn’t cause the video to stop working.\n- **Change the input source**: Changing the input source wouldn’t resolve the issue if the projector isn’t displaying any output at all."
+    },
+    {
+        "question": "A user is having difficulty using a personal all-in-one printer. When the user scans a single-page document in flatbed mode, the scan appears correctly; however, when using the printer's document feeder, the scan has a vertical line going across the page. Which of the following should a technician perform FIRST to resolve this issue?",
+        "options": [
+            "Replace the printer's ADF.",
+            "Install a pickup roller replacement kit.",
+            "Clean the separation pad.",
+            "Use a microfiber cloth to clean the glass."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Use a microfiber cloth to clean the glass**. A vertical line on scans is commonly caused by dirt or debris on the scanner glass, particularly where the document feeder reads the pages.\n\n- **Replace the printer's ADF**: The issue is more likely related to a dirty glass, not a faulty ADF.\n- **Install a pickup roller replacement kit**: Pickup rollers help move paper through the printer but don’t affect scan quality.\n- **Clean the separation pad**: This helps with paper handling, not scanning quality."
+    },
+    {
+        "question": "A user tries to turn on a computer but gets the following error message: Bootable device not found. The computer had no issues yesterday. Which of the following is the most likely reason for this error?",
+        "options": [
+            "The HDD is malfunctioning.",
+            "The mouse and keyboard are not connected.",
+            "A misconfigured boot device is in the BIOS.",
+            "The network cable is unplugged."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **A misconfigured boot device is in the BIOS**. This error commonly occurs when the BIOS settings are incorrect, pointing to the wrong boot device.\n\n- **The HDD is malfunctioning**: While possible, this isn’t as likely as a BIOS misconfiguration unless there are other signs of drive failure.\n- **The mouse and keyboard are not connected**: This would not cause a 'bootable device not found' error.\n- **The network cable is unplugged**: This would only affect internet connectivity, not the system’s boot process."
+    },
+    {
+        "question": "A technician receives a smartphone that has been experiencing screen-related issues. The display is barely visible, and the battery indicates the charge level is very low. The technician connects the device to a power source, but the screen remains dim. Which of the following should the technician perform FIRST to resolve the issue?",
+        "options": [
+            "Enable airplane mode on the smartphone.",
+            "Reset the smartphone to factory settings.",
+            "Manually restart the smartphone.",
+            "Remove and reinsert the smartphone's battery."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Manually restart the smartphone**. Restarting the smartphone is a quick and non-invasive step to resolve screen-related issues.\n\n- **Enable airplane mode on the smartphone**: This will disable network connectivity but won’t address the screen issue.\n- **Reset the smartphone to factory settings**: This is a more drastic measure and should only be done after other troubleshooting steps.\n- **Remove and reinsert the smartphone's battery**: While possible, this is less likely needed for a screen issue and can be avoided by a restart."
+    },
+    {
+        "question": "A user tripped on an Ethernet cable and disconnected it from the wall jack. A technician visually inspects the cable and notices that the plastic prong on the connector of the cable is completely missing. Which of the following tools should the technician use to resolve this issue? (Choose two.)",
+        "options": [
+            "Cable stripper",
+            "Network crimper",
+            "Toner probe",
+            "Punchdown tool",
+            "Multimeter",
+            "Loopback plug"
+        ],
+        "correct_answer": [1, 2],
+        "description": "The correct answers are **Cable stripper** and **Network crimper**. The technician would need a cable stripper to prepare the cable and a network crimper to attach a new RJ45 connector to the Ethernet cable.\n\n- **Toner probe**: This tool is used to trace cables but won’t help repair the connector.\n- **Punchdown tool**: This is used for terminating cables at a patch panel or keystone jack, not for repairing connectors.\n- **Multimeter**: A multimeter measures electrical signals and won’t fix the physical issue.\n- **Loopback plug**: This is used to test network connectivity, not repair connectors."
+    },
+    {
+        "question": "A customer purchased an active touch pen for a tablet PC. After the customer used the pen for a few days, it stopped working. Which of the following is most likely causing the issue?",
+        "options": [
+            "The tablet screen is scratched.",
+            "The pen software is out of date.",
+            "The pen batteries need recharging.",
+            "Software updates disabled the pen."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **The pen batteries need recharging**. Active touch pens typically have batteries that need to be charged, and if the pen stops working, it’s likely because the battery has drained.\n\n- **The tablet screen is scratched**: A scratched screen wouldn’t prevent the pen from working entirely.\n- **The pen software is out of date**: Outdated software could cause issues, but a dead battery is more likely if the pen was working initially.\n- **Software updates disabled the pen**: While possible, this is less common than a battery issue."
+    },
+    {
+        "question": "An IT technician is working on a help desk ticket concerning a user's inability to create a virtual machine. The technician has already checked the RAM and HDD space in the user's machine. Which of the following settings should the technician check next to help troubleshoot the issue?",
+        "options": [
+            "BitLocker",
+            "MSConfig",
+            "BIOS",
+            "Secure Boot"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **BIOS**. Virtualization settings are typically controlled in the BIOS, and if virtualization isn’t enabled, the user won’t be able to create virtual machines.\n\n- **BitLocker**: This is for drive encryption and wouldn’t affect the ability to create virtual machines.\n- **MSConfig**: This tool is used to manage startup programs and services, not virtualization.\n- **Secure Boot**: This is a BIOS feature that ensures only trusted software is loaded but isn’t directly related to virtualization."
+    },
+    {
+        "question": "Isolating email attachments in a safe place until the attachments can be scanned for malware is defined as:",
+        "options": [
+            "An approve listing.",
+            "A screened subnet.",
+            "Cross-platform virtualization.",
+            "Sandboxing."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is **Sandboxing**. Sandboxing isolates potentially harmful files, such as email attachments, in a controlled environment where they can be tested for malware without risking the rest of the system.\n\n- **An approve listing**: This refers to allowing only certain approved programs to run, not isolating files.\n- **A screened subnet**: This is a portion of a network separated for security purposes, not for handling email attachments.\n- **Cross-platform virtualization**: This allows different operating systems to run on the same machine but doesn’t isolate email attachments."
+    },
+    #381-400
 
 
-
-
-
-
-
+    {
+        "question": "A systems administrator is working to ensure access to corporate laptops is limited to authorized users. The administrator has already implemented a password policy. Which of the following would be the best option to help the administrator secure the corporate resources?",
+        "options": [
+            "Trusted Platform Module",
+            "Biometric scanner",
+            "Laptop lock",
+            "Encryption"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **Biometric scanner**. Biometric authentication ensures that only authorized individuals, based on unique physical traits, can access the system.\n\n- **Trusted Platform Module**: TPM secures hardware-based encryption but does not directly limit user access.\n- **Laptop lock**: A laptop lock physically secures the device but does not protect it from unauthorized access.\n- **Encryption**: Encryption protects data, but biometric authentication directly controls user access."
+    },
+    {
+        "question": "A technician is working with a vendor to resolve an issue that a user reported. The vendor indicates that the technician's next step is to update the firmware. Which of the following is the most important step the technician should take before proceeding?",
+        "options": [
+            "Verify the device is fully charged and connected to a power supply",
+            "Ensure the device has adequate storage space for the update",
+            "Verify administrative access on the device",
+            "Export the user's settings so they can be imported after the upgrade"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Verify the device is fully charged and connected to a power supply**. Ensuring the device is adequately powered is crucial during firmware updates to prevent interruptions that could result in system failure or data corruption.\n\n- **Verify the device is fully charged and connected to a power supply**: Critical to avoid power loss during the update process.\n- **Ensure the device has adequate storage space for the update**: Necessary for successful updates, but power is more immediate.\n- **Verify administrative access on the device**: Important for making changes but less critical than ensuring the device is powered during the update.\n- **Export the user's settings so they can be imported after the upgrade**: Helpful for preserving settings but not as crucial as ensuring power stability."
+    },
+    {
+        "question": "A user frequently edits large files and saves them locally on a laptop. The user has recently begun experiencing performance issues and needs a cost-effective hardware upgrade. Which of the following the best way to meet the user's requirements?",
+        "options": [
+            "Upgrade the memory.",
+            "Upgrade to a larger GPU.",
+            "Upgrade to an SSD.",
+            "Upgrade to a faster CPU."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Upgrade to an SSD**. Solid-state drives provide faster read/write speeds, significantly improving performance when working with large files.\n\n- **Upgrade the memory**: While increasing memory may help, SSDs offer more noticeable performance improvements for storage-heavy tasks.\n- **Upgrade to a larger GPU**: A GPU upgrade is useful for graphics tasks but won’t necessarily improve general file handling.\n- **Upgrade to a faster CPU**: A CPU upgrade can improve performance but isn’t as cost-effective as switching to an SSD."
+    },
+    {
+        "question": "A restaurant calls the support line about its 3in (2.5cm) point-of-sale printer that is only printing fully black receipts. Which of the following should the technician check in order to resolve the issue? (Choose two.)",
+        "options": [
+            "Power supply",
+            "Humidity",
+            "Rollers",
+            "Fuser",
+            "Heating element",
+            "Room temperature"
+        ],
+        "correct_answer": [3, 5],
+        "description": "The correct answers are **Rollers** and **Heating element**. For a thermal printer, issues with the rollers or heating element can lead to printing problems, such as fully black receipts. The rollers could be misaligned or dirty, affecting the paper feed and print quality, while the heating element may be malfunctioning and causing excessive heat to be applied.\n\n- **Power supply**: A faulty power supply would prevent the printer from functioning, not cause fully black prints.\n- **Humidity**: While humidity can affect some printers, it's unlikely the cause in this case.\n- **Fuser**: This component is typically found in laser printers, not thermal printers.\n- **Room temperature**: This is unlikely to cause fully black prints unless extremely high."
+    },
+    {
+        "question": "Multiple users contact the help desk to report issues with the network fileshares. Files are accessible, but performance is very slow. Which of the following should a technician perform first?",
+        "options": [
+            "Defragment the files on the network share.",
+            "Ask the users to perform a network speed test.",
+            "Check the RAID drive status LEDs.",
+            "Start the process of rebuilding the array."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Check the RAID drive status LEDs**. Checking RAID status is a quick way to determine if there are hardware issues causing performance degradation.\n\n- **Defragment the files on the network share**: This could help, but hardware issues should be ruled out first.\n- **Ask the users to perform a network speed test**: This might help diagnose network issues, but checking the RAID array is a more efficient first step.\n- **Start the process of rebuilding the array**: This should be done if RAID issues are detected, but it is not the first step."
+    },
+    {
+        "question": "An engineer is installing a 500W power supply in a server that requires continuous availability. Which of the following is the most suitable type of power supply for the application?",
+        "options": [
+            "Redundant",
+            "Modular",
+            "Switched-mode",
+            "Semi-modular"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Redundant**. Redundant power supplies ensure that if one power supply fails, another takes over to maintain continuous availability.\n\n- **Modular**: Modular power supplies allow customization of the cables used but don’t ensure continuous availability.\n- **Switched-mode**: This describes a power supply’s method of converting power, but it’s not a feature related to redundancy.\n- **Semi-modular**: Semi-modular power supplies offer limited customization and aren’t necessarily redundant."
+    },
+    {
+        "question": "An internet service provider is delivering service through a copper medium with shared customer bandwidth. Which of the following services has most likely been installed?",
+        "options": [
+            "Fiber",
+            "Cable",
+            "NIC",
+            "DSL"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is **Cable**. Cable internet uses copper wires and typically shares bandwidth among multiple customers in the same area.\n\n- **Fiber**: Fiber-optic connections use light rather than copper, providing faster, dedicated bandwidth.\n- **NIC**: This is a network interface card, which is hardware inside a computer, not a service type.\n- **DSL**: DSL also uses copper but usually provides dedicated bandwidth rather than shared."
+    },
+    {
+        "question": "A help desk technician receives a ticket regarding a non-functioning printer. The ticket states the printer is no longer producing legible prints, and everything that prints appears as symbols. Which of the following is the most likely cause of this issue?",
+        "options": [
+            "Driver",
+            "Fuser",
+            "Access control list",
+            "Malware"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is **Driver**. Incorrect or corrupted printer drivers can cause printed output to appear as symbols instead of readable text.\n\n- **Fuser**: A faulty fuser would affect print quality, not the content of what is printed.\n- **Access control list**: This restricts access to the printer, but wouldn’t affect print content.\n- **Malware**: Malware could cause many issues, but a driver issue is more likely when symbols are printed."
+    },
+    {
+        "question": "A technician wants to stress test multiple applications while maintaining the ability to easily reset those environments back to the initial state. Which of the following is the best way to accomplish this task?",
+        "options": [
+            "Honeypot",
+            "Hybrid cloud",
+            "Sandbox",
+            "Production network"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **Sandbox**. A sandbox is an isolated environment where applications can be tested and reset easily to their original state without affecting the broader system.\n\n- **Honeypot**: A honeypot is used to lure attackers, not for application testing.\n- **Hybrid cloud**: A hybrid cloud combines public and private cloud environments, but isn’t typically used for isolated testing environments.\n- **Production network**: Testing applications on a production network could disrupt operations and isn’t easily reset."
+    },
+    {
+        "question": "A technician replaces a laptop hard drive with an M.2 SSD. When the technician reboots the laptop, the laptop does not detect the SSD. Which of the following should the technician configure for the system?",
+        "options": [
+            "HSM",
+            "Boot options",
+            "UEFI settings",
+            "TPM"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is **UEFI settings**. The UEFI firmware needs to be configured properly to detect the new M.2 SSD, especially if it requires specific boot settings or compatibility mode adjustments.\n\n- **HSM**: A hardware security module deals with encryption but doesn’t affect SSD detection.\n- **Boot options**: Adjusting boot options may be necessary, but configuring UEFI settings comes first.\n- **TPM**: Trusted Platform Module is related to encryption and security, not SSD detection."
+    }
 
 ]

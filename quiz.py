@@ -2,7 +2,6 @@ import random
 import os
 import time
 import subprocess
-import webbrowser
 from PIL import Image
 from questions_701_A import questions_701_A
 from questions_701_B import questions_701_B
@@ -42,8 +41,10 @@ def ask_question(question_num, total_questions, question, options, correct_answe
         print(f"{idx}. {option}")
     print()
     
-    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), or 'b' to go back: ").strip()
+    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), 'b' to go back, or 'x' to exit: ").strip()
     
+    if answer.lower() == 'x':
+        return 'x', True  # Indicate exit
     if answer.lower() == 'b':
         return None, False
 
@@ -180,6 +181,9 @@ def main():
             q.get("image", None)
         )
         
+        if answer == 'x':
+            break  # Exit the session
+        
         if answer is not None:
             if answers[current_question] is None:
                 if is_correct:
@@ -216,6 +220,9 @@ def main():
                     q["description"],
                     q.get("image", None)
                 )
+                
+                if answer == 'x':
+                    break  # Exit the session
                 
                 if answer is not None:
                     previous_answer = answers[i]
