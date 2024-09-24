@@ -106,8 +106,8 @@ def choose_ordering():
     elif choice == '2':
         return False  # In order
     else:
-        print("Invalid choice. Defaulting to randomized order.")
-        return True
+        print("Invalid choice. Defaulting to in order.")
+        return False
 
 def enable_images():
     print("\nWould you like to enable images in the questions?")
@@ -120,8 +120,8 @@ def enable_images():
     elif choice == '2':
         return False
     else:
-        print("Invalid choice. Defaulting to images enabled.")
-        return True
+        print("Invalid choice. Defaulting to images disabled.")
+        return False
 
 def select_question_range(total_questions):
     print(f"\nSelect the range of questions you want to be asked (1-{total_questions}):")

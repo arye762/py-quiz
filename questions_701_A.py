@@ -670,17 +670,19 @@ questions_701_A = [
     "correct_answer": 1,
     "description": "To improve the performance when opening multiple large Excel files:\n\n- Increasing the swap partition, the correct answer, provides more virtual memory for multitasking and large file operations.\n- Upgrading the CPU may help, but virtual memory is the first place to look.\n- The power supply won’t affect performance in this case.\n- Upgrading RAM could help, but addressing virtual memory through the swap partition is more immediate."
 },
+
 {
-    "question": "Which of the following utilizes TCP ports 20/21 and transfers data in cleartext?",
-    "options": [
-        "SNMP",
-        "SSH",
-        "FTP",
-        "Telnet"
-    ],
-    "correct_answer": 3,
-    "description": "To identify which protocol transfers data in cleartext over TCP ports 20/21:\n\n- SNMP uses UDP and is for network management, not file transfers.\n- SSH is encrypted and does not use ports 20/21.\n- FTP, the correct answer, transfers files in cleartext over TCP ports 20/21.\n- Telnet is used for remote command-line access, not file transfers."
+  "question": "Which of the following utilizes TCP ports 20/21 and transfers data in cleartext?",
+  "options": [
+    "SNMP",
+    "SSH",
+    "FTP",
+    "Telnet"
+  ],
+  "correct_answer": 3,
+  "description": "To identify which protocol transfers data in cleartext over TCP ports 20/21:\n\n- **SNMP** (Simple Network Management Protocol) uses UDP and is for network management, not file transfers.\n- **SSH** (Secure Shell) is encrypted and does not use ports 20/21.\n- **FTP** (File Transfer Protocol), the correct answer, transfers files in cleartext over TCP ports 20 (data) and 21 (control).\n- **Telnet** is used for remote command-line access, not file transfers."
 },
+
 {
     "question": "An organization is looking to upgrade the processing ability for its computers. Most users report that whenever multiple applications are being utilized, the system's response time slows down drastically. When only one application is open, the response time is acceptable. Which of the following should be upgraded FIRST?",
     "options": [

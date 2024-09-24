@@ -277,7 +277,7 @@ questions_701_B = [
         "PRL",
         "NFC"
     ],
-    "correct_answer": 3,
+    "correct_answer": 4,
     "description": "The correct answer is **NFC**. Near Field Communication (NFC) technology allows mobile phones to make transactions by enabling contactless payments, such as through digital wallets or mobile payment apps. This would allow the user to complete transactions even if they have lost their physical cards.\n\n- **GSM** (Global System for Mobile Communications) is related to mobile phone network standards and does not facilitate transactions.\n- **MFA** (Multi-Factor Authentication) enhances security but is not directly related to making payments.\n- **PRL** (Preferred Roaming List) is used for managing network connections and roaming but does not pertain to payment transactions."
 },
 #230
