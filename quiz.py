@@ -125,17 +125,32 @@ def enable_images():
 
 def select_question_range(total_questions):
     print(f"\nSelect the range of questions you want to be asked (1-{total_questions}):")
-    start = input("Enter the starting question number: ").strip()
-    end = input("Enter the ending question number: ").strip()
     
-    try:
-        start = int(start)
-        end = int(end)
-        if start < 1 or end > total_questions or start > end:
-            raise ValueError
-    except ValueError:
-        print("Invalid range. Defaulting to the entire set of questions.")
-        return 1, total_questions
+    # Get the start question number
+    start = input("Enter the starting question number (leave blank for 1): ").strip()
+    if start == "":
+        start = 1  # Default to the first question
+    else:
+        try:
+            start = int(start)
+            if start < 1 or start > total_questions:
+                raise ValueError
+        except ValueError:
+            print(f"Invalid input. Starting with question 1.")
+            start = 1
+
+    # Get the end question number
+    end = input(f"Enter the ending question number (leave blank for {total_questions}): ").strip()
+    if end == "":
+        end = total_questions  # Default to the last question
+    else:
+        try:
+            end = int(end)
+            if end < start or end > total_questions:
+                raise ValueError
+        except ValueError:
+            print(f"Invalid input. Ending with question {total_questions}.")
+            end = total_questions
 
     return start, end
 

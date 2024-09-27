@@ -724,7 +724,7 @@ questions_701_A = [
         "Contacting the gateway vendor",
         "Verifying DMARC is enabled"
     ],
-    "correct_answer": 1,
+    "correct_answer": 4,
     "description": "To address spam emails from different domains:\n\n- Updating keyword filtering may reduce spam but won’t address domain-based issues.\n- Editing the sender policy framework (SPF) helps verify sender domains but isn’t as effective for all spam scenarios.\n- Contacting the vendor might help, but enabling DMARC is a more immediate step.\n- Verifying DMARC, the correct answer, ensures that domain authentication is properly enforced, reducing spoofed emails."
 },
 {

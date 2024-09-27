@@ -1066,7 +1066,7 @@ questions_701_B = [
         "description": "The correct answer is **RAM**. This message typically indicates an issue with the system memory (RAM), such as a faulty or improperly seated RAM module."
     },
     {
-        "question": "Using the output below:\n\nIPv4 Address: 172.25.1.39 -\n\nSubnet Mask: 255.255.255.0 -\n\nRouter: 172.25.1.252 -\n\nName Server: 172.25.1.4 -\n\nWhich of the following is the default gateway?",
+        "question": "Using the output below:\n\nIPv4 Address: 172.25.1.39 \nSubnet Mask: 255.255.255.0 \nRouter: 172.25.1.252 \nName Server: 172.25.1.4 \n\nWhich of the following is the default gateway?",
         "options": [
             "172.25.1.252",
             "172.25.1.39",
