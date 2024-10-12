@@ -1,4 +1,4 @@
-questions_701_images = [
+questions_set_images = [
 {
     "question": "An organization experienced a security breach that allowed an attacker to send fraudulent wire transfers from a hardened PC exclusively to the attacker's bank through remote connections. A security analyst is creating a timeline of events and has found a different PC on the network containing malware. Upon reviewing the command history, the analyst finds the following:\n\n[Command history]\n\nWhich of the following best describes how the attacker gained access to the hardened PC?",
     "image": "images/question292.png",

@@ -3,10 +3,11 @@ import os
 import time
 import subprocess
 from PIL import Image
-from questions_701_A import questions_701_A
-from questions_701_B import questions_701_B
-from questions_701_C import questions_701_C
-from questions_701_images import questions_701_images
+from questions_set_A import questions_set_A
+from questions_set_B import questions_set_B
+from questions_set_C import questions_set_C
+from questions_set_D import questions_set_D
+from questions_set_images import questions_set_images
 
 def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None):
     os.system('clear')  # Clear the screen before each question
@@ -41,11 +42,11 @@ def ask_question(question_num, total_questions, question, options, correct_answe
         print(f"{idx}. {option}")
     print()
     
-    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), 'b' to go back, or 'x' to exit: ").strip()
+    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, or 'x' to exit: ").strip()
     
     if answer.lower() == 'x':
         return 'x', True  # Indicate exit
-    if answer.lower() == 'b':
+    if answer.lower() == '0':
         return None, False
 
     try:
@@ -74,26 +75,28 @@ def ask_question(question_num, total_questions, question, options, correct_answe
 
 def select_questions_set():
     print("Select the set of questions you want to answer:")
-    print("1. Question Set 701_A")
-    print("2. Question Set 701_B")
-    print("3. Question Set 701_C")
-    print("4. Question Set 701_Images")
+    print("1. Question Set set_A")
+    print("2. Question Set set_B")
+    print("3. Question Set set_C")
+    print("4. Question Set set_Images")
     print("5. All Sets of Questions")
     choice = input("Enter the number of your choice: ").strip()
 
     if choice == '1':
-        return questions_701_A
+        return questions_set_A
     elif choice == '2':
-        return questions_701_B
+        return questions_set_B
     elif choice == '3':
-        return questions_701_C
+        return questions_set_C
     elif choice == '4':
-        return questions_701_images
+        return questions_set_D
     elif choice == '5':
-        return questions_701_A + questions_701_B + questions_701_C + questions_701_images
+        return questions_set_images
+    elif choice == '6':
+        questions_set_A + questions_set_B + questions_set_C + questions_set_D + questions_set_images
     else:
         print("Invalid choice. Defaulting to all sets of questions.")
-        return questions_701_A + questions_701_B + questions_701_C + questions_701_images
+        return questions_set_A + questions_set_B + questions_set_C + questions_set_D +  questions_set_images
 
 def choose_ordering():
     print("\nHow would you like the questions to be ordered?")
