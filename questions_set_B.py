@@ -1132,9 +1132,1152 @@ questions_set_B = [
         ],
         "correct_answer": 1,
         "description": "The correct answer is screen-sharing software. This allows the technician to view the user's screen and understand the issue with accessing the online share. \n\n- Secure shell is primarily for command-line access and not for screen sharing. \n- Virtual private network is for secure connections but does not provide direct troubleshooting capabilities. \n- File transfer software is unrelated to troubleshooting access issues."
+    },
+
+#301-315
+
+
+{
+    "question": "A customer calls a service support center and begins yelling at a technician about a feature for a product that is not working to the customer's satisfaction. This feature is not supported by the service support center and requires a field technician to troubleshoot. The customer continues to demand service. Which of the following is the BEST course of action for the support center representative to take?",
+    "options": [
+        "Inform the customer that the issue is not within the scope of this department.",
+        "Apologize to the customer and escalate the issue to a manager.",
+        "Ask the customer to explain the issue and then try to fix it independently.",
+        "Respond that the issue is something the customer should be able to fix."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is to apologize to the customer and escalate the issue to a manager. This approach shows empathy and acknowledges the customer's frustration while directing them to the appropriate resource for resolution. \n\n- Informing the customer that the issue is not within the scope of this department may seem dismissive and could further frustrate them. \n- Asking the customer to explain the issue and trying to fix it independently may lead to wasted time and resources since a field technician is needed. \n- Responding that the customer should be able to fix it does not address their concern and could escalate the situation."
+},
+    {
+        "question": "A user reported that a laptop's screen turns off very quickly after sitting for a few moments and is also very dim when not plugged in to an outlet. Everything else seems to be functioning normally. Which of the following Windows settings should be configured?",
+        "options": [
+            "Power Plans",
+            "Hibernate",
+            "Sleep/Suspend",
+            "Screensaver"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Power Plans. Adjusting power plans allows the user to modify settings related to screen timeout and brightness when unplugged. \n\n- Hibernate is for saving the current session to disk, which does not directly affect screen dimming. \n- Sleep/Suspend settings control whether the computer enters low power mode but do not specifically address screen brightness. \n- Screensaver settings are unrelated to the functionality of screen timeout or brightness adjustment."
+    },
+    {
+        "question": "A user is receiving repeated pop-up advertising messages while browsing the internet. A malware scan is unable to locate the source of an infection. Which of the following should the technician check NEXT?",
+        "options": [
+            "Windows updates",
+            "DNS settings",
+            "Certificate store",
+            "Browser plug-ins"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is browser plug-ins. Unwanted advertising pop-ups are often caused by malicious browser plug-ins that can evade standard malware scans. \n\n- Windows updates are important for security but are unlikely to resolve this specific issue. \n- DNS settings may affect web access but are not typically linked to pop-up ads. \n- The certificate store is related to secure connections and is not relevant to advertising pop-ups."
+    },
+    {
+        "question": "The courts determined that a cybercrimes case could no longer be prosecuted due to the agency’s handling of evidence. Which of the following was MOST likely violated during the investigation?",
+        "options": [
+            "Open-source software",
+            "EULA",
+            "Chain of custody",
+            "AUP"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is chain of custody. Proper handling of evidence is crucial in legal cases, and a breach in the chain of custody can compromise the case. \n\n- Open-source software and EULA relate to software licensing but not evidence handling. \n- AUP (Acceptable Use Policy) deals with acceptable use of organizational resources but does not directly impact legal proceedings."
+    },
+    {
+        "question": "A user reports a virus is on a PC. The user installs additional real-time protection antivirus software, and the PC begins performing extremely slow. Which of the following steps should the technician take to resolve the issue?",
+        "options": [
+            "Uninstall one antivirus software program and install a different one.",
+            "Launch Windows Update, and then download and install OS updates.",
+            "Activate real-time protection on both antivirus software programs.",
+            "Enable the quarantine feature on both antivirus software programs.",
+            "Remove the user-installed antivirus software program."
+        ],
+        "correct_answer": 5,
+        "description": "The correct answer is to remove the user-installed antivirus software program. Running multiple real-time protection programs can cause performance issues and conflicts. \n\n- Uninstalling and installing a different program won't solve the problem if two are running simultaneously. \n- Launching Windows Update may improve performance but is not the direct cause of the slow response. \n- Activating real-time protection on both programs will only worsen the performance issue. \n- Enabling the quarantine feature on both programs doesn't address the underlying conflict."
+    },
+    {
+        "question": "A technician removed a virus from a user's device. The user returned the device a week later with the same virus on it. Which of the following should the technician do to prevent future infections?",
+        "options": [
+            "Disable System Restore.",
+            "Educate the end user.",
+            "Install the latest OS patches.",
+            "Clean the environment preinstallation."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to educate the end user. Educating users about safe browsing habits and recognizing phishing attempts can help prevent future infections. \n\n- Disabling System Restore is not advisable, as it may prevent recovery options in case of future issues. \n- Installing OS patches is important for security, but user behavior is a significant factor in preventing infections. \n- Cleaning the environment preinstallation may help but is not a direct solution to user behavior issues."
+    },
+    {
+        "question": "A technician is concerned about a large increase in the number of whaling attacks happening in the industry. The technician wants to limit the company’s risk to avoid any issues. Which of the following items should the technician implement?",
+        "options": [
+            "Screened subnet",
+            "Firewall",
+            "Anti-phishing training",
+            "Antivirus"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is anti-phishing training. Educating employees about whaling attacks can help them recognize and avoid these targeted scams. \n\n- A screened subnet and firewall can provide some protection but do not address user awareness. \n- Antivirus software is useful for detecting known threats but is not effective against sophisticated whaling attempts that often rely on social engineering."
+    },
+    {
+        "question": "A customer calls the help desk asking for instructions on how to modify desktop wallpaper. Which of the following Windows 10 settings should the technician recommend?",
+        "options": [
+            "Personalization",
+            "Apps",
+            "Updates",
+            "Display"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Personalization. This setting allows users to change the desktop wallpaper and other appearance settings. \n\n- Apps relate to software management, not personalization settings. \n- Updates manage system updates and do not pertain to wallpaper changes. \n- Display settings may affect screen resolution but do not specifically provide options for wallpaper."
+    },
+{
+    "question": "A user calls the help desk and reports a workstation is infected with malicious software. Which of the following tools should the help desk technician use to remove the malicious software? (Choose two.)",
+    "options": [
+        "Local Network Connection",
+        "User Account Control",
+        "Windows Backup and Restore",
+        "Windows Firewall",
+        "Windows Defender",
+        "Network Packet Analyzer"
+    ],
+    "correct_answer": [5, 6],
+    "description": "The correct answers are Windows Defender and Network Packet Analyzer. Windows Defender is built-in antivirus software that can effectively remove malware. \n\n- Local Network Connection, User Account Control, and Windows Firewall do not directly address malware removal. \n- Windows Backup and Restore are for data recovery, not malware removal. A Network Packet Analyzer can help identify malicious traffic or behavior, aiding in further investigation."
+},
+    {
+        "question": "A systems administrator is monitoring an unusual amount of network traffic from a kiosk machine and needs to investigate to determine the source of the traffic. Which of the following tools can the administrator use to view which processes on the kiosk machine are connecting to the internet?",
+        "options": [
+            "Resource Monitor",
+            "Performance Monitor",
+            "Command Prompt",
+            "System Information"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Resource Monitor. This tool allows the administrator to view active network connections and which processes are using the network. \n\n- Performance Monitor is used for tracking system performance metrics but does not provide detailed information on network connections. \n- Command Prompt can be used for some network commands, but Resource Monitor provides a more user-friendly interface. \n- System Information gives an overview of system specs but does not monitor active processes."
+    },
+    {
+        "question": "Which of the following protects a mobile device against unwanted access when it is left unattended?",
+        "options": [
+            "PIN code",
+            "OS updates",
+            "Antivirus software",
+            "BYOD policy"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is PIN code. A PIN code secures the device and prevents unauthorized access when the device is unattended. \n\n- OS updates are crucial for security but do not directly prevent access when the device is left alone. \n- Antivirus software helps protect against malicious software but does not secure the device when unattended. \n- A BYOD policy outlines acceptable use but does not provide direct protection against unauthorized access."
+    },
+    {
+        "question": "A systems administrator installed the latest Windows security patch and received numerous tickets reporting slow performance the next day. Which of the following should the administrator do to resolve this issue?",
+        "options": [
+            "Rebuild user profiles.",
+            "Roll back the updates.",
+            "Restart the services.",
+            "Perform a system file check."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to roll back the updates. If a security patch is causing performance issues, rolling it back can restore normal functionality. \n\n- Rebuilding user profiles may address user-specific issues but does not tackle the patch's impact. \n- Restarting services may help but is unlikely to resolve issues caused by the update. \n- Performing a system file check can identify corrupted files but may not directly relate to the slow performance."
+    },
+    {
+        "question": "A corporation purchased new computers for a school. The computers are the same make and model and need to have the standard image loaded. Which of the following orchestration tools should a desktop administrator use for wide-scale deployment?",
+        "options": [
+            "USB drive",
+            "DVD installation media",
+            "PXE boot",
+            "Recovery partition"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is PXE boot. PXE boot allows for network-based deployment of images, making it efficient for deploying to multiple computers simultaneously. \n\n- USB drives and DVD installation media are limited to one computer at a time and require manual intervention. \n- A recovery partition is useful for restoring individual computers but is not practical for wide-scale deployment."
+    },
+{
+    "question": "A Windows user recently replaced a computer. The user can access the public internet on the computer; however, an internal site at https://companyintranet.com:8888 is no longer loading. Which of the following should a technician adjust to resolve the issue?",
+    "options": [
+        "Default gateway settings",
+        "DHCP settings",
+        "IP address settings",
+        "Firewall settings",
+        "Antivirus settings"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is firewall settings. The inability to access an internal site may indicate that the firewall is blocking the connection to the specific internal resource. \n\n- Default gateway settings are important for routing traffic, but since the public internet is accessible, the gateway is likely not the issue. \n- DHCP settings manage IP address allocation but do not typically affect access to specific sites. \n- IP address settings may impact connectivity, but the firewall is the most probable cause in this scenario. \n- Antivirus settings could interfere with connections, but the firewall is a more common issue when internal sites are inaccessible."
+},
+    {
+        "question": "Which of the following refers to the steps to be taken if an issue occurs during a change implementation?",
+        "options": [
+            "Testing",
+            "Rollback",
+            "Risk",
+            "Acceptance"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is rollback. Rollback procedures define how to revert changes if an implementation fails or causes issues. \n\n- Testing refers to the process of evaluating changes before implementation. \n- Risk involves assessing potential problems but does not provide a direct action plan for dealing with issues. \n- Acceptance is about agreeing to changes but does not specify actions to take if problems arise."
+    },
+
+#316-330
+
+    {
+        "question": "A company would like to implement multifactor authentication for all employees at a minimal cost. Which of the following best meets the company's requirements?",
+        "options": [
+            "Biometrics",
+            "Soft token",
+            "Access control lists",
+            "Smart card"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is soft token. Soft tokens are cost-effective solutions that generate time-based one-time passwords (TOTPs) for multifactor authentication without the need for expensive hardware. \n\n- Biometrics can be costly due to the need for specialized hardware. \n- Access control lists manage permissions but do not provide multifactor authentication. \n- Smart cards require physical cards and card readers, making them more expensive than soft tokens."
+    },
+    {
+        "question": "A help desk technician determines a motherboard has failed. Which of the following is the most logical next step in the remediation process?",
+        "options": [
+            "Escalating the issue to Tier 2",
+            "Verifying warranty status with the vendor",
+            "Replacing the motherboard",
+            "Purchasing another PC"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is verifying warranty status with the vendor. Before proceeding with repairs or replacements, it is crucial to determine if the motherboard is still under warranty to avoid unnecessary costs. \n\n- Escalating to Tier 2 may not be necessary if the technician has already diagnosed the issue. \n- Replacing the motherboard without checking warranty status can lead to added expenses. \n- Purchasing another PC is an extreme measure when warranty support may be available."
+    },
+    {
+        "question": "A user added a second monitor and wants to extend the display to it. In which of the following Windows settings will the user most likely be able to make this change?",
+        "options": [
+            "System",
+            "Devices",
+            "Personalization",
+            "Accessibility"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is Personalization. This section in Windows allows users to manage display settings, including extending displays across multiple monitors. \n\n- The System settings are more general and do not focus on display configurations. \n- Devices settings pertain to adding and managing hardware but not display settings. \n- Accessibility options focus on features for users with disabilities rather than monitor configurations."
+    },
+    {
+        "question": "A systems administrator is configuring centralized desktop management for computers on a domain. The management team has decided that all users' workstations should have the same network drives, printers, and configurations. Which of the following should the administrator use to accomplish this task?",
+        "options": [
+            "Network and Sharing Center",
+            "net use",
+            "User Accounts",
+            "regedit",
+            "Group Policy"
+        ],
+        "correct_answer": 5,
+        "description": "The correct answer is Group Policy. This tool allows administrators to enforce settings across multiple computers on a domain, ensuring consistency in network drives, printers, and configurations. \n\n- Network and Sharing Center is used for managing network connections but lacks centralized control features. \n- net use is a command-line utility for mapping network drives, not for centralized management. \n- User Accounts manage user settings but do not configure network resources. \n- regedit allows changes to the Windows Registry but is not suitable for managing multiple machines effectively."
+    },
+    {
+        "question": "A user connected an external hard drive but is unable to see it as a destination to save files. Which of the following tools will allow the drive to be formatted?",
+        "options": [
+            "Disk Management",
+            "Device Manager",
+            "Disk Cleanup",
+            "Disk Defragmenter"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Disk Management. This tool is used to manage disk drives and partitions, including formatting unrecognized drives. \n\n- Device Manager is for managing hardware devices but does not format disks. \n- Disk Cleanup removes unnecessary files but does not format disks. \n- Disk Defragmenter reorganizes data on existing drives but does not perform formatting operations."
+    },
+    {
+        "question": "Which of the following best describes when to use the YUM command in Linux?",
+        "options": [
+            "To add functionality",
+            "To change folder permissions",
+            "To show documentation",
+            "To list file contents"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is to add functionality. YUM (Yellowdog Updater Modified) is a package manager for Linux that simplifies the installation, updating, and removal of software packages. \n\n- Changing folder permissions is done with the chmod command, not YUM. \n- Showing documentation can be accomplished with the man command. \n- Listing file contents is done using commands like ls, not YUM."
+    },
+    {
+        "question": "Which of the following would MOST likely be used to extend the life of a device?",
+        "options": [
+            "Battery backup",
+            "Electrostatic discharge mat",
+            "Proper ventilation",
+            "Green disposal"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is proper ventilation. Adequate airflow helps prevent overheating, which can significantly extend the life of electronic devices. \n\n- Battery backup protects against power surges but does not directly extend device lifespan. \n- Electrostatic discharge mats help prevent damage during handling, but they are not a maintenance solution. \n- Green disposal pertains to environmentally responsible methods of disposing of electronic waste."
+    },
+    {
+        "question": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which of the following does the technician need in order to continue the OS repair?",
+        "options": [
+            "SSL key",
+            "Preshared key",
+            "WPA2 key",
+            "Recovery key"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is recovery key. This key is required to access encrypted drives or to continue repair processes if a prompt specifically requests it. \n\n- An SSL key is used for secure web communications, not OS repair. \n- Preshared keys are used in network security, not for OS repairs. \n- WPA2 keys are related to wireless network security."
+    },
+    {
+        "question": "Which of the following allows access to the command line in macOS?",
+        "options": [
+            "PsExec",
+            "command.com",
+            "Terminal",
+            "CMD"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is Terminal. Terminal is the macOS application that provides a command-line interface for users to interact with the system. \n\n- PsExec is a Windows tool for executing processes on remote systems, not available on macOS. \n- command.com is a command-line interpreter for DOS, not used in macOS. \n- CMD is the command prompt in Windows, not applicable to macOS."
+    },
+    {
+        "question": "A technician sees a file that is requesting payment to a cryptocurrency address. Which of the following should the technician do first?",
+        "options": [
+            "Quarantine the computer.",
+            "Disable System Restore.",
+            "Update the antivirus software definitions.",
+            "Boot to safe mode."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is to quarantine the computer. This step isolates the affected system to prevent further spread of potential malware. \n\n- Disabling System Restore may not be necessary initially and could hinder recovery options. \n- Updating antivirus definitions is important but should follow isolation to prevent further harm. \n- Booting to safe mode is a potential step, but isolation should be prioritized first."
+    },
+    {
+        "question": "A user contacts the help desk to request assistance with a program feature. The user is in a different building but on the same network as the help desk technician. Which of the following should the technician use to assist the user?",
+        "options": [
+            "AAA",
+            "SSH",
+            "RDP",
+            "VPN"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is RDP (Remote Desktop Protocol). This allows the technician to remotely access the user's desktop to assist with the program feature. \n\n- AAA refers to authentication, authorization, and accounting and is not a tool for remote support. \n- SSH is a secure shell for command-line access but not suitable for graphical user interface support. \n- VPN provides secure remote access to the network but does not allow direct assistance with a user's desktop."
+    },
+    {
+        "question": "An engineer is configuring a new server that requires a bare-metal installation. Which of the following installation methods should the engineer use if installation media is not available on site?",
+        "options": [
+            "Image deployment",
+            "Recovery partition Installation",
+            "Remote network installation",
+            "Repair installation"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is remote network installation. This method allows the installation of an operating system over the network without local media. \n\n- Image deployment requires pre-made installation images, which are not available in this scenario. \n- Recovery partition installation is contingent on having access to recovery media on the server itself. \n- Repair installation is intended for fixing existing installations, not for new setups."
+    },
+    {
+        "question": "A company is experiencing a DDoS attack. Several internal workstations are the source of the traffic. Which of the following types of infections are the workstations most likely experiencing? (Choose two.)",
+        "options": [
+            "Zombies",
+            "Keylogger",
+            "Adware",
+            "Botnet",
+            "Ransomware",
+            "Spyware"
+        ],
+        "correct_answer": [1, 4],
+        "description": "The correct answers are zombies and botnet. Zombie computers are part of a botnet and are often used to carry out DDoS attacks by overwhelming targeted services with traffic. \n\n- Keyloggers and spyware focus on capturing user data and activity rather than participating in attacks. \n- Adware typically shows ads and does not contribute to DDoS activities. \n- Ransomware encrypts files for ransom and is unrelated to DDoS attacks."
+    },
+    {
+        "question": "A desktop technician has received reports that a user's PC is slow to load programs and saved files. The technician investigates and discovers an older HDD with adequate free space. Which of the following should the technician use to alleviate the issue first?",
+        "options": [
+            "Disk Management",
+            "Disk Defragment",
+            "Disk Cleanup",
+            "Device Manager"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is Disk Defragment. Defragmenting the hard drive can improve access times and overall performance for older HDDs, especially if files are fragmented. \n\n- Disk Management is used for partition management but does not improve performance. \n- Disk Cleanup removes temporary files but may not address the underlying performance issues. \n- Device Manager manages hardware but does not affect disk performance directly."
+    },
+    {
+        "question": "An employee calls the help desk regarding an issue with a laptop PC. After a Windows update, the user can no longer use certain locally attached devices, and a reboot has not fixed the issue. Which of the following should the technician perform to fix the issue?",
+        "options": [
+            "Disable the Windows Update service.",
+            "Check for updates.",
+            "Restore hidden updates.",
+            "Roll back updates."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is roll back updates. This step restores the system to a previous state before the problematic update, potentially fixing the issue with locally attached devices. \n\n- Disabling the Windows Update service is not a viable solution for resolving issues caused by specific updates. \n- Checking for updates may not address the current issue. \n- Restoring hidden updates does not resolve the problem if the current update is already causing issues."
+    },
+
+#331-350
+
+ {
+        "question": "A technician needs to transfer a file to a user's workstation. Which of the following would best accomplish this task utilizing the workstation's built-in protocols?",
+        "options": [
+            "VPN",
+            "SMB",
+            "RMM",
+            "MSRA"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is SMB (Server Message Block). SMB is a network protocol used for file sharing and allows for easy transfer of files between devices on the same network. \n\n- VPN (Virtual Private Network) is primarily used for secure remote access, not direct file transfer. \n- RMM (Remote Monitoring and Management) tools typically manage devices remotely rather than transferring files. \n- MSRA (Microsoft Remote Assistance) allows users to share their screen but is not designed specifically for file transfers."
+    },
+    {
+        "question": "Which of the following is most likely used to run .vbs files on Windows devices?",
+        "options": [
+            "winmgmt.exe",
+            "powershell.exe",
+            "cscript.exe",
+            "explorer.exe"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is cscript.exe. This command-line utility is specifically designed to execute VBScript files (.vbs) in Windows. \n\n- winmgmt.exe is related to Windows Management Instrumentation (WMI), not for running scripts. \n- powershell.exe is a more advanced scripting environment but is not specifically for .vbs files. \n- explorer.exe is the Windows file explorer and does not execute scripts."
+    },
+    {
+        "question": "A technician wants to install Developer Mode on a Windows laptop but is receiving a “failed to install package” message. Which of the following should the technician do first?",
+        "options": [
+            "Ensure internet connectivity.",
+            "Check for Windows updates.",
+            "Enable SSH.",
+            "Reboot computer."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is ensure internet connectivity. Internet access is crucial for downloading packages and updates, and a lack of connectivity can lead to installation failures. \n\n- Checking for Windows updates can be important, but it may not address immediate connectivity issues. \n- Enabling SSH is irrelevant in this context as it is not related to installing Developer Mode. \n- Rebooting the computer may help but does not address the core issue of connectivity."
+    },
+    {
+        "question": "A PC is taking a long time to boot. Which of the following operations would be best to do to resolve the issue at a minimal expense? (Choose two.)",
+        "options": [
+            "Installing additional RAM",
+            "Removing the applications from startup",
+            "Installing a faster SSD",
+            "Running the Disk Cleanup utility",
+            "Defragmenting the hard drive",
+            "Ending the processes in the Task Manager"
+        ],
+        "correct_answer": [2, 5],
+        "description": "The correct answers are removing the applications from startup and defragmenting the hard drive. \n\n- Removing startup applications can significantly decrease boot time by limiting the number of programs that load at startup. \n- Defragmenting the hard drive can improve file access speeds, especially for older HDDs. \n\n- Installing additional RAM and a faster SSD would improve performance but involve higher costs. \n- Running Disk Cleanup can help but is less effective for boot times than the other two options. \n- Ending processes in the Task Manager is a temporary fix and may not resolve boot issues."
+    },
+    {
+        "question": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to most likely resolve the issue?",
+        "options": [
+            "Install the software in safe mode.",
+            "Attach the external hardware token.",
+            "Install OS updates.",
+            "Restart the workstation after installation"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to attach the external hardware token. Some specialized software requires hardware authentication to function properly, which could lead to the authorization error if not present. \n\n- Installing in safe mode may bypass certain restrictions but is not a guaranteed fix for authorization issues. \n- Installing OS updates could improve compatibility but is not directly related to the authorization problem. \n- Restarting the workstation may help, but it is unlikely to resolve the authorization issue without the proper token."
+    },
+    {
+        "question": "Which of the following would most likely be used in a small office environment?",
+        "options": [
+            "Print server",
+            "Virtualization",
+            "Domain access",
+            "Workgroup"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is workgroup. Workgroups are simpler and easier to manage in small office environments, allowing devices to connect and share resources without the complexity of a server-based domain. \n\n- Print servers can be used but typically in larger setups where multiple printers are centralized. \n- Virtualization is more common in larger or enterprise environments due to resource demands. \n- Domain access is suitable for larger organizations needing centralized control and management."
+    },
+    {
+        "question": "When trying to access a secure internal network, the user receives an error messaging stating, \"There is a problem with this website's security certificate.\" The user reboots the desktop and tries to access the website again, but the issue persists. Which of the following should the user do to prevent this error from reoccurring?",
+        "options": [
+            "Reimage the system and install SSL.",
+            "Install Trusted Root Certificate",
+            "Select View Certificates and then Install Certificate.",
+            "Continue to access the website."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to install Trusted Root Certificate. This action ensures that the system recognizes the certificate authority and can validate the security certificates used by the website, preventing future errors. \n\n- Reimaging the system is unnecessary and overly drastic for this issue. \n- Selecting View Certificates may provide insights but does not directly resolve the problem. \n- Continuing to access the website may expose the user to security risks."
+    },
+  {
+    "question": "A department manager submits a help desk ticket to request the migration of a printer's port utilization from USB to Ethernet so multiple users can access the printer. This will be a new network printer; thus, a new IP address allocation is required. Which of the following should happen immediately before network use is authorized?",
+    "options": [
+        "Document the date and time of the change.",
+        "Submit a change request form.",
+        "Determine the risk level of this change.",
+        "Request an unused IP address."
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is to determine the risk level of this change. Understanding the risk associated with migrating the printer's port utilization is crucial to ensure that potential issues are identified and mitigated before the change is authorized. \n\n- Submitting a change request form is also necessary, but assessing the risk should come first to guide the decision-making process. \n- Documenting the date and time is important for record-keeping but is not the priority before authorization. \n- Requesting an unused IP address will follow after the risk assessment and change approval."
+  },
+    {
+        "question": "An IT security team is implementing a new Group Policy that will return a computer to the log-in after three minutes. Which of the following best describes the change in policy?",
+        "options": [
+            "Log-in times",
+            "Screen lock",
+            "User permission",
+            "Log-in lockout attempts"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is screen lock. This policy configuration is designed to automatically lock the computer after a period of inactivity, requiring the user to log back in. \n\n- Log-in times refer to the duration of user sessions, not inactivity. \n- User permission deals with access rights and not session management. \n- Log-in lockout attempts relate to failed log-in attempts rather than inactivity."
+    },
+  {
+    "question": "A company recently experienced a security incident in which a USB drive containing malicious software was able to covertly install malware on a workstation. Which of the following actions should be taken to prevent this incident from happening again? (Choose two.)",
+    "options": [
+        "Install a host-based IDS.",
+        "Restrict log-in times.",
+        "Enable a BIOS password.",
+        "Update the password complexity.",
+        "Disable AutoRun.",
+        "Update the antivirus definitions.",
+        "Restrict user permissions."
+    ],
+    "correct_answer": [5, 7],
+    "description": "The correct answers are disable AutoRun and restrict user permissions. \n\n- Disabling AutoRun prevents USB drives from executing files automatically, significantly reducing the risk of malware installation. \n- Restricting user permissions limits access to potentially harmful actions and resources, providing an additional layer of security against unauthorized software execution. \n\n- While installing a host-based IDS can enhance security, it is not as immediate a preventive measure against USB threats as the other two options. \n- Other options, such as updating antivirus definitions and enabling a BIOS password, also contribute to security but do not directly prevent USB malware execution."
+  },
+  {
+    "question": "A hard drive that previously contained PII needs to be repurposed for a public access workstation. Which of the following data destruction methods should a technician use to ensure data is completely removed from the hard drive?",
+    "options": [
+        "Shredding",
+        "Degaussing",
+        "Low-level formatting",
+        "Recycling"
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is degaussing. This method effectively destroys all data on the hard drive by disrupting the magnetic fields used to store information, ensuring that any PII is irretrievable. \n\n- Shredding refers to physically destroying the drive, which is effective but may not always be feasible for repurposing. \n- Low-level formatting can make data harder to recover but does not guarantee complete destruction. \n- Recycling does not destroy data and poses a risk of data exposure."
+},
+
+{
+    "question": "A technician receives a help desk ticket from a user who is unable to update a phone. The technician investigates the issue and notices the following error message: Insufficient storage space. While analyzing the phone, the technician does not discover any third-party applications or photos. Which of the following is the best way to resolve the issue?",
+    "options": [
+        "Exchange the device for a newer one.",
+        "Upgrade the onboard storage.",
+        "Allocate more space by removing factory applications.",
+        "Move factory applications to external memory."
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is to allocate more space by removing factory applications. Many phones come with pre-installed applications that can be safely removed to free up space. \n\n- Upgrading onboard storage may not be possible for all devices, especially if they are not designed for expansion. \n- Moving factory applications to external memory might not be supported by all operating systems. \n- Exchanging the device is unnecessary if the issue can be resolved by managing storage."
+},
+
+{
+    "question": "During an enterprise rollout of a new application, a technician needs to validate compliance with an application’s EULA while also reducing the number of licenses to manage. Which of the following licenses would best accomplish this goal?",
+    "options": [
+        "Personal use license",
+        "Corporate use license",
+        "Open-source license",
+        "Non-expiring license"
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is corporate use license. This license allows for multiple users within an organization to utilize the software while ensuring compliance with the EULA, simplifying license management. \n\n- Personal use licenses are typically restrictive and do not cover corporate use. \n- Open-source licenses allow free use but may not provide the same support or compliance assurances. \n- Non-expiring licenses do not necessarily reduce the number of licenses needed to manage."
+},
+
+{
+    "question": "An administrator is designing and implementing a server backup system that minimizes the capacity of storage used. Which of the following is the best backup approach to use in conjunction with synthetic full backups?",
+    "options": [
+        "Differential",
+        "Open file",
+        "Archive",
+        "Incremental"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is incremental. Incremental backups only save changes made since the last backup, minimizing storage usage when used alongside synthetic full backups. \n\n- Differential backups save changes since the last full backup, which can use more space over time. \n- Open file backups refer to files that are currently in use, not a specific strategy for storage management. \n- Archive backups typically retain data longer but do not focus on minimizing capacity."
+},
+
+{
+    "question": "A developer's Type 2 hypervisor is performing inadequately when compiling new source code. Which of the following components should the developer upgrade to improve the hypervisor's performance?",
+    "options": [
+        "Amount of system RAM",
+        "NIC performance",
+        "Storage IOPS",
+        "Dedicated GPU"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is amount of system RAM. Increasing RAM can enhance the performance of a Type 2 hypervisor by allowing more memory for the virtual machines, which is crucial for resource-intensive tasks like compiling source code. \n\n- While NIC performance and storage IOPS are important, they have less impact on the overall performance of the hypervisor compared to RAM. \n- A dedicated GPU may not significantly affect the performance of a Type 2 hypervisor unless graphical processing is a bottleneck, which is less common in source code compilation."
+},
+
+{
+    "question": "A change advisory board authorized a setting change so a technician is permitted to implement the change. The technician successfully implemented the change. Which of the following should be done next?",
+    "options": [
+        "Document the date and time of change.",
+        "Document the purpose of the change.",
+        "Document the risk level.",
+        "Document the findings of the sandbox test."
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is to document the date and time of change. This documentation is essential for tracking changes and their effects, helping in future audits and troubleshooting. \n\n- While documenting the purpose and risk level is important, the immediate priority is to establish when the change occurred. \n- Documenting findings from the sandbox test is useful but typically happens before implementation."
+},
+
+{
+    "question": "A user's corporate phone was stolen, and the device contains company trade secrets. Which of the following technologies should be implemented to mitigate this risk? (Choose two.)",
+    "options": [
+        "Remote wipe",
+        "Firewall",
+        "Device encryption",
+        "Remote backup",
+        "Antivirus",
+        "Global Positioning System"
+    ],
+    "correct_answer": [1, 3],
+    "description": "The correct answers are remote wipe and device encryption. Remote wipe allows for the erasure of sensitive data from a stolen device, while device encryption protects data at rest, making it unreadable without proper authorization. \n\n- A firewall is more effective for network security than device-specific data protection. \n- Remote backup and antivirus software are important for overall security but do not directly address the risk of stolen devices."
+},
+
+{
+    "question": "A user visits a game vendor's website to view the latest patch notes, but this information is not available on the page. Which of the following should the user perform before reloading the page?",
+    "options": [
+        "Synchronize the browser data.",
+        "Enable private browsing mode.",
+        "Mark the site as trusted.",
+        "Clear the cached file."
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is to clear the cached file. This action can resolve issues with outdated or corrupted data being displayed on the webpage. \n\n- Synchronizing browser data does not affect the current page view. \n- Enabling private browsing mode will not help with loading the latest content. \n- Marking the site as trusted is a security measure but irrelevant to retrieving the patch notes."
+},
+
+{
+    "question": "A user receives the following error while attempting to boot a computer: BOOTMGR is missing - Press Ctrl+Alt+Del to restart - Which of the following should a desktop engineer attempt first to address this issue?",
+    "options": [
+        "Repair Windows.",
+        "Partition the hard disk.",
+        "Reimage the workstation.",
+        "Roll back the updates."
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is to repair Windows. This option focuses on addressing the boot manager error directly, allowing the user to boot into the operating system without losing data. \n\n- Partitioning the hard disk may be necessary if there are underlying issues, but it's not the first step. \n- Reimaging the workstation is a more drastic measure that could result in data loss. \n- Rolling back updates may not be effective if the boot manager issue is unrelated to recent changes."
+},
+
+{
+    "question": "A technician is working on a way to register all employee badges and associated computer IDs. Which of the following options should the technician use in order to achieve this objective?",
+    "options": [
+        "Database system",
+        "Software management",
+        "Active Directory description",
+        "Infrastructure as a Service"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is a database system. A database is well-suited for storing, organizing, and managing employee badges and associated computer IDs, providing easy access and retrieval. \n\n- Software management focuses on managing applications and systems rather than specific data records. \n- Active Directory is used for managing user permissions and authentication, not specifically for tracking badges. \n- Infrastructure as a Service is a cloud computing model and does not directly apply to the task of registration."
+},
+
+#350-360
+
+
+    {
+    "question": "A technician successfully removed malicious software from an infected computer after running updates and scheduled scans to mitigate future risks. Which of the following should the technician do next?",
+    "options": [
+        "Educate the end user on best practices for security.",
+        "Quarantine the host in the antivirus system.",
+        "Investigate how the system was infected with malware.",
+        "Create a system restore point."
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is to create a system restore point. This action allows the technician to capture the current state of the system, ensuring that a stable version is available for recovery in case of future issues. \n\n- Educating the end user on best practices is important for long-term security, but creating a restore point addresses immediate system stability. \n- Quarantining the host is unnecessary since the malware has already been removed. \n- Investigating how the system was infected is relevant for understanding security weaknesses but does not provide immediate protection."
+  },
+    {
+        "question": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
+        "options": [
+            "Preserving chain of custody",
+            "Implementing data protection policies",
+            "Informing law enforcement",
+            "Creating a summary of the incident"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is preserving chain of custody. This concept involves documenting the handling of evidence to ensure it is admissible in legal situations. \n\n- Implementing data protection policies is relevant but not specific to the handling of evidence. \n- Informing law enforcement may be necessary but is not directly related to documenting the evidence movement. \n- Creating a summary of the incident is useful but does not address the legal implications of evidence handling."
+    },
+    {
+        "question": "A user requires a drive to be mapped through a Windows command line. Which of the following command-line tools can be utilized to map the drive?",
+        "options": [
+            "gpupdate",
+            "net use",
+            "hostname",
+            "dir"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is net use. This command is specifically designed for mapping network drives in Windows. \n\n- gpupdate is used for updating Group Policy settings, not for mapping drives. \n- hostname displays the name of the computer and does not relate to drive mapping. \n- dir lists the contents of a directory, which is not relevant to mapping a drive."
+    },
+    {
+        "question": "Users access files in the department share. When a user creates a new subfolder, only that user can access the folder and its files. Which of the following will MOST likely allow all users to access the new folders?",
+        "options": [
+            "Assigning share permissions",
+            "Enabling inheritance",
+            "Requiring multifactor authentication",
+            "Removing archive attribute"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is enabling inheritance. This allows new subfolders to inherit the permissions of the parent folder, making them accessible to all users. \n\n- Assigning share permissions alone may not automatically apply to new folders. \n- Requiring multifactor authentication enhances security but does not affect folder access permissions. \n- Removing the archive attribute does not influence access rights."
+    },
+    {
+        "question": "A computer technician is investigating a computer that is not booting. The user reports that the computer was working prior to shutting it down last night. The technician notices a removable USB device is inserted, and the user explains the device is a prize the user received in the mail yesterday. Which of the following types of attacks does this describe?",
+        "options": [
+            "Phishing",
+            "Dumpster diving",
+            "Tailgating",
+            "Evil twin"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is phishing. The scenario suggests that the USB device may have been maliciously designed to compromise the system, potentially leading to data theft or malware installation. \n\n- Dumpster diving involves searching through trash for confidential information, not related to USB devices. \n- Tailgating refers to unauthorized access to a facility, and evil twin involves rogue Wi-Fi hotspots, neither of which are applicable here."
+    },
+    {
+        "question": "A macOS user is installing a new application. Which of the following system directories is the software most likely to install by default?",
+        "options": [
+            "/etc/services",
+            "/Applications",
+            "/usr/bin",
+            "C:\\Program Files"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is /Applications. This is the default directory for installed applications on macOS systems. \n\n- /etc/services is a configuration file directory, not for applications. \n- /usr/bin is for executable binaries but not where applications are installed. \n- C:\\Program Files is a Windows directory, not relevant for macOS."
+    },
+    {
+        "question": "A customer is requesting help with a technical issue. Which of the following techniques should the technician use to properly evaluate and correct the customer concern?",
+        "options": [
+            "Have a videoconference using the customer’s personal phone so the customer can share the screen.",
+            "Ask yes or no questions so that the answers are clear.",
+            "Use open-ended questions to get additional information.",
+            "Ask for the customer’s password so the issue can be resolved quickly and directly by the technician."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is to use open-ended questions to get additional information. This technique encourages the customer to provide more details, helping the technician understand the issue better. \n\n- Videoconferencing can be helpful but may not always be possible or practical. \n- Yes or no questions limit the responses and may not provide enough context. \n- Asking for passwords poses a security risk and is unnecessary for resolving most issues."
+    },
+    {
+        "question": "A user is setting up backups on a workstation. The user wants to ensure that the restore process is as simple as possible. Which of the following backup types should the user select?",
+        "options": [
+            "Full",
+            "Incremental",
+            "Differential",
+            "Synthetic"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is full. A full backup contains all the data and simplifies the restore process because the entire dataset is available in one backup. \n\n- Incremental backups require the last full backup plus all subsequent increments to restore, complicating the process. \n- Differential backups need the last full backup and the latest differential backup but can still be more complex than a full backup. \n- Synthetic backups involve multiple sources and can complicate the restore process."
+    },
+    {
+        "question": "A user notices a small USB drive is attached to the user’s computer after a new vendor visited the office. The technician notices two files named grabber.exe and output.txt. Which of the following attacks is most likely occurring?",
+        "options": [
+            "Trojan",
+            "Rootkit",
+            "Cryptominer",
+            "Keylogger"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Trojan. The file name grabber.exe suggests that it may be designed to extract data from the system, characteristic of a Trojan horse. \n\n- A rootkit is used to gain unauthorized access and remain undetected, but the context here suggests active data extraction. \n- A cryptominer is used to mine cryptocurrency and would typically be named differently. \n- A keylogger captures keystrokes and would not be indicated by these file names."
+    },
+    {
+        "question": "Which of the following ls command options is used to display hidden files and directories?",
+        "options": [
+            "-a",
+            "-s",
+            "-lh",
+            "-t"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is -a. This option displays all files, including hidden files and directories, which are typically prefixed with a dot (.). \n\n- -s shows the size of files, but not hidden files. \n- -lh lists files with details but does not include hidden ones unless -a is also specified. \n- -t sorts files by modification time, not related to visibility."
+    },
+#361-375
+
+    {
+        "question": "Which of the following social engineering tactics is best avoided by shredding sensitive documents?",
+        "options": [
+            "Dumpster diving",
+            "Phishing",
+            "Whaling",
+            "Shoulder surfing"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is dumpster diving. Shredding sensitive documents helps prevent unauthorized individuals from retrieving confidential information discarded in the trash. \n\n- Phishing involves tricking users into giving away personal information and is not related to physical document disposal. \n- Whaling is a form of phishing targeting high-profile individuals and also does not relate to document handling. \n- Shoulder surfing is the act of watching someone enter confidential information and is not prevented by shredding documents."
+    },
+    {
+        "question": "A user receives an error message from an online banking site that states the following: Your connection is not private. Authority invalid. Which of the following actions should the user take next?",
+        "options": [
+            "Proceed to the site.",
+            "Use a different browser.",
+            "Report the error to the bank.",
+            "Reinstall the browser."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is to report the error to the bank. Reporting helps ensure the bank can investigate potential security issues with their website. \n\n- Proceeding to the site could expose the user to security risks. \n- Using a different browser might bypass the error but does not address the underlying security concern. \n- Reinstalling the browser is unnecessary and does not solve the issue of a potentially compromised connection."
+    },
+    {
+        "question": "Which of the following filesystems replaced FAT as the preferred filesystem for Microsoft Windows OS?",
+        "options": [
+            "APFS",
+            "FAT32",
+            "NTFS",
+            "ext4"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is NTFS. NTFS (New Technology File System) is the modern filesystem used by Windows, providing improved features such as better security and support for larger files. \n\n- APFS is primarily used by macOS and is not applicable to Windows. \n- FAT32 is an older filesystem that has limitations, particularly with file size and security features. \n- ext4 is commonly used in Linux environments and not for Windows."
+    },
+    {
+        "question": "A user requires local administrative access to a workstation. Which of the following Control Panel utilities allows the technician to grant access to the user?",
+        "options": [
+            "System",
+            "Network and Sharing Center",
+            "User Accounts",
+            "Security and Maintenance"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is User Accounts. This utility allows the technician to manage user accounts and assign administrative privileges. \n\n- The System utility deals with system settings and does not manage user permissions. \n- Network and Sharing Center is focused on network settings and does not provide user access controls. \n- Security and Maintenance is for system security settings but does not directly manage user account permissions."
+    },
+    {
+        "question": "A systems administrator received a request to limit the amount of cellular data a user's Windows 10 tablet can utilize when traveling. Which of the following can the administrator do to best solve the user's issue?",
+        "options": [
+            "Turn on airplane mode.",
+            "Set the connection to be metered.",
+            "Configure the device to use a static IP address.",
+            "Enable the Windows Defender Firewall."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to set the connection to be metered. This setting limits data usage on Windows devices, helping to control cellular data consumption. \n\n- Turning on airplane mode would disable all wireless communications, not just limit data usage. \n- Configuring a static IP address does not impact data usage and is related to network configuration. \n- Enabling the Windows Defender Firewall enhances security but does not directly address data usage."
+    },
+    {
+        "question": "Which of the following is used to ensure users have the appropriate level of access to perform their job functions?",
+        "options": [
+            "Access control list",
+            "Multifactor authentication",
+            "Least privilege",
+            "Mobile device management"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is least privilege. The principle of least privilege ensures users have only the access necessary to perform their job functions, reducing security risks. \n\n- Access control lists (ACLs) define permissions but do not inherently enforce the principle of least privilege. \n- Multifactor authentication enhances security but does not dictate access levels. \n- Mobile device management pertains to managing devices rather than access permissions."
+    },
+    {
+        "question": "A company implemented a BYOD policy and would like to reduce data disclosure caused by malware that may infect these devices. Which of the following should the company deploy to address these concerns?",
+        "options": [
+            "UAC",
+            "MDM",
+            "LDAP",
+            "SSO"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is MDM (Mobile Device Management). MDM solutions help manage and secure mobile devices, ensuring compliance with company policies and minimizing risks from malware. \n\n- UAC (User Account Control) is a Windows security feature that manages user privileges but does not protect mobile devices. \n- LDAP (Lightweight Directory Access Protocol) is used for directory services and does not address malware concerns. \n- SSO (Single Sign-On) simplifies user authentication but does not provide malware protection."
+    },
+{
+    "question": "Which of the following would allow physical access to a restricted area while maintaining a record of events?",
+    "options": [
+        "Hard token",
+        "Access control vestibule",
+        "Key fob",
+        "Door Lock"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is key fob. Key fobs can be integrated with access control systems to grant entry while also maintaining logs of who accessed the restricted area, including timestamps for each entry and exit. \n\n- A hard token provides secure access but does not maintain a physical entry log. \n- An access control vestibule can log entries, but it typically requires additional hardware like key fobs or cards to function effectively. \n- A door lock secures access but does not inherently track entry."
+},
+    {
+        "question": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
+        "options": [
+            "To maintain an information security policy",
+            "To properly identify the issue",
+            "To control evidence and maintain integrity",
+            "To gather as much information as possible"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is to control evidence and maintain integrity. Proper chain of custody ensures that evidence is preserved in its original state, which is vital for legal and investigative purposes. \n\n- Maintaining an information security policy is a broader concept and not specifically related to incident response evidence. \n- Properly identifying the issue is important, but it does not directly relate to the chain of custody. \n- Gathering information is a goal of investigations, but maintaining the integrity of evidence is more critical."
+    },
+    {
+        "question": "A remote user is experiencing issues connecting to a corporate email account on a laptop. The user clicks the internet connection icon and does not recognize the connected Wi-Fi. The help desk technician, who is troubleshooting the issue, assumes this is a rogue access point. Which of the following is the first action the technician should take?",
+        "options": [
+            "Restart the wireless adapter.",
+            "Launch the browser to see if it redirects to an unknown site.",
+            "Instruct the user to disconnect the Wi-Fi.",
+            "Instruct the user to run the installed antivirus software."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is to instruct the user to disconnect the Wi-Fi. This action prevents potential data interception and secures the user's connection until the issue is resolved. \n\n- Restarting the wireless adapter may not address the underlying issue of a rogue access point. \n- Launching the browser does not directly resolve the connection issue and could expose the user to risks. \n- Running antivirus software is a good security measure but not the immediate action needed to disconnect from a potentially dangerous network."
+    },
+    {
+        "question": "A systems administrator is troubleshooting network performance issues in a large corporate office. The end users report that traffic to certain internal environments is not stable and often drops. Which of the following command-line tools can provide the most detailed information for investigating the issue further?",
+        "options": [
+            "ipconfig",
+            "arp",
+            "nslookup",
+            "pathping"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is pathping. This tool combines the functions of ping and tracert, providing detailed information about network latency and packet loss across multiple hops. \n\n- ipconfig displays network configuration details but does not analyze performance. \n- arp is used for address resolution and does not provide performance data. \n- nslookup resolves DNS queries but does not assess network performance."
+    },
+    {
+        "question": "A user's workstation is failing to load. An analyst inspects the workstation and sees a message that states there is no bootable device. Which of the following should the analyst do first?",
+        "options": [
+            "Reimage the machine back to factory defaults.",
+            "Verify drive readability in the BIOS.",
+            "Select safe mode when the machine begins booting.",
+            "Boot to a Linux live image."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is to verify drive readability in the BIOS. This step checks whether the BIOS recognizes the hard drive, which is essential for troubleshooting boot issues. \n\n- Reimaging the machine is a last resort and should only be done after confirming hardware issues. \n- Selecting safe mode assumes the device is recognized by the BIOS, which is not the case here. \n- Booting to a Linux live image can help diagnose issues but requires the drive to be readable first."
+    },
+    {
+        "question": "A large university wants to equip all classrooms with high-definition IP videoconferencing equipment. Which of the following would most likely be impacted in this situation?",
+        "options": [
+            "SAN",
+            "LAN",
+            "GPU",
+            "PAN"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is LAN (Local Area Network). Implementing high-definition videoconferencing requires sufficient bandwidth and network resources, which directly affects the LAN infrastructure. \n\n- SAN (Storage Area Network) pertains to storage solutions and is not directly involved in videoconferencing. \n- GPU (Graphics Processing Unit) affects video rendering but is not impacted by the network deployment. \n- PAN (Personal Area Network) typically involves devices within a small area and is less relevant for classroom videoconferencing."
+    },
+    {
+        "question": "A technician needs administrator access on a Windows workstation to facilitate system changes without elevating permissions. Which of the following would best accomplish this task?",
+        "options": [
+            "Group Policy Editor",
+            "Local Users and Groups",
+            "Device Manager",
+            "System Configuration"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is Local Users and Groups. This utility allows the technician to modify user permissions and grant administrative rights. \n\n- Group Policy Editor manages policies across users and devices but does not directly provide individual access control. \n- Device Manager deals with hardware devices and drivers, not user permissions. \n- System Configuration is for configuring system startup options and does not handle user access."
+    },
+    {
+        "question": "Which of the following default system tools can be used in macOS to allow the technician to view the screen simultaneously with the user?",
+        "options": [
+            "Remote Assistance",
+            "Remote Desktop Protocol",
+            "Screen Sharing",
+            "Virtual Network Computing"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is Screen Sharing. This built-in feature in macOS enables technicians to view and interact with a user's screen in real-time, facilitating troubleshooting. \n\n- Remote Assistance is primarily a Windows feature and not applicable to macOS. \n- Remote Desktop Protocol (RDP) is used for remote access but is not native to macOS. \n- Virtual Network Computing (VNC) can be used but is less integrated than the built-in Screen Sharing feature."
+    },
+
+#376-400
+
+    {
+        "question": "Windows updates need to be performed on a department's servers. Which of the following methods should be used to connect to the server?",
+        "options": [
+            "FTP",
+            "MSRA",
+            "RDP",
+            "VPN"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is RDP (Remote Desktop Protocol). RDP allows remote access to a server's graphical interface, making it ideal for performing updates. \n\n- FTP (File Transfer Protocol) is primarily used for transferring files and does not provide remote desktop access. \n- MSRA (Microsoft Remote Assistance) is useful for providing help but is not typically used for server management tasks like updates. \n- VPN (Virtual Private Network) provides a secure connection but does not facilitate remote desktop access on its own."
+    },
+    {
+        "question": "A technician is working on a Windows 10 PC that has unwanted applications starting on boot. Which of the following tools should the technician use to disable applications on startup?",
+        "options": [
+            "System Configuration",
+            "Task Manager",
+            "Performance Monitor",
+            "Group Policy Editor"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is Task Manager. It includes a Startup tab that allows users to enable or disable applications that run at boot. \n\n- System Configuration (msconfig) is also an option but is more complex for this task. \n- Performance Monitor is used to track system performance and does not manage startup applications. \n- Group Policy Editor is used for enforcing policies on multiple machines rather than individual startup configurations."
+    },
+    {
+        "question": "A technician receives an invalid certificate error when visiting a website. Other workstations on the same local network are unable to replicate this issue. Which of the following is most likely causing the issue?",
+        "options": [
+            "Date and time",
+            "User access control",
+            "UEFI boot mode",
+            "Log-on times"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Date and time. An incorrect date or time can cause certificate validation errors since certificates are time-sensitive. \n\n- User access control typically manages permissions rather than affecting certificate validation. \n- UEFI boot mode relates to the system's startup method and does not impact certificates. \n- Log-on times are not directly related to certificate issues."
+    },
+    {
+        "question": "A company is recycling old hard drives and wants to quickly reprovision the drives for reuse. Which of the following data destruction methods should the company use?",
+        "options": [
+            "Degaussing",
+            "Standard formatting",
+            "Low-level wiping",
+            "Deleting"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is degaussing. This method erases data by disrupting the magnetic field of the drive, making data recovery virtually impossible. \n\n- Standard formatting may not remove all data and can be reversed with recovery software. \n- Low-level wiping is effective but can take longer than degaussing. \n- Deleting files does not ensure they are unrecoverable."
+    },
+    {
+        "question": "Which of the following is used as a password manager in the macOS?",
+        "options": [
+            "Terminal",
+            "FileVault",
+            "Privacy",
+            "Keychain"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is Keychain. Keychain securely stores passwords and other sensitive information on macOS. \n\n- Terminal is a command-line interface and does not manage passwords. \n- FileVault is used for disk encryption, not password management. \n- Privacy settings control application access to user data but do not function as a password manager."
+    },
+    {
+        "question": "A company's assets are scanned annually. Which of the following will most likely help the company gain a holistic view of asset cost?",
+        "options": [
+            "Creating a database",
+            "Assigning users to assets",
+            "Inventorying asset tags",
+            "Updating the procurement account owners"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is creating a database. A comprehensive database allows for better tracking and analysis of asset costs over time. \n\n- Assigning users to assets provides accountability but does not address cost analysis directly. \n- Inventorying asset tags helps in asset tracking but lacks a complete view of costs. \n- Updating procurement account owners ensures proper management but does not directly relate to cost overview."
+    },
+    {
+        "question": "Which of the following types of malicious software is most likely to demand payments in cryptocurrency?",
+        "options": [
+            "Ransomware",
+            "Keylogger",
+            "Cryptomining",
+            "Rootkit"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is ransomware. Ransomware encrypts files and demands payment, often in cryptocurrency, to restore access. \n\n- Keyloggers capture keystrokes for data theft but do not typically demand payment. \n- Cryptomining uses system resources to mine cryptocurrency but does not directly demand payment from users. \n- Rootkits are used to gain unauthorized access but do not usually involve financial demands."
+    },
+    {
+        "question": "A systems administrator is creating a new document with a list of the websites that users are allowed to access. Which of the following types of documents is the administrator most likely creating?",
+        "options": [
+            "Access control list",
+            "Acceptable use policy",
+            "Incident report",
+            "Standard operating procedure"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is access control list. This document specifies which websites users can access, enforcing security policies. \n\n- An acceptable use policy outlines general rules for system use but may not list specific websites. \n- An incident report documents security breaches or policy violations, not access permissions. \n- A standard operating procedure details processes but does not specify access permissions."
+    },
+    {
+        "question": "Which of the following file types would be used in the Windows Startup folder to automate copying a personal storage table (.pst file) to a network drive at log-in?",
+        "options": [
+            ".bat",
+            ".dll",
+            ".ps1",
+            ".txt"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is .bat (batch file). A .bat file can execute commands to automate tasks like copying files during startup. \n\n- .dll files are dynamic link libraries used by applications but are not executable scripts. \n- .ps1 files are PowerShell scripts, which can be used but are less common for startup tasks. \n- .txt files are plain text files and cannot execute commands."
+    },
+    {
+        "question": "Which of the following macOS features can help a user close an application that has stopped responding?",
+        "options": [
+            "Finder",
+            "Mission Control",
+            "System Preferences",
+            "Force Quit"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is Force Quit. This feature allows users to terminate unresponsive applications quickly. \n\n- Finder is the file management system and does not manage application states. \n- Mission Control provides an overview of open applications but does not close them. \n- System Preferences is used for system configuration, not for closing applications."
+    },
+    {
+        "question": "Which of the following filesystem types does macOS use?",
+        "options": [
+            "ext4",
+            "exFAT",
+            "NTFS",
+            "APFS"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is APFS (Apple File System). APFS is optimized for flash storage and is the default filesystem for macOS. \n\n- ext4 is a Linux filesystem and not compatible with macOS. \n- exFAT is used for external drives across different operating systems but is not the native filesystem for macOS. \n- NTFS is a Windows filesystem that macOS can read but not write to natively."
+    },
+    {
+        "question": "A company recently outsourced its night-shift cleaning service. A technician is concerned about having unsupervised contractors in the building. Which of the following security measures can be used to prevent the computers from being accessed? (Choose two.)",
+        "options": [
+            "Implementing data-at-rest encryption",
+            "Disabling AutoRun",
+            "Restricting user permissions",
+            "Restricting log-in times",
+            "Enabling a screen lock",
+            "Disabling local administrator accounts"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answers are implementing data-at-rest encryption and enabling a screen lock. \n\n- Implementing data-at-rest encryption ensures that even if contractors access computers, the data remains secure. \n- Enabling a screen lock prevents unauthorized access when users are away. \n- Disabling AutoRun does not prevent physical access to computers. \n- Restricting user permissions helps, but encryption adds an extra layer of security. \n- Restricting log-in times limits access hours but does not secure data itself. \n- Disabling local administrator accounts can restrict access but is not as effective as the first two measures."
+    },
+    {
+        "question": "A user requested that the file permissions on a Linux device be changed to only allow access to a certain group of users. Which of the following commands should be used to modify file permissions?",
+        "options": [
+            "chmod",
+            "setfacl",
+            "chown",
+            "passwd"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is setfacl. This command allows the administrator to set access control lists for files and directories, modifying permissions for specific users or groups. \n\n- chmod changes file permissions, but setfacl is specifically for ACLs. \n- chown changes the ownership of files, not permissions. \n- passwd is used for changing user passwords, not for modifying file permissions."
+    },
+
+    {
+        "question": "A user installed a new computer game. Upon starting the game, the user notices the frame rates are low. Which of the following should the user upgrade to resolve the issue?",
+        "options": [
+            "Hard drive",
+            "Graphics card",
+            "Random-access memory",
+            "Monitor"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is graphics card. Upgrading the graphics card can significantly improve frame rates in games, as it handles the rendering of images and video. \n\n- A hard drive upgrade won't enhance graphics performance; faster load times might occur, but frame rates won't improve. \n- Random-access memory (RAM) can help with overall system performance but won't specifically address low frame rates unless the current RAM is critically low. \n- A monitor upgrade will improve display quality but won't resolve the underlying issue with frame rates."
+    },
+    {
+        "question": "A technician is troubleshooting application crashes on a Windows workstation. Each time the workstation user tries to open a website in a browser, the following message is displayed: crypt32.dll is missing or not found. Which of the following should the technician attempt first?",
+        "options": [
+            "Rebuild Windows profiles",
+            "Reimage the workstation",
+            "Roll back updates",
+            "Perform a system file check"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is perform a system file check. This tool scans for and repairs corrupted system files, which is likely causing the missing crypt32.dll error. \n\n- Rebuilding Windows profiles is unnecessary unless the user-specific settings are corrupted. \n- Reimaging the workstation is a drastic measure that may not address the specific file issue. \n- Rolling back updates might help if a recent update caused the problem, but it's better to check for system file integrity first."
+    },
+    {
+        "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "options": [
+            "UEFI password",
+            "Secure boot",
+            "Account lockout",
+            "Disable network drivers"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is UEFI password. Setting a UEFI password can prevent unauthorized changes to firmware settings, including enabling virtualization features. \n\n- Secure boot helps protect against unauthorized firmware but does not control virtualization settings. \n- Account lockout policies manage user access but won’t affect hardware capabilities. \n- Disabling network drivers won't prevent users from installing virtual machines; it only impacts network connectivity."
+    },
+    {
+        "question": "Which of the following involves sending arbitrary characters in a web page request?",
+        "options": [
+            "SMS",
+            "SSL",
+            "XSS",
+            "VPN"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is XSS (Cross-Site Scripting). XSS is a security vulnerability that allows an attacker to inject arbitrary code into web pages viewed by other users. \n\n- SMS (Short Message Service) is for sending text messages and not related to web requests. \n- SSL (Secure Sockets Layer) is a protocol for secure communication over a computer network and does not involve sending arbitrary characters. \n- VPN (Virtual Private Network) is used for secure remote access but does not relate to web page requests."
+    },
+    {
+        "question": "A user is trying to use proprietary software, but it crashes intermittently. The user notices that the desktop is displaying a 'low memory' warning message. Upon restarting the desktop, the issue persists. Which of the following should a technician do next to troubleshoot the issue?",
+        "options": [
+            "Reimage the computer.",
+            "Replace the system RAM.",
+            "Reinstall and update the failing software.",
+            "Decrease the page file size."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is reinstall and update the failing software. This step can resolve issues caused by corrupted installation files or outdated versions that may not manage memory efficiently. \n\n- Reimaging the computer is excessive at this point and may not directly address the software issue. \n- Replacing the system RAM may be necessary, but first confirming that the software is the cause is more efficient. \n- Decreasing the page file size can exacerbate memory issues, as it reduces virtual memory available for applications."
+    },
+    {
+        "question": "An office is experiencing constant connection attempts to the corporate Wi-Fi. Which of the following should be disabled to mitigate connection attempts?",
+        "options": [
+            "SSID",
+            "DHCP",
+            "Firewall",
+            "SSD"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is SSID. Disabling the SSID broadcast makes the network less visible to unauthorized users, reducing connection attempts. \n\n- Disabling DHCP would make it harder for legitimate users to connect since they wouldn't automatically receive an IP address. \n- A firewall should be enabled to protect the network; disabling it would increase vulnerabilities. \n- SSD (Solid State Drive) is unrelated to network connections."
+    },
+    {
+        "question": "A customer is accessing a public kiosk in a company’s lobby. Which of the following should be enforced to mitigate the risk of customer data being accidentally saved to the kiosk?",
+        "options": [
+            "Manually clearing browsing data",
+            "Private-browsing mode",
+            "Browser data synchronization",
+            "Password manager"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is private-browsing mode. This mode prevents the browser from saving any history or data from the session, reducing the risk of personal information being stored. \n\n- Manually clearing browsing data is less secure, as users may forget to do it. \n- Browser data synchronization could inadvertently save user data to a cloud service. \n- A password manager is not applicable in this context and does not protect against data saving during a kiosk session."
+    },
+    {
+        "question": "A technician receives a personal text message while troubleshooting a customer's PC. The technician does not reply to the message and continues troubleshooting. Which of the following best describes the technician's actions?",
+        "options": [
+            "Avoiding distractions",
+            "Presenting a professional appearance",
+            "Setting and meeting timelines",
+            "Projecting confidence"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is avoiding distractions. By not responding to the text message, the technician remains focused on resolving the customer's issue without interruptions. \n\n- Presenting a professional appearance relates more to demeanor and attire than distractions. \n- Setting and meeting timelines is important but doesn't apply to the technician's choice here. \n- Projecting confidence is beneficial but not directly related to the technician's decision to ignore the text."
+    },
+    {
+        "question": "A new employee is having difficulties using a laptop with a docking station. The laptop is connected to the docking station, and the laptop is closed. The external monitor works for a few seconds, but then the laptop goes to sleep. Which of the following options should the technician configure in order to fix the issue?",
+        "options": [
+            "Hibernate",
+            "Sleep/suspend",
+            "Choose what closing the lid does",
+            "Turn on fast startup"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is choose what closing the lid does. Configuring this setting allows the technician to prevent the laptop from sleeping when the lid is closed, ensuring continuous operation with the docking station. \n\n- Hibernate is a power-saving state but doesn't resolve the issue of sleep mode activation. \n- Sleep/suspend settings are the cause of the problem, not the solution. \n- Turning on fast startup improves boot times but does not address the immediate issue with the docking station."
+    },
+    {
+        "question": "A technician is unable to access the internet or named network resources. The technician receives a valid IP address from the DHCP server and can ping the default gateway. Which of the following should the technician check next to resolve the issue?",
+        "options": [
+            "Verify the DNS server settings",
+            "Turn off the Windows firewall",
+            "Confirm the subnet mask is correct",
+            "Configure a static IP address"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is verify the DNS server settings. If the IP address is valid and the default gateway is reachable, DNS settings could be the reason for the inability to access the internet. \n\n- Turning off the Windows firewall could expose the system to vulnerabilities and should only be a last resort. \n- Confirming the subnet mask is correct is important, but since the DHCP server provided a valid address, it's likely correct. \n- Configuring a static IP address is unnecessary and may complicate network management."
+    },
+    {
+        "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "options": [
+            "System",
+            "Power Options",
+            "Devices and Printers",
+            "Ease of Access"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is Power Options. This utility allows the technician to modify settings related to power management, including USB selective suspend settings. \n\n- The System utility primarily deals with system properties and performance settings, not power management. \n- Devices and Printers show connected devices but do not provide options for power settings. \n- Ease of Access is for accessibility options and does not relate to USB device management."
+    },
+    {
+        "question": "During a network outage, a technician discovers a new network switch that was not listed in the support documentation. The switch was installed during a recent change window when a new office was added to the environment. Which of the following would most likely prevent this type of mismatch after next month's change window?",
+        "options": [
+            "Performing annual network topology reviews",
+            "Requiring all network changes include updating the network diagrams",
+            "Allowing network changes once per year",
+            "Routinely backing up switch configuration files"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is requiring all network changes include updating the network diagrams. This ensures that any new equipment or changes are documented, preventing mismatches in future reviews. \n\n- Performing annual network topology reviews is useful but may not catch changes made during the year. \n- Allowing network changes only once per year can delay necessary updates and responses. \n- Routinely backing up switch configuration files is important for recovery but doesn't prevent undocumented changes from being made."
     }
-
-
 
 
 ]

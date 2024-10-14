@@ -78,8 +78,9 @@ def select_questions_set():
     print("1. Question Set set_A")
     print("2. Question Set set_B")
     print("3. Question Set set_C")
-    print("4. Question Set set_Images")
-    print("5. All Sets of Questions")
+    print("4. Question Set set_D")
+    print("5. Question Set set_Images")
+    print("6. All Sets of Questions")
     choice = input("Enter the number of your choice: ").strip()
 
     if choice == '1':
