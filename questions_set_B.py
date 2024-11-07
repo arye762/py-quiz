@@ -2131,9 +2131,11 @@ questions_set_B = [
             "Enabling a screen lock",
             "Disabling local administrator accounts"
         ],
-        "correct_answer": 1,
+        "correct_answer": [1,5],
         "description": "The correct answers are implementing data-at-rest encryption and enabling a screen lock. \n\n- Implementing data-at-rest encryption ensures that even if contractors access computers, the data remains secure. \n- Enabling a screen lock prevents unauthorized access when users are away. \n- Disabling AutoRun does not prevent physical access to computers. \n- Restricting user permissions helps, but encryption adds an extra layer of security. \n- Restricting log-in times limits access hours but does not secure data itself. \n- Disabling local administrator accounts can restrict access but is not as effective as the first two measures."
     },
+
+
     {
         "question": "A user requested that the file permissions on a Linux device be changed to only allow access to a certain group of users. Which of the following commands should be used to modify file permissions?",
         "options": [

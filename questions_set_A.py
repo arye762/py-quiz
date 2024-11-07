@@ -1,82 +1,88 @@
 questions_set_A = [
 
 #2 - 10
-   {
+{
     "question": "A help desk team lead contacts a systems administrator because the technicians are unable to log in to a Linux server that is used to access tools. When the administrator tries to use remote desktop to log in to the server, the administrator sees the GUI is crashing. Which of the following methods can the administrator use to troubleshoot the server effectively?",
     "options": [
-        "SFTP - Secure File Transfer Protocol is used for transferring files securely over a network, but does not provide command line access.",
-        "SSH - Secure Shell allows the administrator to access the command line of the server remotely, which can be crucial for troubleshooting a crashing GUI.",
-        "VNC - Virtual Network Computing provides a graphical interface but may not be useful if the GUI is already crashing.",
-        "MSRA - Microsoft Remote Assistance is primarily for Windows systems and is not suitable for Linux troubleshooting."
+        "SFTP",
+        "SSH",
+        "VNC",
+        "MSRA"
     ],
-    "correct_answer": [2],
-    "description": "The correct answer is SSH. SSH allows the administrator to access the command line of the server remotely, which can be crucial for troubleshooting a crashing GUI. \n\n- SFTP is used for file transfers and does not provide access to the command line.\n- VNC is also a graphical interface, and if the GUI is crashing, it may not be useful.\n- MSRA is primarily for Windows systems, not suitable for Linux troubleshooting."
+    "correct_answer": 2,
+    "description": "The correct answer is 'SSH.' SSH (Secure Shell) provides a secure command-line interface for accessing Linux servers, allowing the administrator to troubleshoot the server without relying on the graphical user interface (GUI), which is crashing. \n\n- SFTP (Secure File Transfer Protocol) is used for transferring files, not for remote administration. \n- VNC (Virtual Network Computing) provides a graphical interface, which is not suitable if the GUI is crashing. \n- MSRA (Microsoft Remote Assistance) is for Windows environments and won't work with Linux servers."
 },
+
 {
     "question": "A company wants to remove information from past users' hard drives in order to reuse the hard drives. Which of the following is the MOST secure method?",
     "options": [
-        "Reinstalling Windows - This method will install a new operating system, but it does not ensure that old data is unrecoverable.",
-        "Performing a quick format - This process removes the file system structure but does not erase the data, allowing for potential recovery.",
-        "Using disk-wiping software - This method securely overwrites existing data, making it virtually impossible to recover.",
-        "Deleting all files from command-line interface - Deleting files does not securely erase data, as recovery tools can restore deleted files."
+        "Reinstalling Windows",
+        "Performing a quick format",
+        "Using disk-wiping software",
+        "Deleting all files from command-line interface"
     ],
-    "correct_answer": [3],
-    "description": "The correct answer is Using disk-wiping software. This method securely overwrites existing data, making it virtually impossible to recover. \n\n- Reinstalling Windows does not guarantee that data is irretrievable, as remnants may still exist on the drive.\n- Quick format only removes the file system structure but not the actual data.\n- Deleting files from the command line does not securely erase the data."
+    "correct_answer": 3,
+    "description": "The correct answer is 'Using disk-wiping software.' Disk-wiping software securely erases all data from the hard drive by overwriting it multiple times, ensuring that the data cannot be recovered. \n\n- Reinstalling Windows may remove the operating system but does not securely erase user data. \n- Performing a quick format only removes file system references to data, leaving the data itself recoverable. \n- Deleting files via command-line interface only removes references to the files, but data recovery is still possible."
 },
+
 {
     "question": "A user is having phone issues after installing a new application that claims to optimize performance. The user downloaded the application directly from the vendor's website and is now experiencing high network utilization and is receiving repeated security warnings. Which of the following should the technician perform FIRST to mitigate the issue?",
     "options": [
-        "Reset the phone to factory settings - This action erases all data and settings, which should be a last resort.",
-        "Uninstall the fraudulent application - This action removes the source of the issue and helps stop further potential damage.",
-        "Increase the data plan limits - This does not address the underlying issue of the app consuming bandwidth.",
-        "Disable the mobile hotspot - This might reduce network utilization temporarily but does not solve the problem."
+        "Reset the phone to factory settings.",
+        "Uninstall the fraudulent application.",
+        "Increase the data plan limits.",
+        "Disable the mobile hotspot."
     ],
-    "correct_answer": [2],
-    "description": "The correct answer is Uninstall the fraudulent application. This action removes the source of the issue and helps stop further potential damage. \n\n- Resetting the phone should be a last resort.\n- Increasing data plan limits does not address the underlying issue.\n- Disabling the mobile hotspot might reduce network utilization temporarily but does not solve the problem."
+    "correct_answer": 2,
+    "description": "The correct answer is 'Uninstall the fraudulent application.' The high network utilization and security warnings are likely caused by the newly installed app, which is potentially harmful. Uninstalling it removes the root cause of the issue. \n\n- Resetting the phone to factory settings may be an option but should be done only if uninstalling the app does not resolve the issue. \n- Increasing the data plan limits does not address the root cause of the issue, which is the fraudulent app. \n- Disabling the mobile hotspot does not directly resolve the issue related to the application."
 },
+
 {
     "question": "A change advisory board just approved a change request. Which of the following is the MOST likely next step in the change process?",
     "options": [
-        "End user acceptance - This comes after the change is implemented, not immediately after approval.",
-        "Perform risk analysis - This should ideally happen before approval, to assess potential impacts.",
-        "Communicate to stakeholders - Informing stakeholders ensures that everyone affected by the change is aware and prepared for it.",
-        "Sandbox testing - This can occur after communication to stakeholders."
+        "End user acceptance",
+        "Perform risk analysis",
+        "Communicate to stakeholders",
+        "Sandbox testing"
     ],
-    "correct_answer": [3],
-    "description": "The correct answer is Communicate to stakeholders. Informing stakeholders ensures that everyone affected by the change is aware and prepared for it. \n\n- End user acceptance comes after the change is implemented.\n- Performing risk analysis should ideally happen before approval.\n- Sandbox testing is a step that can occur but follows communication to stakeholders."
+    "correct_answer": 3,
+    "description": "The correct answer is 'Communicate to stakeholders.' Once a change request is approved, it is important to inform stakeholders about the upcoming changes so they can prepare accordingly. \n\n- End user acceptance comes later in the process, after the change is implemented. \n- Risk analysis should have already been performed during the planning phase of the change process. \n- Sandbox testing occurs earlier in the process to test the change in a controlled environment."
 },
+
 {
     "question": "A user calls the help desk to report that none of the files on a PC will open. The user also indicates a program on the desktop is requesting payment in exchange for file access. A technician verifies the user's PC is infected with ransomware. Which of the following should the technician do FIRST?",
     "options": [
-        "Scan and remove the malware - This is important but should be done after containment to avoid further damage.",
-        "Schedule automated malware scans - This does not address the immediate threat.",
-        "Quarantine the system - This step prevents further spread of the ransomware and protects other systems on the network.",
-        "Disable System Restore - This can prevent the restoration of previous states but is not the first priority."
+        "Scan and remove the malware.",
+        "Schedule automated malware scans.",
+        "Quarantine the system.",
+        "Disable System Restore."
     ],
-    "correct_answer": [3],
-    "description": "The correct answer is Quarantine the system. This step prevents further spread of the ransomware and protects other systems on the network. \n\n- Scanning and removing malware is important but should be done after containment.\n- Scheduling automated scans does not address the immediate threat.\n- Disabling System Restore is a consideration but not the first priority."
+    "correct_answer": 3,
+    "description": "The correct answer is 'Quarantine the system.' The first step in responding to a ransomware infection is to isolate the system to prevent the ransomware from spreading to other devices. \n\n- Scanning and removing the malware can only happen after the system is isolated. \n- Scheduling automated malware scans is a proactive measure but not an immediate step in response to an active ransomware attack. \n- Disabling System Restore might prevent the malware from being restored but does not prevent its spread."
 },
+
 {
-    "question": "A company is issuing smartphones to employees and needs to ensure data is secure if the devices are lost or stolen. Which of the following provides the BEST solution?",
+    "question": "A company is issuing smartphone to employees and needs to ensure data is secure if the devices are lost or stolen. Which of the following provides the BEST solution?",
     "options": [
-        "Anti-malware - This helps protect against threats but does not secure data if the device is lost.",
-        "Remote wipe - This capability allows the company to erase all data on the device remotely if it is lost or stolen.",
-        "Locator applications - These can help find lost devices but do not protect the data if unauthorized individuals access the device.",
-        "Screen lock - This adds a layer of security but does not prevent data exposure if the device is not physically secured."
+        "Anti-malware",
+        "Remote wipe",
+        "Locator applications",
+        "Screen lock"
     ],
-    "correct_answer": [2],
-    "description": "The correct answer is Remote wipe. This capability allows the company to erase all data on the device remotely if it is lost or stolen, ensuring sensitive information is protected. \n\n- Anti-malware helps protect against threats but does not secure data if the device is lost.\n- Locator applications can help find lost devices but do not protect the data if accessed by unauthorized individuals.\n- Screen lock adds security but does not prevent data exposure if the device is not physically secured."
+    "correct_answer": 2,
+    "description": "The correct answer is 'Remote wipe.' Remote wipe allows the company to erase data from the device remotely in the event it is lost or stolen, ensuring sensitive data is not compromised. \n\n- Anti-malware protects the device from malicious software but does not address the issue of lost or stolen devices. \n- Locator applications help track the device's location but do not provide a way to secure the data. \n- Screen lock secures access to the device but does not protect the data if the device is stolen."
 },
+
 {
     "question": "A user reports seeing random, seemingly non-malicious advertisement notifications in the Windows 10 Action Center. The notifications indicate the advertisements are coming from a web browser. Which of the following is the BEST solution for a technician to implement?",
     "options": [
-        "Disable the browser from sending notifications to the Action Center - This may prevent useful alerts as well, leading to a poor user experience.",
-        "Run a full antivirus scan on the computer - This is a good practice but may not directly solve the notification issue.",
-        "Disable all Action Center notifications - This would prevent important alerts from appearing, leading to missed information.",
-        "Move specific site notifications from Allowed to Block - This action addresses the source of the unwanted notifications without disabling useful alerts."
+        "Disable the browser from sending notifications to the Action Center.",
+        "Run a full antivirus scan on the computer.",
+        "Disable all Action Center notifications.",
+        "Move specific site notifications from Allowed to Block."
     ],
-    "correct_answer": [4],
-    "description": "The correct answer is Move specific site notifications from Allowed to Block. This action addresses the source of the unwanted notifications without disabling useful alerts. \n\n- Disabling browser notifications may prevent useful alerts as well.\n- Running a full antivirus scan is a good practice but may not directly solve the notification issue.\n- Disabling all Action Center notifications would prevent important alerts from appearing."
+    "correct_answer": 4,
+    "description": "The correct answer is 'Move specific site notifications from Allowed to Block.' Blocking notifications from the specific websites that are sending the ads helps stop the unwanted ads while allowing legitimate notifications. \n\n- Disabling the browser from sending notifications may stop all notifications, but it is better to block only the specific sites causing issues. \n- Running a full antivirus scan is useful for detecting malware but is unlikely to address legitimate, non-malicious advertisements. \n- Disabling all Action Center notifications will prevent all notifications, including those that are important."
 },
 
 
