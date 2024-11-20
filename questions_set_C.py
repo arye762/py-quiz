@@ -2020,19 +2020,6 @@ questions_set_C = [
 
 
     {
-        "question": "A user's Windows computer seems to work well at the beginning of the day. However, its performance degrades throughout the day, and the system freezes when several applications are open. Which of the following should a technician do to resolve the issue? (Choose two.)",
-        "options": [
-            "Install the latest GPU drivers.",
-            "Reinstall the OS.",
-            "Increase the RAM.",
-            "Increase the hard drive space.",
-            "Uninstall unnecessary software.",
-            "Disable scheduled tasks."
-        ],
-        "correct_answer": [3, 5],
-        "description": "The correct answers are Increase the RAM and Uninstall unnecessary software. Increasing RAM can enhance system performance by providing more memory for running applications, reducing lag and crashes. \n\n- Uninstalling unnecessary software frees up system resources, helping to improve performance. \n- Installing GPU drivers is unlikely to resolve the main issue as it pertains to overall system memory. \n- Reinstalling the OS is a drastic measure and may not address the underlying resource constraints."
-    },
-    {
         "question": "Which of the following languages is used for scripting the creation of Active Directory accounts?",
         "options": [
             "Bash",

@@ -347,17 +347,7 @@ questions_set_D = [
     "description": "The correct answer is to establish a scope. Defining the scope helps outline the specific components, resources, and objectives of the upgrade, providing clarity before submitting a change request.\n\n- Change board approval is obtained after the scope is established and the plan is ready to be reviewed.\n- Creating a test environment is important but typically follows the initial scoping and planning stages.\n- Rolling back previous changes is only necessary if recent modifications caused issues."
 	},
 
-	{
-    "question": "A systems administrator plans to upgrade a server to the latest operating system. Which of the following should the administrator do before placing a change request?",
-    "options": [
-        "Establish a scope",
-        "Get change board approval",
-        "Create a test environment",
-        "Roll back any previous changes"
-    ],
-    "correct_answer": 1,
-    "description": "The correct answer is to establish a scope. Defining the scope helps outline the specific components, resources, and objectives of the upgrade, providing clarity before submitting a change request.\n\n- Change board approval is obtained after the scope is established and the plan is ready to be reviewed.\n- Creating a test environment is important but typically follows the initial scoping and planning stages.\n- Rolling back previous changes is only necessary if recent modifications caused issues."
-	},
+	
     {
         "question": "Which of the following provides disk encryption on computers running a Windows OS?",
         "options": [
