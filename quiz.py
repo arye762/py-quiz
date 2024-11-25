@@ -1,8 +1,9 @@
 import random
 import os
+import datetime
 import time
 import subprocess
-from PIL import Image
+#from PIL import Image
 from questions_set_A import questions_set_A
 from questions_set_B import questions_set_B
 from questions_set_C import questions_set_C
