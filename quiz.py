@@ -2,13 +2,16 @@ import random
 import os
 import datetime
 import time
+import json
 import subprocess
-#from PIL import Image
+from PIL import Image
 from questions_set_A import questions_set_A
 from questions_set_B import questions_set_B
 from questions_set_C import questions_set_C
 from questions_set_D import questions_set_D
 from questions_set_images import questions_set_images
+
+SAVE_FILE = "quiz_save.json"
 
 def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None):
     os.system('clear')  # Clear the screen before each question
@@ -18,7 +21,7 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     indices = list(range(len(options)))
     random.shuffle(indices)
     shuffled_options = [options[i] for i in indices]
-    
+
     if isinstance(correct_answer, list):
         shuffled_correct_answer = [indices.index(ans - 1) + 1 for ans in correct_answer]
     else:
@@ -44,8 +47,9 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     print()
     
     answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, or 'x' to exit: ").strip()
-    
+
     if answer.lower() == 'x':
+        save_session()
         return 'x', True  # Indicate exit
     if answer.lower() == '0':
         return None, False
@@ -76,11 +80,11 @@ def ask_question(question_num, total_questions, question, options, correct_answe
 
 def select_questions_set():
     print("Select the set of questions you want to answer:")
-    print("1. Question Set set_A")
-    print("2. Question Set set_B")
-    print("3. Question Set set_C")
-    print("4. Question Set set_D")
-    print("5. Question Set set_Images")
+    print("1. Question Set A")
+    print("2. Question Set B")
+    print("3. Question Set C")
+    print("4. Question Set D")
+    print("5. Question Set Images")
     print("6. All Sets of Questions")
     choice = input("Enter the number of your choice: ").strip()
 
@@ -95,10 +99,10 @@ def select_questions_set():
     elif choice == '5':
         return questions_set_images
     elif choice == '6':
-        questions_set_A + questions_set_B + questions_set_C + questions_set_D + questions_set_images
+        return questions_set_A + questions_set_B + questions_set_C + questions_set_D + questions_set_images
     else:
         print("Invalid choice. Defaulting to all sets of questions.")
-        return questions_set_A + questions_set_B + questions_set_C + questions_set_D +  questions_set_images
+        return questions_set_A + questions_set_B + questions_set_C + questions_set_D + questions_set_images
 
 def choose_ordering():
     print("\nHow would you like the questions to be ordered?")
@@ -131,10 +135,9 @@ def enable_images():
 def select_question_range(total_questions):
     print(f"\nSelect the range of questions you want to be asked (1-{total_questions}):")
     
-    # Get the start question number
     start = input("Enter the starting question number (leave blank for 1): ").strip()
     if start == "":
-        start = 1  # Default to the first question
+        start = 1
     else:
         try:
             start = int(start)
@@ -144,10 +147,9 @@ def select_question_range(total_questions):
             print(f"Invalid input. Starting with question 1.")
             start = 1
 
-    # Get the end question number
     end = input(f"Enter the ending question number (leave blank for {total_questions}): ").strip()
     if end == "":
-        end = total_questions  # Default to the last question
+        end = total_questions
     else:
         try:
             end = int(end)
@@ -166,95 +168,129 @@ def time_elapsed():
     seconds = int(elapsed_time % 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-def main():
+def save_session():
+    session_data = {
+        "score": score,
+        "current_question": current_question,
+        "answers": answers,
+        "start_time": start_time,
+        "selected_questions": selected_questions,  # Save the selected questions
+        "image_enabled": image_enabled,  # Save the image setting
+    }
+    with open(SAVE_FILE, "w") as f:
+        json.dump(session_data, f)
+    print("\nSession saved successfully!\n")
+
+
+def load_session():
+    global score, current_question, answers, start_time, selected_questions, image_enabled
+    try:
+        with open(SAVE_FILE, "r") as f:
+            session_data = json.load(f)
+        score = session_data["score"]
+        current_question = session_data["current_question"]
+        answers = session_data["answers"]
+        start_time = session_data["start_time"]
+        selected_questions = session_data["selected_questions"]
+        image_enabled = session_data.get("image_enabled", False)  # Load the image setting
+        print("\nSession loaded successfully!\n")
+        return True
+    except FileNotFoundError:
+        print("\nNo saved session found.\n")
+        return False
+
+
+def retry_wrong_answers(wrong_questions):
+    """
+    Handles retrying incorrectly answered questions.
+    """
     global score
-    global image_enabled
-    score = 0
-    wrong_questions = []
-    global start_time
-    start_time = time.time()
 
-    selected_questions = select_questions_set()
+    if not wrong_questions:
+        print("\nGreat job! You didn't get any questions wrong.\n")
+        return
 
-    randomize_order = choose_ordering()
-    image_enabled = enable_images()
+    print("\nDo you want to retry the questions you got wrong? (y/n): ", end="")
+    if input().strip().lower() != 'y':
+        return
 
-    if randomize_order:
-        random.shuffle(selected_questions)
+    for idx, q in enumerate(wrong_questions):
+        print(f"\nRetrying question {idx + 1} of {len(wrong_questions)}")
+        answer, is_correct = ask_question(
+            idx + 1,
+            len(wrong_questions),
+            q["question"],
+            q["options"],
+            q["correct_answer"],
+            q["description"],
+            q.get("image", None),
+        )
 
-    total_questions = len(selected_questions)
-    start, end = select_question_range(total_questions)
-    selected_questions = selected_questions[start-1:end]
+        if is_correct:
+            score += 1
+            print("Correct! Well done!")
+        else:
+            print("Still incorrect. Keep practicing!")
 
-    answers = [None] * len(selected_questions)
-    current_question = 0 
+def main():
+    global score, current_question, answers, start_time, image_enabled, selected_questions
+
+    print("Welcome to the Quiz!")
+    if input("Do you want to resume the last session? (y/n): ").strip().lower() == 'y':
+        if not load_session():
+            return
+    else:
+        score = 0
+        current_question = 0
+        answers = []
+        start_time = time.time()
+        selected_questions = select_questions_set()
+        randomize_order = choose_ordering()
+        image_enabled = enable_images()  # Ask whether to enable images
+
+        if randomize_order:
+            random.shuffle(selected_questions)
+
+        total_questions = len(selected_questions)
+        start, end = select_question_range(total_questions)
+        selected_questions = selected_questions[start - 1:end]
+
+        answers = [None] * len(selected_questions)
+
+    wrong_questions = []  # Track questions answered incorrectly
 
     while current_question < len(selected_questions):
         q = selected_questions[current_question]
         answer, is_correct = ask_question(
-            current_question + 1, 
-            len(selected_questions), 
-            q["question"], 
-            q["options"], 
-            q["correct_answer"], 
+            current_question + 1,
+            len(selected_questions),
+            q["question"],
+            q["options"],
+            q["correct_answer"],
             q["description"],
-            q.get("image", None)
+            q.get("image", None),
         )
-        
+
         if answer == 'x':
-            break  # Exit the session
-        
+            break
+
         if answer is not None:
             if answers[current_question] is None:
                 if is_correct:
                     score += 1
                 else:
-                    wrong_questions.append(current_question)
-            elif answers[current_question] != answer:
-                previous_correct = answers[current_question] == str(q["correct_answer"])
-                if is_correct and not previous_correct:
-                    score += 1
-                elif not is_correct and previous_correct:
-                    score -= 1
-
+                    wrong_questions.append(q)
             answers[current_question] = answer
             current_question += 1
         elif current_question > 0:
             current_question -= 1
 
     print(f"\nYour final score is {score}/{len(selected_questions)}")
+    retry_wrong_answers(wrong_questions)
 
-    if wrong_questions:
-        print(f"\nYou got {len(wrong_questions)} questions wrong. Would you like to try them again? (y/n)")
-        retry = input().strip().lower()
-        if retry == 'y':
-            print("\nRepeating wrong questions...\n")
-            for i in wrong_questions:
-                q = selected_questions[i]
-                answer, is_correct = ask_question(
-                    i + 1, 
-                    len(selected_questions), 
-                    q["question"], 
-                    q["options"], 
-                    q["correct_answer"], 
-                    q["description"],
-                    q.get("image", None)
-                )
-                
-                if answer == 'x':
-                    break  # Exit the session
-                
-                if answer is not None:
-                    previous_answer = answers[i]
-                    previous_correct = previous_answer == str(q["correct_answer"])
-                    if previous_answer != answer:
-                        if is_correct and not previous_correct:
-                            score += 1
-                        elif not is_correct and previous_correct:
-                            score -= 1
-                    answers[i] = answer
-
-            print(f"\nYour final score after retry is {score}/{len(selected_questions)}")
 
 if __name__ == "__main__":
     main()
+
+
+
