@@ -4,7 +4,7 @@ import datetime
 import time
 import json
 import subprocess
-from PIL import Image
+#from PIL import Image
 from questions_set_A import questions_set_A
 from questions_set_B import questions_set_B
 from questions_set_C import questions_set_C
@@ -168,7 +168,10 @@ def time_elapsed():
     seconds = int(elapsed_time % 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-def save_session():
+def save_session(wrong_questions=None):
+    """
+    Save the session to a file, including wrong questions if provided.
+    """
     session_data = {
         "score": score,
         "current_question": current_question,
@@ -177,9 +180,13 @@ def save_session():
         "selected_questions": selected_questions,  # Save the selected questions
         "image_enabled": image_enabled,  # Save the image setting
     }
+    if wrong_questions is not None:
+        session_data["wrong_questions"] = wrong_questions  # Save wrong questions for retry
+
     with open(SAVE_FILE, "w") as f:
         json.dump(session_data, f)
     print("\nSession saved successfully!\n")
+
 
 
 def load_session():
@@ -220,8 +227,7 @@ def retry_wrong_answers(wrong_questions):
             idx + 1,
             len(wrong_questions),
             q["question"],
-            q["options"],
-            q["correct_answer"],
+            q["options"],            q["correct_answer"],
             q["description"],
             q.get("image", None),
         )
@@ -232,18 +238,55 @@ def retry_wrong_answers(wrong_questions):
         else:
             print("Still incorrect. Keep practicing!")
 
+
+def load_session():
+    """
+    Load the saved session data from the save file.
+    Returns the session data or None if no session is found.
+    """
+    try:
+        with open(SAVE_FILE, "r") as f:
+            session_data = json.load(f)
+        print("\nSession loaded successfully!\n")
+        return session_data
+    except FileNotFoundError:
+        print("\nNo saved session found.\n")
+        return None
+
+
+
+
+
 def main():
     global score, current_question, answers, start_time, image_enabled, selected_questions
 
+    # Initialize all global variables at the start
+    score = 0
+    current_question = 0
+    answers = []
+    start_time = time.time()
+    selected_questions = []
+    image_enabled = False
+
     print("Welcome to the Quiz!")
-    if input("Do you want to resume the last session? (y/n): ").strip().lower() == 'y':
-        if not load_session():
-            return
-    else:
-        score = 0
-        current_question = 0
-        answers = []
-        start_time = time.time()
+    
+    retry_saved = False
+    session_data = None
+    if os.path.exists(SAVE_FILE):
+        print("Do you want to retry wrong answers from the previous session? (y/n): ", end="")
+        retry_saved = input().strip().lower() == 'y'
+
+    if retry_saved:
+        session_data = load_session()
+        if session_data and "wrong_questions" in session_data:
+            wrong_questions = session_data["wrong_questions"]
+            retry_wrong_answers(wrong_questions)
+            return  # Exit after retrying wrong questions
+        else:
+            print("\nNo saved wrong questions found. Starting a new session.\n")
+    
+    # If not retrying or resuming, initialize a new session
+    if not session_data or not retry_saved:
         selected_questions = select_questions_set()
         randomize_order = choose_ordering()
         image_enabled = enable_images()  # Ask whether to enable images
@@ -285,8 +328,14 @@ def main():
         elif current_question > 0:
             current_question -= 1
 
+    # Save the wrong questions for retry
+    save_session(wrong_questions)
+
     print(f"\nYour final score is {score}/{len(selected_questions)}")
     retry_wrong_answers(wrong_questions)
+
+
+
 
 
 if __name__ == "__main__":
