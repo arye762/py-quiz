@@ -4,7 +4,7 @@ import datetime
 import time
 import json
 import subprocess
-from PIL import Image
+#from PIL import Image
 from questions_set_A import questions_set_A
 from questions_set_B import questions_set_B
 from questions_set_C import questions_set_C
@@ -49,8 +49,7 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, or 'x' to exit: ").strip()
 
     if answer.lower() == 'x':
-        save_session()
-        return 'x', True  # Indicate exit
+        return 'x', False  # Indicate exit without saving here
     if answer.lower() == '0':
         return None, False
 
@@ -77,6 +76,7 @@ def ask_question(question_num, total_questions, question, options, correct_answe
         subprocess.call(["osascript", "-e", 'tell application "Preview" to quit'])
 
     return answer, is_correct
+
 
 def select_questions_set():
     print("Select the set of questions you want to answer:")
@@ -168,7 +168,10 @@ def time_elapsed():
     seconds = int(elapsed_time % 60)
     return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-def save_session():
+def save_session(wrong_questions=None):
+    """
+    Save the session to a file, including wrong questions if provided.
+    """
     session_data = {
         "score": score,
         "current_question": current_question,
@@ -177,9 +180,13 @@ def save_session():
         "selected_questions": selected_questions,  # Save the selected questions
         "image_enabled": image_enabled,  # Save the image setting
     }
+    if wrong_questions is not None:
+        session_data["wrong_questions"] = wrong_questions  # Save wrong questions for retry
+
     with open(SAVE_FILE, "w") as f:
         json.dump(session_data, f)
     print("\nSession saved successfully!\n")
+
 
 
 def load_session():
@@ -220,8 +227,7 @@ def retry_wrong_answers(wrong_questions):
             idx + 1,
             len(wrong_questions),
             q["question"],
-            q["options"],
-            q["correct_answer"],
+            q["options"],            q["correct_answer"],
             q["description"],
             q.get("image", None),
         )
@@ -232,21 +238,73 @@ def retry_wrong_answers(wrong_questions):
         else:
             print("Still incorrect. Keep practicing!")
 
+
+def load_session():
+    global score, current_question, answers, start_time, selected_questions, image_enabled
+    try:
+        with open(SAVE_FILE, "r") as f:
+            session_data = json.load(f)
+        score = session_data["score"]
+        current_question = session_data["current_question"]
+        answers = session_data["answers"]
+        start_time = session_data["start_time"]
+        selected_questions = session_data["selected_questions"]
+        image_enabled = session_data.get("image_enabled", False)
+        print("\nSession loaded successfully!\n")
+        return session_data  # Return session data for flexibility
+    except FileNotFoundError:
+        print("\nNo saved session found.\n")
+        return None
+
+
+
 def main():
     global score, current_question, answers, start_time, image_enabled, selected_questions
 
+    # Initialize variables
+    score = 0
+    current_question = 0
+    answers = []
+    start_time = time.time()
+    selected_questions = []
+    image_enabled = False
+
     print("Welcome to the Quiz!")
-    if input("Do you want to resume the last session? (y/n): ").strip().lower() == 'y':
-        if not load_session():
-            return
-    else:
-        score = 0
-        current_question = 0
-        answers = []
-        start_time = time.time()
+    print("1. Start a New Quiz")
+    print("2. Retry Wrong Answers")
+    print("3. Resume Last Session")
+    print("4. Exit")
+    
+    choice = input("Choose an option: ").strip()
+    
+    if choice == '2':  # Retry wrong answers
+        session_data = load_session()
+        if session_data and "wrong_questions" in session_data:
+            retry_wrong_answers(session_data["wrong_questions"])
+        else:
+            print("\nNo saved wrong questions found. Starting a new session.\n")
+        return
+
+    elif choice == '3':  # Resume the last session
+        session_data = load_session()
+        if session_data:
+            score = session_data["score"]
+            current_question = session_data["current_question"]
+            answers = session_data["answers"]
+            start_time = session_data["start_time"]
+            selected_questions = session_data["selected_questions"]
+            image_enabled = session_data.get("image_enabled", False)
+        else:
+            print("\nNo saved session found. Starting a new session.\n")
+
+    elif choice == '4':  # Exit
+        print("Goodbye!")
+        return
+
+    else:  # Start a new quiz
         selected_questions = select_questions_set()
         randomize_order = choose_ordering()
-        image_enabled = enable_images()  # Ask whether to enable images
+        image_enabled = enable_images()
 
         if randomize_order:
             random.shuffle(selected_questions)
@@ -254,11 +312,12 @@ def main():
         total_questions = len(selected_questions)
         start, end = select_question_range(total_questions)
         selected_questions = selected_questions[start - 1:end]
-
         answers = [None] * len(selected_questions)
 
-    wrong_questions = []  # Track questions answered incorrectly
+    # Initialize wrong questions list
+    wrong_questions = []
 
+    # Main quiz loop
     while current_question < len(selected_questions):
         q = selected_questions[current_question]
         answer, is_correct = ask_question(
@@ -272,6 +331,7 @@ def main():
         )
 
         if answer == 'x':
+            save_session(wrong_questions)  # Save session
             break
 
         if answer is not None:
@@ -285,8 +345,13 @@ def main():
         elif current_question > 0:
             current_question -= 1
 
+    if answer != 'x':  # Save session if not already saved during exit
+        save_session(wrong_questions)
+
     print(f"\nYour final score is {score}/{len(selected_questions)}")
     retry_wrong_answers(wrong_questions)
+
+
 
 
 if __name__ == "__main__":
