@@ -1436,7 +1436,7 @@ questions_set_C = [
             "HTTPS",
             "DHCP"
         ],
-        "correct_answers": [2, 6],
+        "correct_answer": [2, 6],
         "description": "The correct answers are VPN and HTTPS. A VPN (Virtual Private Network) secures the remote connection by encrypting the data, making it safer for employees to access company servers remotely. HTTPS (HyperText Transfer Protocol Secure) ensures that any web-based access to fileshares or servers is encrypted, adding an extra layer of security.\n\n- RDP is useful for remote desktop access but lacks encryption by itself.\n- FTP is unsecure as it transmits data in plain text.\n- VLAN is for segmenting network traffic internally, not for securing remote access.\n- Telnet is outdated and insecure, transmitting data unencrypted.\n- DHCP assigns IP addresses but doesn’t secure remote access."
     },
 {
@@ -2278,7 +2278,7 @@ questions_set_C = [
             "Delete the browser cookies.",
             "Run sfc /scannow."
         ],
-        "correct_answers": [1, 3],
+        "correct_answer": [1, 3],
         "description": "The correct answers are isolating the computer and updating the endpoint protection software. Isolation prevents potential malware spread, and updating endpoint protection ensures security is restored. \n\n- Enabling the firewall does not address antivirus issues directly. \n- System Restore may help, but it is not the primary solution. \n- Deleting cookies and running sfc are unrelated to antivirus function."
     },
     {

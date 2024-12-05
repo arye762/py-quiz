@@ -252,9 +252,19 @@ def load_session():
         image_enabled = session_data.get("image_enabled", False)
         print("\nSession loaded successfully!\n")
         return session_data  # Return session data for flexibility
+    """
+    Load the saved session data from the save file.
+    Returns the session data or None if no session is found.
+    """
+    try:
+        with open(SAVE_FILE, "r") as f:
+            session_data = json.load(f)
+        print("\nSession loaded successfully!\n")
+        return session_data
     except FileNotFoundError:
         print("\nNo saved session found.\n")
         return None
+
 
 
 
@@ -262,6 +272,14 @@ def main():
     global score, current_question, answers, start_time, image_enabled, selected_questions
 
     # Initialize variables
+
+
+
+def main():
+    global score, current_question, answers, start_time, image_enabled, selected_questions
+
+    # Initialize all global variables at the start
+
     score = 0
     current_question = 0
     answers = []
@@ -270,6 +288,7 @@ def main():
     image_enabled = False
 
     print("Welcome to the Quiz!")
+
     print("1. Start a New Quiz")
     print("2. Retry Wrong Answers")
     print("3. Resume Last Session")
@@ -302,6 +321,26 @@ def main():
         return
 
     else:  # Start a new quiz
+
+    
+    retry_saved = False
+    session_data = None
+    if os.path.exists(SAVE_FILE):
+        print("Do you want to retry wrong answers from the previous session? (y/n): ", end="")
+        retry_saved = input().strip().lower() == 'y'
+
+    if retry_saved:
+        session_data = load_session()
+        if session_data and "wrong_questions" in session_data:
+            wrong_questions = session_data["wrong_questions"]
+            retry_wrong_answers(wrong_questions)
+            return  # Exit after retrying wrong questions
+        else:
+            print("\nNo saved wrong questions found. Starting a new session.\n")
+    
+    # If not retrying or resuming, initialize a new session
+    if not session_data or not retry_saved:
+
         selected_questions = select_questions_set()
         randomize_order = choose_ordering()
         image_enabled = enable_images()
@@ -345,8 +384,13 @@ def main():
         elif current_question > 0:
             current_question -= 1
 
+
     if answer != 'x':  # Save session if not already saved during exit
         save_session(wrong_questions)
+
+    # Save the wrong questions for retry
+    save_session(wrong_questions)
+
 
     print(f"\nYour final score is {score}/{len(selected_questions)}")
     retry_wrong_answers(wrong_questions)
