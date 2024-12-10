@@ -2177,5 +2177,763 @@ questions_set_C = [
 
 
 
+    
+    {
+        "question": "Which of the following is the cause of the connection issue?",
+        "options": [
+            "Routing loop.",
+            "Asymmetrical routing.",
+            "Broadcast storm.",
+            "Switching loop."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is routing loop. The repeated appearance of the same IP addresses in the traceroute indicates that the packets are being routed in a loop, preventing them from reaching the destination. \n\n- Asymmetrical routing would show different paths for forward and return traffic but would not cause repetitive hops. \n- A broadcast storm affects the entire network and is not indicated by a repetitive traceroute. \n- A switching loop would disrupt Layer 2 operations, not Layer 3 routing."
+    },
+    {
+        "question": "While using a secure conference call connection over a corporate VPN, a user moves from a cellular connection to a hotel wireless network. Although the wireless connection and the VPN show a connected status, no network connectivity is present. Which of the following is the MOST likely cause of this issue?",
+        "options": [
+            "MAC filtering is configured on the wireless connection.",
+            "The VPN and the WLAN connection have an encryption protocol mismatch.",
+            "The WLAN is using a captive portal that requires further authentication.",
+            "Wireless client isolation is enforced on the WLAN settings."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is the WLAN is using a captive portal that requires further authentication. Captive portals often block network traffic until authentication is completed. \n\n- MAC filtering restricts devices based on their MAC addresses but wouldn't show a connected VPN status. \n- An encryption protocol mismatch would likely prevent the VPN connection altogether. \n- Wireless client isolation blocks communication between devices on the same WLAN but does not affect external VPN connectivity."
+    },
+    {
+        "question": "An engineer was asked to update an MX record for an upcoming project. Which of the following server types is MOST likely to be in scope for the project?",
+        "options": [
+            "Email.",
+            "Web.",
+            "File.",
+            "Database."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is email. MX (Mail Exchange) records are DNS records used to specify the mail server responsible for receiving email for a domain. \n\n- Web servers are specified using A or CNAME records, not MX. \n- File servers do not involve DNS MX records. \n- Database servers are unrelated to email routing and MX records."
+    },
+    {
+        "question": "Which of the following commands should the technician use to get the required information to share a USB printer connected to a PC? (Choose two.)",
+        "options": [
+            "arp.",
+            "route.",
+            "netstat.",
+            "tcpdump.",
+            "hostname.",
+            "ipconfig."
+        ],
+        "correct_answer": [5, 6],
+        "description": "The correct answers are hostname and ipconfig. The hostname command provides the name of the PC, and ipconfig provides the IP address necessary for network sharing. \n\n- The arp command shows the ARP table but does not help in identifying the PC or its IP. \n- The route command displays routing tables but is unrelated to printer sharing. \n- netstat and tcpdump focus on active connections and network traffic, respectively, and do not provide the required information for setting up shared printers."
+    },
+    {
+        "question": "Which of the following was the agent trying to accomplish with this exchange?",
+        "options": [
+            "The agent was questioning the obvious.",
+            "The agent was verifying full system functionality.",
+            "The agent was identifying potential effects.",
+            "The agent was trying to duplicate the problem."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is the agent was trying to duplicate the problem. By attempting to reach the website, the agent confirmed the issue existed beyond the customer’s system. \n\n- Questioning the obvious implies unnecessary probing, which this was not. \n- Verifying full system functionality involves checking all aspects of the system, not just connectivity to one website. \n- Identifying potential effects focuses on the problem's broader impact, not the confirmation of the problem itself."
+    },
+    {
+        "question": "Which of the following devices is MOST likely causing the issue of intermittent connectivity across floors in a building?",
+        "options": [
+            "User devices.",
+            "Edge devices.",
+            "Access switch.",
+            "Core switch."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is core switch. The core switch connects multiple access switches and floors; a malfunction here could disrupt connectivity between floors. \n\n- User devices are not a common cause of building-wide issues. \n- Edge devices manage external connections and are unrelated to inter-floor connectivity. \n- Access switches handle connections within a floor but would not affect other floors."
+    },
+
+
+
+#601 - 650
+
+
+    {
+        "question": "A help desk technician discovers the following note while reviewing tickets in a customer's account:\nWas able to confirm customer's problem with the system. Will upgrade system to latest version and monitor for further connectivity problems per developer's instructions.\nWhich of the following describes what the technician was documenting with this note?",
+        "options": [
+            "The technician was approaching multiple problems individually.",
+            "The technician was establishing a plan of action and identifying potential effects.",
+            "The technician was testing a theory to determine the cause.",
+            "The technician was identifying the problem by gathering information."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is 'The technician was establishing a plan of action and identifying potential effects.' This note indicates a structured approach to resolve the issue, detailing actions and possible consequences.\n\n- Approaching multiple problems individually would involve isolated troubleshooting efforts.\n- Testing a theory focuses on diagnosing the problem, not on planning or monitoring.\n- Identifying the problem involves initial fact-finding, which was already completed here."
+    },
+    {
+        "question": "The results of a recently completed site survey indicate a significant, undesired RSSI in the parking lot and other exterior areas near the main building. The wireless technician would like to mitigate access to the wireless network in exterior access areas. The current access point settings are listed in the table.\n\nWhich of the following is the BEST step for the technician to take to resolve the issue?",
+        "options": [
+            "Reconfigure AP2 and AP3 for non-overlapping channels.",
+            "Implement directional antennas on AP1 and AP2.",
+            "Raise the power settings on AP2 and AP3.",
+            "Change the SSID on AP1 and AP2."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is 'Implement directional antennas on AP1 and AP2.' Directional antennas help focus the signal within desired areas, reducing the RSSI in exterior locations.\n\n- Reconfiguring for non-overlapping channels addresses interference, not external RSSI.\n- Raising power settings would increase RSSI, worsening the issue.\n- Changing the SSID would not affect signal coverage."
+    },
+    {
+        "question": "A network technician is selecting new network hardware, and availability is the main concern. Which of the following availability concepts should the technician consider?",
+        "options": [
+            "RTO",
+            "MTTR",
+            "MTBF",
+            "RPO"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is 'MTBF' (Mean Time Between Failures). MTBF measures hardware reliability and the expected time between failures, which is critical for availability.\n\n- RTO focuses on recovery time for services after a failure.\n- MTTR measures the average repair time, not failure intervals.\n- RPO relates to data recovery points, not hardware availability."
+    },
+    {
+        "question": "A new company moved into a corporate center. Users in the shared lobby are experiencing disconnects on their mobile devices. Which of the following is the BEST tool a network technician could use to troubleshoot the issue?",
+        "options": [
+            "Port scanner",
+            "Protocol analyzer",
+            "NetFlow analyzer",
+            "Wi-Fi analyzer"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is 'Wi-Fi analyzer.' This tool identifies wireless signal issues, interference, and coverage problems, which are key to resolving connectivity issues.\n\n- Port scanner focuses on open ports, not wireless signals.\n- Protocol analyzers capture network traffic but are not ideal for Wi-Fi issues.\n- NetFlow analyzers monitor traffic flow, not wireless performance."
+    },
+    {
+        "question": "Two companies want to build an encrypted tunnel between them and use a PSK for initial authentication. Which of the following is the BEST protocol for the companies to use?",
+        "options": [
+            "VPN",
+            "SSL",
+            "TLS",
+            "IPSec"
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is 'IPSec.' It is widely used for creating secure tunnels with strong encryption and supports PSK authentication.\n\n- VPN is a general term for a secure connection, often implemented using IPSec.\n- SSL and TLS are more commonly used for web encryption, not tunnel creation."
+    },
+    {
+        "question": "While troubleshooting a network, a VoIP systems engineer discovers a significant inconsistency in the amount of time required for data to reach its destination and return. Which of the following terms BEST describes this issue?",
+        "options": [
+            "Bandwidth",
+            "Latency",
+            "Jitter",
+            "Throughput"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is 'Jitter.' This refers to variations in packet delay, which affects VoIP call quality.\n\n- Bandwidth measures the maximum data capacity.\n- Latency refers to delay, not inconsistency in delay.\n- Throughput measures the actual data transmission rate."
+    },
+    {
+        "question": "A network technician is configuring a wireless access point and wants to only allow company-owned devices to associate with the network. The access point uses PSKs, and a network authentication system does not exist on the network. Which of the following should the technician implement?",
+        "options": [
+            "Captive portal",
+            "Guest network isolation",
+            "MAC filtering",
+            "Geofencing"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is 'MAC filtering.' It allows the technician to permit only approved device MAC addresses.\n\n- Captive portals manage guest access, not device restrictions.\n- Guest network isolation separates traffic but does not restrict device association.\n- Geofencing limits access based on location, not device ownership."
+    },
+    {
+        "question": "Which of the following network topologies BEST describes a central device connected to multiple independent devices?",
+        "options": [
+            "Mesh",
+            "Ring",
+            "Hub-and-spoke",
+            "Bus"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is 'Hub-and-spoke.' This topology has a central device (hub) connected to multiple independent devices (spokes).\n\n- Mesh connects devices in a fully interlinked pattern.\n- Ring connects devices in a closed loop.\n- Bus uses a shared single cable for all devices."
+    },
+    {
+        "question": "A network administrator is reviewing north-south traffic to determine whether a security threat exists. Which of the following explains the type of traffic the administrator is reviewing?",
+        "options": [
+            "Data flowing between application servers",
+            "Data flowing between the perimeter network and application servers",
+            "Data flowing in and out of the data center",
+            "Data flowing between local on-site support and backup servers"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is 'Data flowing in and out of the data center.' North-south traffic refers to data entering or exiting the network, commonly monitored for threats.\n\n- East-west traffic involves data between application servers or internal systems."
+    },
+    {
+        "question": "A network technician is installing a wireless network in an office building. After performing a site survey, the technician determines the area is very saturated on the 2.4GHz and 5GHz bands. Which of the following wireless standards should the network technician implement?",
+        "options": [
+            "802.11ac",
+            "802.11ax",
+            "802.11g",
+            "802.11n"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is '802.11ax.' This standard (Wi-Fi 6) supports better performance and efficiency in congested environments.\n\n- 802.11ac offers high performance but is less effective in high-density scenarios.\n- 802.11g and 802.11n are older standards with limited capabilities."
+    }, 
+
+
+
+    {
+        "question": "A network technician discovered multiple failed logins on a production server. Upon investigation, the technician determined that a client plugged a personal laptop into the corporate LAN, which allowed malware on the laptop to probe the network. Which of the following would have prevented this unauthorized device?",
+        "options": [
+            "Port security.",
+            "Bring your own device policy.",
+            "Patch management.",
+            "Changing default passwords."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is port security. Port security restricts access to specific devices based on their MAC addresses, preventing unauthorized devices from connecting to the network. \n\n- Bring your own device policy helps establish guidelines for personal devices but does not enforce restrictions. \n- Patch management addresses software vulnerabilities but does not prevent unauthorized device access. \n- Changing default passwords enhances security but does not control network access."
+    },
+    {
+        "question": "Following a fire in a data center, an executive is concerned about the amount of data that must be reentered. Which of the following describes the executive's concern?",
+        "options": [
+            "RTO.",
+            "MTBF.",
+            "MMTR.",
+            "RPO."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is RPO (Recovery Point Objective). RPO defines the maximum tolerable amount of data loss during a disaster, helping organizations determine how often data backups should be performed. \n\n- RTO focuses on the time required to restore systems after an outage. \n- MTBF refers to the average time between failures of a system. \n- MMTR is not a recognized metric in disaster recovery."
+    },
+    {
+        "question": "A customer needs to distribute Ethernet to multiple computers in an office. The customer would like to use non-proprietary standards. Which of the following blocks does the technician need to install?",
+        "options": [
+            "110.",
+            "66.",
+            "Bix.",
+            "Krone."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is 110. The 110 block is a non-proprietary standard used to terminate Ethernet cabling in structured cabling systems. \n\n- 66 blocks are older and primarily used for voice communications. \n- Bix and Krone blocks are proprietary solutions not commonly used for Ethernet distribution."
+    },
+    {
+        "question": "A network engineer turned on logging to assist with troubleshooting a suspected configuration issue. Which of the following would provide the network engineer with the most informative log information?",
+        "options": [
+            "FATAL.",
+            "ERROR.",
+            "DEBUG.",
+            "WARN."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is DEBUG. Debug-level logging provides the most detailed information about system operations, including configuration details and troubleshooting data. \n\n- FATAL logs only capture critical failures. \n- ERROR logs capture issues that prevent certain functionalities. \n- WARN logs capture potential issues but may not provide sufficient detail for in-depth troubleshooting."
+    },
+    {
+        "question": "Which of the following cloud deployment models involves servers that are hosted at a company’s property and are only used by that company?",
+        "options": [
+            "Public.",
+            "Private.",
+            "Hybrid.",
+            "Community."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is private. A private cloud deployment model is exclusively used by a single organization and is often hosted on-premises, ensuring data security and control. \n\n- Public cloud involves shared resources hosted off-premises. \n- Hybrid cloud combines private and public cloud models. \n- Community cloud is shared among organizations with similar needs."
+    },
+    {
+        "question": "A technician needs to find the MAC address of a connecting router. Which of the following commands should the technician use?",
+        "options": [
+            "arp.",
+            "traceroute.",
+            "nslookup.",
+            "ping."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is arp. The `arp` command maps IP addresses to MAC addresses, allowing the technician to find the router's MAC address. \n\n- Traceroute tracks the path packets take to a destination but does not show MAC addresses. \n- Nslookup resolves domain names to IP addresses. \n- Ping checks connectivity but does not provide MAC address information."
+    },
+    {
+        "question": "A network engineer is installing hardware in a newly renovated data center. Major concerns that were addressed during the renovation included air circulation, building power redundancy, and the need for continuous monitoring. The network engineer is creating alerts based on the following operation specifications:\n\n- Environmental monitoring alerts for humidity greater than 95%.\n- SIEM to parse syslog events for a failed power supply.\n- SNMP traps to report when the chassis temperature exceeds 95°F (35°C).\n- UPS monitoring to report when input voltage drops below 220VAC.",
+        "options": [
+            "Environmental monitoring alerts for humidity greater than 95%.",
+            "SIEM to parse syslog events for a failed power supply.",
+            "SNMP traps to report when the chassis temperature exceeds 95°F (35°C).",
+            "UPS monitoring to report when input voltage drops below 220VAC."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is SNMP traps to report when the chassis temperature exceeds 95°F (35°C). Temperature monitoring is crucial to prevent hardware failure due to overheating. \n\n- Humidity monitoring is important but secondary to temperature concerns. \n- Parsing syslog events for power supply failures ensures reliability but does not address immediate operational risks. \n- UPS monitoring for voltage drops ensures power reliability but does not prevent overheating."
+    },
+
+    {
+        "question": "A technician needs to set up a wireless connection that utilizes MIMO on non-overlapping channels. Which of the following would be the best choice?",
+        "options": [
+            "802.11a.",
+            "802.11b.",
+            "802.11g.",
+            "802.11n."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is 802.11n. This standard supports MIMO (Multiple Input Multiple Output) technology, which improves performance and reliability by using multiple antennas. It also allows for operation on non-overlapping channels in the 5GHz band, reducing interference. \n\n- 802.11a operates on the 5GHz band but does not support MIMO. \n- 802.11b operates on the 2.4GHz band, which is more prone to interference and does not support MIMO. \n- 802.11g improves on 802.11b but also operates on the 2.4GHz band and lacks MIMO support."
+    },
+    {
+        "question": "Users have reported an issue connecting to a server over the network. A workstation was recently added to the network and configured with a shared USB printer. Which of the following is most likely causing the issue?",
+        "options": [
+            "The switch is oversubscribed and cannot handle the additional throughput.",
+            "The printer is tying up the server with DHCP discover messages.",
+            "The web server's back end was designed for only single-threaded applications.",
+            "The workstation was configured with a static IP that is the same as the server."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is that the workstation was configured with a static IP that is the same as the server. IP address conflicts prevent devices from communicating properly on the network, causing connectivity issues for the server. \n\n- The switch being oversubscribed could cause throughput problems but not specifically prevent server access. \n- DHCP discover messages are broadcast traffic and unlikely to tie up the server. \n- A single-threaded web server back end would not result in network-wide connection issues caused by a new workstation."
+    },
+    {
+        "question": "Which of the following routing protocols uses an autonomous system number?",
+        "options": [
+            "IS-IS.",
+            "EIGRP.",
+            "OSPF.",
+            "BGP."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is BGP (Border Gateway Protocol). BGP is used for routing between different autonomous systems on the internet and relies on an autonomous system number (ASN) for unique identification. \n\n- IS-IS (Intermediate System to Intermediate System) is a link-state protocol used within an autonomous system and does not use ASNs. \n- EIGRP (Enhanced Interior Gateway Routing Protocol) is a Cisco proprietary protocol used within an autonomous system. \n- OSPF (Open Shortest Path First) is another link-state protocol for intra-domain routing that does not require ASNs."
+    },
+
+
+    {
+        "question": "A network administrator is designing a new network for a company that has frequent power spikes. The company wants to ensure that employees can keep working and the server will remain operational. Which of the following is the best solution for the administrator to recommend?",
+        "options": [
+            "Generator.",
+            "Cold site.",
+            "Redundant power supplies.",
+            "Uninterruptible power supply."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is Uninterruptible Power Supply (UPS). A UPS provides immediate backup power during outages or spikes, ensuring continuous operation of servers and workstations. \n\n- A generator provides long-term backup but takes time to start and does not protect against short power spikes. \n- A cold site is a recovery location for disasters but does not provide power backup. \n- Redundant power supplies help protect individual devices but do not address power spikes or outages for the entire facility."
+    },
+    {
+        "question": "Which of the following OSI model layers are responsible for handling packets from the sources to the destination and checking for errors? (Choose two.)",
+        "options": [
+            "Physical.",
+            "Session.",
+            "Data link.",
+            "Network.",
+            "Presentation.",
+            "Application."
+        ],
+        "correct_answer": [3, 4],
+        "description": "The correct answers are Data Link and Network. The Data Link layer ensures error-free transmission by checking for errors in frames, while the Network layer is responsible for routing packets from source to destination. \n\n- The Physical layer deals with raw data transmission but does not handle error checking. \n- The Session layer manages connections between applications but does not directly handle packets or errors. \n- The Presentation and Application layers are higher layers, dealing with data translation and user interface, respectively."
+    },
+    {
+        "question": "Which of the following fiber connector types is the most likely to be used on a network interface card?",
+        "options": [
+            "LC.",
+            "SC.",
+            "ST.",
+            "MPO."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is LC (Lucent Connector). LC connectors are small form-factor connectors commonly used in high-density networking environments, such as network interface cards. \n\n- SC connectors are larger and typically used in older or larger-scale applications. \n- ST connectors are bayonet-style and less common in modern NICs. \n- MPO connectors are used for high-speed data transfer in multi-fiber systems but not typically for individual NIC connections."
+    },
+    {
+        "question": "Which of the following is the most cost-effective way for a network administrator to establish a persistent, secure connection between two facilities?",
+        "options": [
+            "Site-to-site VPN.",
+            "SSH tunnel.",
+            "API gateway.",
+            "Dedicated line."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Site-to-site VPN. It provides a secure and cost-effective method for connecting two remote networks over the internet. \n\n- SSH tunnels are used for secure individual sessions but are not scalable for persistent network connections. \n- API gateways are for managing APIs, not establishing network connections. \n- Dedicated lines are highly secure but expensive and less cost-effective compared to VPNs."
+    },
+    {
+        "question": "Which of the following would most likely be considered for an IDF installation in a secure facility?",
+        "options": [
+            "Full-size body scanners.",
+            "Iris scanner.",
+            "RFID badge readers.",
+            "Smart deadbolt."
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is RFID badge readers. They are commonly used for secure access to networking equipment rooms like IDFs (Intermediate Distribution Frames). \n\n- Full-size body scanners are more suited for high-security areas like airports. \n- Iris scanners provide strong biometric security but are less commonly used for equipment rooms. \n- Smart deadbolts are less secure than RFID systems and are generally used in residential settings."
+    },
+    {
+        "question": "Which of the following is the most secure way to provide site-to-site connectivity?",
+        "options": [
+            "VXLAN.",
+            "IKE.",
+            "GRE.",
+            "IPSec."
+        ],
+        "correct_answer": 4,
+        "description": "The correct answer is IPSec. IPSec is a protocol suite for secure internet communications, offering strong encryption and authentication for site-to-site connections. \n\n- VXLAN is used for extending Layer 2 networks over Layer 3 but does not provide encryption. \n- IKE (Internet Key Exchange) is part of IPSec but not a standalone connectivity solution. \n- GRE (Generic Routing Encapsulation) lacks inherent security features."
+    },
+    {
+        "question": "Which of the following security methods uses physical characteristics of a person to authorize access to a location?",
+        "options": [
+            "Access control vestibule.",
+            "Palm scanner.",
+            "PIN pad.",
+            "Digital card reader.",
+            "Photo ID."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is Palm scanner. It uses biometric data (physical characteristics) for access control, ensuring high security and uniqueness. \n\n- Access control vestibules focus on physical entry barriers, not individual authentication. \n- PIN pads and digital card readers rely on codes or tokens, not physical characteristics. \n- Photo IDs are a visual method of verification and not an automated security method."
+    },
+    {
+        "question": "Which of the following are environmental factors that should be considered when installing equipment in a building? (Choose two.)",
+        "options": [
+            "Fire suppression system.",
+            "UPS location.",
+            "Humidity control.",
+            "Power load.",
+            "Floor construction type.",
+            "Proximity to nearest MDF."
+        ],
+        "correct_answer": [1, 3],
+        "description": "The correct answers are Fire suppression system and Humidity control. A fire suppression system ensures equipment safety during emergencies, while humidity control prevents damage from moisture. \n\n- UPS location is important but not an environmental factor. \n- Power load and floor construction are structural concerns but less related to environmental factors. \n- Proximity to the MDF impacts connectivity, not environmental safety."
+    },
+    {
+        "question": "A network administrator requires redundant routers on the network, but only one default gateway is configurable on a workstation. Which of the following will allow for redundant routers with a single IP address?",
+        "options": [
+            "EIGRP.",
+            "VRRP.",
+            "MPLS.",
+            "STP."
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is VRRP (Virtual Router Redundancy Protocol). VRRP allows multiple routers to share a single IP address, providing redundancy for default gateway functionality. \n\n- EIGRP is a routing protocol and does not handle gateway redundancy. \n- MPLS is a data-carrying technique, not relevant for redundant gateways. \n- STP prevents loops in a switched network but does not provide gateway redundancy."
+    },
+    {
+        "question": "Which of the following antenna types would most likely be used in a network repeater that is housed in a central point in a home office?",
+        "options": [
+            "Omnidirectional.",
+            "Parabolic.",
+            "High-gain.",
+            "Patch."
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is Omnidirectional. This antenna type radiates signals in all directions, making it ideal for a central repeater in a home office to provide uniform coverage. \n\n- Parabolic antennas focus signals in a specific direction, unsuitable for central coverage. \n- High-gain antennas amplify signals but may not provide the wide coverage needed in a home office. \n- Patch antennas are designed for directional use, not for central, uniform coverage."
+    },
+
+
+    
+    {
+        "question": "A network administrator received reports that a 40Gb connection is saturated. The only server the administrator can use for data collection in that location has a 10GB connection to the network. Which of the following is the best method to use on the server to determine the source of the saturation?",
+        "options": [
+            "Port mirroring",
+            "Log aggregation",
+            "Flow data",
+            "Packet capture"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is port mirroring. Port mirroring allows the administrator to capture all traffic on the saturated 40Gb connection and analyze it using the server's 10Gb connection. \n\n- Log aggregation collects logs from different sources, but doesn't provide real-time analysis of network traffic. \n- Flow data provides a summary of network traffic but may not be detailed enough to identify specific issues. \n- Packet capture is also useful but requires more resources than port mirroring and can be less efficient with large amounts of data."
+    },
+    {
+        "question": "A network administrator needs to implement routing capabilities in a hypervisor. Which of the following should the administrator most likely implement?",
+        "options": [
+            "VPC",
+            "Firewall",
+            "NFV",
+            "IaaS"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is IaaS (Infrastructure as a Service). IaaS provides the necessary networking capabilities to implement routing in a virtualized environment. \n\n- VPC (Virtual Private Cloud) is a cloud networking feature but doesn’t provide routing by itself. \n- Firewall is used for security and traffic control, not specifically for routing. \n- NFV (Network Function Virtualization) focuses on virtualizing network functions, but is not directly concerned with implementing routing."
+    },
+    {
+        "question": "A network technician crimped a length of UTP with TIA/EIA-568A on one end and TIA/EIA-568B on the other. Which of the following cable types did the technician create?",
+        "options": [
+            "Crossover cable",
+            "Patch cable",
+            "Twinaxial cable",
+            "Rollover cable"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is crossover cable. A crossover cable uses TIA/EIA-568A on one end and TIA/EIA-568B on the other, allowing for direct communication between two similar devices. \n\n- Patch cables typically use the same wiring standard on both ends for connecting devices. \n- Twinaxial cables are a type of coaxial cable and unrelated to the scenario. \n- Rollover cables are used for console connections and have a different pinout configuration."
+    },
+    {
+        "question": "A network engineer designed and implemented a new office space with the following characteristics:\n\nBuilding construction type: Brick\nLayout: 10,764 ft (1,000sqm) commercial office space\nUsers: 50\nServers: 2\nLaptops: 50\n\nOne month after the office space was implemented, users began reporting dropped signals when entering another room and overall poor connections to the 5GHz network. Which of the following should the engineer do to best resolve the issue?",
+        "options": [
+            "Use non-overlapping channels",
+            "Reconfigure the network to support 2.4GHz",
+            "Upgrade to WPA3",
+            "Change to directional antennas"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is to use non-overlapping channels. In a brick building, signal interference can occur, and non-overlapping channels help reduce congestion and interference on the 5GHz band. \n\n- Reconfiguring to 2.4GHz may help in some cases but could result in more interference due to the crowded nature of the 2.4GHz band. \n- WPA3 enhances security but does not resolve signal issues. \n- Directional antennas may be helpful in some cases but would not address general interference across the office space."
+    },
+    {
+        "question": "Which of the following security concepts is related to ensuring that encrypted data is not edited while in transit?",
+        "options": [
+            "Zero trust",
+            "Integrity",
+            "Availability",
+            "Confidentiality"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is integrity. Integrity ensures that data is not altered or tampered with during transmission, even if it is encrypted. \n\n- Zero trust is a security model that assumes no trust, but does not specifically address data integrity. \n- Availability ensures that data and services are accessible when needed, but does not focus on editing or modifying data. \n- Confidentiality ensures that data is protected from unauthorized access but does not specifically address data editing."
+    },
+    {
+        "question": "A network technician is troubleshooting internet connectivity issues with users in a subnet. From a host, the technician runs tcpdump and then attempts to navigate to a website using a web browser. The technician receives the following output:\n\n16:35:58.756583 IP (tos 0x0, ttl 64, id 56522, offset 0, flags [DF], proto UDP (17), length 57)\n192.168.1.15.44232 > 192.168.1.252.53: 50327 + A? comptia.com (29)\n\n16:35:58.835371 IP (tos 0x0, ttl 64, id 56523, offset 0, flags [DF], proto UDP (17), length 57)\n192.168.1.15.44232 > 192.168.1.252.53: 50327 + A? comptia.com (29)\n\n16:35:59.652312 IP (tos 0x0, ttl 64, id 56524, offset 0, flags [DF], proto UDP (17), length 57)\n192.168.1.15.44232 > 192.168.1.252.53: 50327 + A? comptia.com (29)\n\n16:35:58.765212 IP (tos 0x0, ttl 64, id 56525, offset 0, flags [DF], proto UDP (17), length 57)\n192.168.1.15.44232 > 192.168.1.252.53: 50327 + A? comptia.com (29)\n\nAfterward, the browser displays an error. Which of the following explains this issue?",
+        "options": [
+            "A routing loop is within the network",
+            "The host is configured with incorrect DNS settings",
+            "A broadcast storm is occurring on the subnet",
+            "The host is missing a route to the website"
+        ],
+        "correct_answer": 2,
+        "description": "The correct answer is the host is configured with incorrect DNS settings. The output shows repeated DNS queries for the same website, indicating that the DNS server is not responding or providing the correct information. \n\n- A routing loop would cause continuous network traffic and could disrupt routing, but it doesn't match the symptoms. \n- A broadcast storm would flood the network with broadcast packets, but that's not indicated by the tcpdump. \n- Missing routes could prevent access to websites but doesn't explain repeated DNS queries."
+    },
+    {
+        "question": "After running a Cat 8 cable using passthrough plugs, an electrician notices that connected cables are experiencing a lot of cross talk. Which of the following troubleshooting steps should the electrician take first?",
+        "options": [
+            "Inspect the connectors for any wires that are touching or exposed",
+            "Restore default settings on the connected devices",
+            "Terminate the connections again",
+            "Check for radio frequency interference in the area"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is to inspect the connectors for any wires that are touching or exposed. Crosstalk can occur if wires are improperly connected or if there are exposed wires, causing interference. \n\n- Restoring default settings on connected devices is unlikely to resolve physical layer issues. \n- Terminating the connections again could help if the connectors are faulty, but inspecting the connectors first is a better starting point. \n- Radio frequency interference might contribute, but improper wiring is a more common cause of crosstalk."
+    },
+    {
+        "question": "A user took a laptop on a trip and made changes to the network parameters while at the airport. The user can access all internet websites but not corporate intranet websites. Which of the following is the most likely cause of the issue?",
+        "options": [
+            "Duplicate IP address",
+            "Duplicate SSID",
+            "Incorrect DNS",
+            "Incorrect subnet mask"
+        ],
+        "correct_answer": 3,
+        "description": "The correct answer is incorrect DNS. The user can access external websites, but corporate intranet websites are likely internal and require specific DNS settings. \n\n- A duplicate IP address would cause general network connectivity issues, not just intranet access. \n- Duplicate SSID would cause Wi-Fi issues but would not affect the ability to access websites. \n- An incorrect subnet mask could affect network communication but does not directly impact access to specific websites."
+    },
+    {
+        "question": "Which of the following best describe the functions of Layer 2 of the OSI model? (Choose two.)",
+        "options": [
+            "Local addressing",
+            "Error preventing",
+            "Logical addressing",
+            "Error detecting",
+            "Port addressing",
+            "Error correcting"
+        ],
+        "correct_answer": [4, 5],
+        "description": "The correct answers are error detecting and port addressing. Layer 2 is responsible for error detection and managing physical addresses (such as MAC addresses), which are used to identify devices on the local network. \n\n- Local addressing and logical addressing are associated with Layer 3 (Network layer), not Layer 2. \n- Error preventing and error correcting are related to Layer 2's error detection and Layer 4's reliability features."
+    },
+    {
+        "question": "A network administrator wants to implement an authentication process for temporary access to an organization’s network. Which of the following technologies would facilitate this process?",
+        "options": [
+            "Captive portal",
+            "Enterprise authentication",
+            "Ad hoc network",
+            "WPA3"
+        ],
+        "correct_answer": 1,
+        "description": "The correct answer is captive portal. A captive portal allows for temporary authentication of users on a network, often used in public Wi-Fi hotspots or guest networks. \n\n- Enterprise authentication is used for more permanent and centralized user access control, not for temporary access. \n- An ad hoc network does not offer the same centralized authentication options. \n- WPA3 is a security protocol but is not designed for managing temporary access."
+    },
+
+  {
+    "question": "Which of the following would be best suited for use at the access layer in a three-tier architecture system?",
+    "options": [
+      "Router",
+      "Multilayer switch",
+      "Layer 2 switch",
+      "Access point"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Access point. In a three-tier architecture, the access layer is responsible for connecting end devices such as computers and wireless access points to the network. \n\n- A router operates at the core or distribution layer, connecting different networks. \n- A multilayer switch can function at both the access and distribution layers but is not as ideal for end device connection. \n- A Layer 2 switch provides basic switching capabilities, but access points are more appropriate for wireless connectivity at the access layer."
+  },
+  {
+    "question": "Following the implementation of a BYOD policy, some users in a high-density environment report slowness over the wireless connection. Some wireless controller reports indicate high latency and airtime contention. Which of the following is the most probable root cause?",
+    "options": [
+      "The AP is configured with 2.4GHz frequency, which the new personal devices do not support.",
+      "The AP is configured with 2.4GHz frequency without band-steering capabilities.",
+      "The AP is configured with 5GHz frequency with band-steering capabilities.",
+      "The AP is configured with 5GHz frequency, which the new personal devices do not support."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is The AP is configured with 2.4GHz frequency without band-steering capabilities. In high-density environments, the 2.4GHz band can become congested, leading to latency and airtime contention. \n\n- Band-steering helps devices connect to the less congested 5GHz band, improving performance. \n- Devices that support 5GHz would benefit more from it, but the lack of band-steering causes issues in choosing the best band."
+  },
+  {
+    "question": "A company’s VoIP phone connection is cutting in and out. Which of the following should be configured to resolve this issue?",
+    "options": [
+      "802.1Q tagging",
+      "Jumbo frames",
+      "Native VLAN",
+      "Link aggregation"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is 802.1Q tagging. This helps prioritize VoIP traffic over other types of data, ensuring that voice traffic gets the necessary bandwidth and minimal delay. \n\n- Jumbo frames allow larger packet sizes but do not directly address the issue of VoIP quality. \n- Native VLAN is related to untagged traffic and does not address performance issues specific to VoIP. \n- Link aggregation is used to increase bandwidth but does not directly resolve VoIP issues related to prioritization."
+  },
+  {
+    "question": "A network technician is configuring a wireless network that consists of multiple APs for better coverage and allows roaming between the APs. Which of the following types of SSIDs should the technician configure?",
+    "options": [
+      "Basic Service Set",
+      "Independent Basic Service Set",
+      "Extended Service Set",
+      "Distribution System Service"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Extended Service Set. ESS is used for multiple access points working together to extend coverage and allow clients to roam between them seamlessly. \n\n- Basic Service Set (BSS) is for a single access point and its associated clients. \n- Independent Basic Service Set (IBSS) is used for peer-to-peer wireless networks, not roaming. \n- Distribution System Service is part of the infrastructure but not an SSID type."
+  },
+  {
+    "question": "A network engineer performed a migration to a new mail server. The engineer changed the MX record, verified the change was accurate, and confirmed the new mail server was reachable via the IP address in the A record. However, users are not receiving email. Which of the following should the engineer have done to prevent the issue from occurring?",
+    "options": [
+      "Change the email client configuration to match the MX record.",
+      "Reduce the TTL record prior to the MX record change.",
+      "Perform a DNS zone transfer prior to the MX record change.",
+      "Update the NS record to reflect the IP address change."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is Reduce the TTL record prior to the MX record change. Reducing the TTL (Time to Live) for the MX record before making changes helps propagate the new record faster and minimizes email delivery issues. \n\n- Changing the email client configuration is unnecessary if the MX record is properly set up. \n- A DNS zone transfer would update records but would not expedite the propagation of the MX record change. \n- Updating the NS record is unrelated to the MX record change for email delivery."
+  },
+  {
+    "question": "Which of the following network topologies contains a direct connection between every node in the network?",
+    "options": [
+      "Mesh",
+      "Hub-and-spoke",
+      "Star",
+      "Point-to-point"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is Mesh. In a mesh topology, every node is directly connected to every other node, offering redundancy and fault tolerance. \n\n- Hub-and-spoke topology involves a central hub connecting to each node. \n- Star topology has a central device (hub/switch) that connects all nodes, not direct connections between them. \n- Point-to-point topology is a single connection between two nodes."
+  },
+  {
+    "question": "Which of the following layers of the OSI model is responsible for end-to-end encryption?",
+    "options": [
+      "Presentation",
+      "Application",
+      "Session",
+      "Transport"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is Transport. The transport layer is responsible for end-to-end encryption and error correction, ensuring secure communication between devices. \n\n- The presentation layer is responsible for data representation and encryption but does not handle end-to-end encryption. \n- The application layer deals with data at the user level and is not focused on encryption. \n- The session layer is responsible for maintaining sessions but does not handle encryption directly."
+  },
+  {
+    "question": "A company, which is located in a coastal town, retrofitted an office building for a new data center. The underground fiber optics were brought in and connected to the switches in the basement network MDF. A server data center was built on the fifth floor with the two rooms vertically connected by fiber optics. Which of the following types of environmental sensors is most needed?",
+    "options": [
+      "Temperature sensor in the network MOF",
+      "Water sensor in the network MDF",
+      "Temperature sensor in the data center",
+      "Water sensor in the data center"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is Water sensor in the data center. Coastal areas may have high humidity, and water leakage could damage sensitive equipment. A water sensor will help detect leaks early. \n\n- Temperature sensors are necessary, but water leakage poses a more immediate threat in this environment. \n- The network MOF and MDF are not the most critical locations for water monitoring compared to the data center."
+  },
+  {
+    "question": "A network administrator needs to monitor traffic on a specific port on a switch. Which of the following should the administrator configure to accomplish the task?",
+    "options": [
+      "Port security",
+      "Port tagging",
+      "Port mirroring",
+      "Media access control"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Port mirroring. Port mirroring allows the administrator to copy network traffic from one port to another for monitoring purposes. \n\n- Port security is used to secure switch ports but does not monitor traffic. \n- Port tagging is used in VLAN environments to differentiate traffic but does not monitor it. \n- Media access control addresses access control but not monitoring."
+  },
+  {
+    "question": "A company is designing a new complex. The primary and alternate data centers will be in separate buildings 6.2mi (10km) apart and will be connected via fiber. Which of the following types of SFP is the best choice?",
+    "options": [
+      "10GBASE-SR",
+      "10000BASE-LX",
+      "10GBASE-LR",
+      "1000BASE-SX"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is 10GBASE-LR. The 10GBASE-LR transceiver is ideal for long-range connections, such as those needed between buildings 6.2 miles apart. \n\n- 10GBASE-SR is designed for short-range connections and would not be suitable for this distance. \n- 1000BASE-SX is for gigabit connections and is also designed for short distances. \n- 10000BASE-LX is a long-range option but not the best match for 10G speeds."
+  },
+
+
+
+
+  {
+    "question": "Which of the following would be best suited for use at the access layer in a three-tier architecture system?",
+    "options": [
+      "Router",
+      "Multilayer switch",
+      "Layer 2 switch",
+      "Access point"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Access point. In a three-tier architecture, the access layer is responsible for connecting end devices such as computers and wireless access points to the network. \n\n- A router operates at the core or distribution layer, connecting different networks. \n- A multilayer switch can function at both the access and distribution layers but is not as ideal for end device connection. \n- A Layer 2 switch provides basic switching capabilities, but access points are more appropriate for wireless connectivity at the access layer."
+  },
+  {
+    "question": "Following the implementation of a BYOD policy, some users in a high-density environment report slowness over the wireless connection. Some wireless controller reports indicate high latency and airtime contention. Which of the following is the most probable root cause?",
+    "options": [
+      "The AP is configured with 2.4GHz frequency, which the new personal devices do not support.",
+      "The AP is configured with 2.4GHz frequency without band-steering capabilities.",
+      "The AP is configured with 5GHz frequency with band-steering capabilities.",
+      "The AP is configured with 5GHz frequency, which the new personal devices do not support."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is The AP is configured with 2.4GHz frequency without band-steering capabilities. In high-density environments, the 2.4GHz band can become congested, leading to latency and airtime contention. \n\n- Band-steering helps devices connect to the less congested 5GHz band, improving performance. \n- Devices that support 5GHz would benefit more from it, but the lack of band-steering causes issues in choosing the best band."
+  },
+  {
+    "question": "A company’s VoIP phone connection is cutting in and out. Which of the following should be configured to resolve this issue?",
+    "options": [
+      "802.1Q tagging",
+      "Jumbo frames",
+      "Native VLAN",
+      "Link aggregation"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is 802.1Q tagging. This helps prioritize VoIP traffic over other types of data, ensuring that voice traffic gets the necessary bandwidth and minimal delay. \n\n- Jumbo frames allow larger packet sizes but do not directly address the issue of VoIP quality. \n- Native VLAN is related to untagged traffic and does not address performance issues specific to VoIP. \n- Link aggregation is used to increase bandwidth but does not directly resolve VoIP issues related to prioritization."
+  },
+  {
+    "question": "A network technician is configuring a wireless network that consists of multiple APs for better coverage and allows roaming between the APs. Which of the following types of SSIDs should the technician configure?",
+    "options": [
+      "Basic Service Set",
+      "Independent Basic Service Set",
+      "Extended Service Set",
+      "Distribution System Service"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Extended Service Set. ESS is used for multiple access points working together to extend coverage and allow clients to roam between them seamlessly. \n\n- Basic Service Set (BSS) is for a single access point and its associated clients. \n- Independent Basic Service Set (IBSS) is used for peer-to-peer wireless networks, not roaming. \n- Distribution System Service is part of the infrastructure but not an SSID type."
+  },
+  {
+    "question": "A network engineer performed a migration to a new mail server. The engineer changed the MX record, verified the change was accurate, and confirmed the new mail server was reachable via the IP address in the A record. However, users are not receiving email. Which of the following should the engineer have done to prevent the issue from occurring?",
+    "options": [
+      "Change the email client configuration to match the MX record.",
+      "Reduce the TTL record prior to the MX record change.",
+      "Perform a DNS zone transfer prior to the MX record change.",
+      "Update the NS record to reflect the IP address change."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is Reduce the TTL record prior to the MX record change. Reducing the TTL (Time to Live) for the MX record before making changes helps propagate the new record faster and minimizes email delivery issues. \n\n- Changing the email client configuration is unnecessary if the MX record is properly set up. \n- A DNS zone transfer would update records but would not expedite the propagation of the MX record change. \n- Updating the NS record is unrelated to the MX record change for email delivery."
+  },
+  {
+    "question": "Which of the following network topologies contains a direct connection between every node in the network?",
+    "options": [
+      "Mesh",
+      "Hub-and-spoke",
+      "Star",
+      "Point-to-point"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is Mesh. In a mesh topology, every node is directly connected to every other node, offering redundancy and fault tolerance. \n\n- Hub-and-spoke topology involves a central hub connecting to each node. \n- Star topology has a central device (hub/switch) that connects all nodes, not direct connections between them. \n- Point-to-point topology is a single connection between two nodes."
+  },
+  {
+    "question": "Which of the following layers of the OSI model is responsible for end-to-end encryption?",
+    "options": [
+      "Presentation",
+      "Application",
+      "Session",
+      "Transport"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is Transport. The transport layer is responsible for end-to-end encryption and error correction, ensuring secure communication between devices. \n\n- The presentation layer is responsible for data representation and encryption but does not handle end-to-end encryption. \n- The application layer deals with data at the user level and is not focused on encryption. \n- The session layer is responsible for maintaining sessions but does not handle encryption directly."
+  },
+  {
+    "question": "A company, which is located in a coastal town, retrofitted an office building for a new data center. The underground fiber optics were brought in and connected to the switches in the basement network MDF. A server data center was built on the fifth floor with the two rooms vertically connected by fiber optics. Which of the following types of environmental sensors is most needed?",
+    "options": [
+      "Temperature sensor in the network MOF",
+      "Water sensor in the network MDF",
+      "Temperature sensor in the data center",
+      "Water sensor in the data center"
+    ],
+    "correct_answer": 4,
+    "description": "The correct answer is Water sensor in the data center. Coastal areas may have high humidity, and water leakage could damage sensitive equipment. A water sensor will help detect leaks early. \n\n- Temperature sensors are necessary, but water leakage poses a more immediate threat in this environment. \n- The network MOF and MDF are not the most critical locations for water monitoring compared to the data center."
+  },
+  {
+    "question": "A network administrator needs to monitor traffic on a specific port on a switch. Which of the following should the administrator configure to accomplish the task?",
+    "options": [
+      "Port security",
+      "Port tagging",
+      "Port mirroring",
+      "Media access control"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is Port mirroring. Port mirroring allows the administrator to copy network traffic from one port to another for monitoring purposes. \n\n- Port security is used to secure switch ports but does not monitor traffic. \n- Port tagging is used in VLAN environments to differentiate traffic but does not monitor it. \n- Media access control addresses access control but not monitoring."
+  },
+  {
+    "question": "A company is designing a new complex. The primary and alternate data centers will be in separate buildings 6.2mi (10km) apart and will be connected via fiber. Which of the following types of SFP is the best choice?",
+    "options": [
+      "10GBASE-SR",
+      "10000BASE-LX",
+      "10GBASE-LR",
+      "1000BASE-SX"
+    ],
+    "correct_answer": 3,
+    "description": "The correct answer is 10GBASE-LR. The 10GBASE-LR transceiver is ideal for long-range connections, such as those needed between buildings 6.2 miles apart. \n\n- 10GBASE-SR is designed for short-range connections and would not be suitable for this distance. \n- 1000BASE-SX is for gigabit connections and is also designed for short distances. \n- 10000BASE-LX is a long-range option but not the best match for 10G speeds."
+  }
+
+
 
 ]
