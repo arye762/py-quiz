@@ -465,125 +465,125 @@ questions_set_C = [
 {
   "question": "A network administrator views a network pcap and sees a packet containing the following:\n\ncommunity: public\nrequest-id: 13438\nget-response 1.3.6.1.2.1.1.3.0 Value: 206801150\n\nWhich of the following are the BEST ways for the administrator to secure this type of traffic? (Choose two.)",
   "options": [
-    "A. Migrate the network to IPv6.",
-    "B. Implement 802.1 X authentication.",
-    "C. Set a private community string.",
-    "D. Use SNMPv3.",
+    "Migrate the network to IPv6.",
+    "Implement 802.1 X authentication.",
+    "Set a private community string.",
+    "Use SNMPv3.",
     "E. Incorporate SSL encryption.",
     "F. Utilize IPSec tunnelling."
   ],
   "correct_answer": [3, 4],
-  "description": "The correct answers are C and D. SNMPv3 provides stronger security with encryption and authentication, which is more secure than the older SNMPv1 and SNMPv2 protocols that use community strings. \n\n- Setting a private community string is an improvement over using 'public', but it doesn't provide the same level of security as SNMPv3. \n- IPv6 migration doesn't directly address SNMP security. \n- 802.1X is a network access control method, not directly related to securing SNMP traffic. \n- SSL encryption is relevant for securing web traffic but not for SNMP."
+  "description": "The correct answers are C and SNMPv3 provides stronger security with encryption and authentication, which is more secure than the older SNMPv1 and SNMPv2 protocols that use community strings. \n\n- Setting a private community string is an improvement over using 'public', but it doesn't provide the same level of security as SNMPv3. \n- IPv6 migration doesn't directly address SNMP security. \n- 802.1X is a network access control method, not directly related to securing SNMP traffic. \n- SSL encryption is relevant for securing web traffic but not for SNMP."
 },
 {
   "question": "A network technician is troubleshooting a network issue for employees who have reported issues with speed when accessing a server in another subnet. The server is in another building that is 410ft (125m) away from the employees' building. The 10GBASE-T connection between the two buildings uses Cat 5e. Which of the following BEST explains the speed issue?",
   "options": [
-    "A. The connection type is not rated for that distance.",
-    "B. A broadcast storm is occurring on the subnet.",
-    "C. The cable run has interference on it.",
-    "D. The connection should be made using a Cat 6 cable."
+    "The connection type is not rated for that distance.",
+    "A broadcast storm is occurring on the subnet.",
+    "The cable run has interference on it.",
+    "The connection should be made using a Cat 6 cable."
   ],
   "correct_answer": 1,
-  "description": "The correct answer is A. The 10GBASE-T standard requires a maximum distance of 100 meters (328 feet) for Cat 5e cables. At 410 feet, the connection exceeds the distance limit for optimal performance. \n\n- A broadcast storm could affect network performance, but it wouldn't specifically explain the speed issue caused by cable distance. \n- Interference could impact speed, but the primary issue here is the distance. \n- While upgrading to Cat 6 would improve performance, it’s the distance limitation that causes the problem."
+  "description": "The correct answer is The 10GBASE-T standard requires a maximum distance of 100 meters (328 feet) for Cat 5e cables. At 410 feet, the connection exceeds the distance limit for optimal performance. \n\n- A broadcast storm could affect network performance, but it wouldn't specifically explain the speed issue caused by cable distance. \n- Interference could impact speed, but the primary issue here is the distance. \n- While upgrading to Cat 6 would improve performance, it’s the distance limitation that causes the problem."
 },
 {
   "question": "Which of the following is a security flaw in an application or network?",
   "options": [
-    "A. A threat",
-    "B. A vulnerability",
-    "C. An exploit",
-    "D. A risk"
+    "A threat",
+    "A vulnerability",
+    "An exploit",
+    "A risk"
   ],
   "correct_answer": 2,
-  "description": "The correct answer is B. A vulnerability is a weakness in a system or application that could potentially be exploited. \n\n- A threat refers to anything that has the potential to cause harm but is not necessarily a flaw. \n- An exploit is an attack that takes advantage of a vulnerability. \n- A risk refers to the potential for harm, but it is not specifically a flaw in the system."
+  "description": "The correct answer is A vulnerability is a weakness in a system or application that could potentially be exploite\n\n- A threat refers to anything that has the potential to cause harm but is not necessarily a flaw. \n- An exploit is an attack that takes advantage of a vulnerability. \n- A risk refers to the potential for harm, but it is not specifically a flaw in the system."
 },
 {
   "question": "An administrator is investigating reports of network slowness in a building. While looking at the uplink interface statistics in the switch's CLI, the administrator discovers the uplink is at 100% utilization. However, the administrator is unsure how to identify what traffic is causing the saturation. Which of the following tools should the administrator utilize to identify the source and destination addresses of the traffic?",
   "options": [
-    "A. SNMP",
-    "B. Traps",
-    "C. Syslog",
-    "D. NetFlow"
+    "SNMP",
+    "Traps",
+    "Syslog",
+    "NetFlow"
   ],
   "correct_answer": 4,
-  "description": "The correct answer is D. NetFlow provides detailed information about traffic flows, including source and destination addresses, allowing the administrator to pinpoint the cause of network saturation. \n\n- SNMP and Traps provide network statistics but lack the detailed flow data required to track traffic patterns. \n- Syslog is useful for logging system events but does not offer detailed traffic flow analysis."
+  "description": "The correct answer is NetFlow provides detailed information about traffic flows, including source and destination addresses, allowing the administrator to pinpoint the cause of network saturation. \n\n- SNMP and Traps provide network statistics but lack the detailed flow data required to track traffic patterns. \n- Syslog is useful for logging system events but does not offer detailed traffic flow analysis."
 },
 {
   "question": "Two new network switches located in different buildings are connected together with single-mode fiber. However, no link exists between the two switches. Which of the following steps should the technician perform FIRST to troubleshoot the issue?",
   "options": [
-    "A. Reverse TX/RX on the fiber patch cord at one building.",
-    "B. Replace the fiber patch cords in both buildings.",
-    "C. Clean the fiber patch cord connectors in both buildings.",
-    "D. Connect the fiber patch cord to an OTDR at one building."
+    "Reverse TX/RX on the fiber patch cord at one building.",
+    "Replace the fiber patch cords in both buildings.",
+    "Clean the fiber patch cord connectors in both buildings.",
+    "Connect the fiber patch cord to an OTDR at one building."
   ],
   "correct_answer": 3,
-  "description": "The correct answer is C. Cleaning the fiber patch cord connectors is often the first step in troubleshooting a no-link issue, as dirt and dust can interfere with the signal. \n\n- Reversing the TX/RX could be necessary if the cables were wired incorrectly, but it's typically addressed after confirming the physical condition of the cables. \n- Replacing the cables may not be needed if cleaning resolves the issue. \n- An OTDR is a useful tool for more advanced troubleshooting but is typically used after the basics are ruled out."
+  "description": "The correct answer is Cleaning the fiber patch cord connectors is often the first step in troubleshooting a no-link issue, as dirt and dust can interfere with the signal. \n\n- Reversing the TX/RX could be necessary if the cables were wired incorrectly, but it's typically addressed after confirming the physical condition of the cables. \n- Replacing the cables may not be needed if cleaning resolves the issue. \n- An OTDR is a useful tool for more advanced troubleshooting but is typically used after the basics are ruled out."
 },
 {
   "question": "Which of the following OSI model layers would allow a user to access and download files from a remote computer?",
   "options": [
-    "A. Session",
-    "B. Presentation",
-    "C. Network",
-    "D. Application"
+    "Session",
+    "Presentation",
+    "Network",
+    "Application"
   ],
   "correct_answer": 4,
-  "description": "The correct answer is D. The Application layer allows users to interact with network services such as file transfer protocols (FTP) and web browsers for file access and download. \n\n- The Session layer establishes, manages, and terminates connections but does not handle file access. \n- The Presentation layer ensures that data is in a readable format but doesn't handle the actual file transfer. \n- The Network layer is responsible for routing data but not for file access."
+  "description": "The correct answer is The Application layer allows users to interact with network services such as file transfer protocols (FTP) and web browsers for file access and download. \n\n- The Session layer establishes, manages, and terminates connections but does not handle file access. \n- The Presentation layer ensures that data is in a readable format but doesn't handle the actual file transfer. \n- The Network layer is responsible for routing data but not for file access."
 },
 {
   "question": "A new office space is being designed. The network switches are up, but no services are running yet. A network engineer plugs in a laptop configured as a DHCP client to a switch. Which of the following IP addresses should be assigned to the laptop?",
   "options": [
-    "A. 10.1.1.1",
-    "B. 169.254.1.128",
-    "C. 172.16.128.128",
-    "D. 192.168.0.1"
+    "10.1.1.1",
+    "169.254.1.128",
+    "172.16.128.128",
+    "192.168.0.1"
   ],
   "correct_answer": 2,
-  "description": "The correct answer is B. When a DHCP client cannot reach a DHCP server, it assigns itself an APIPA (Automatic Private IP Addressing) address from the 169.254.x.x range. \n\n- 10.1.1.1, 172.16.128.128, and 192.168.0.1 are private IP addresses, but they require a DHCP server or manual configuration to be assigned."
+  "description": "The correct answer is When a DHCP client cannot reach a DHCP server, it assigns itself an APIPA (Automatic Private IP Addressing) address from the 169.254.x.x range. \n\n- 10.1.1.1, 172.16.128.128, and 192.168.0.1 are private IP addresses, but they require a DHCP server or manual configuration to be assigned."
 },
 {
   "question": "An organization requires the ability to send encrypted email messages to a partner from an email server that is hosted on premises. The organization prefers to use the standard default ports when creating firewall rules. Which of the following ports should be open to satisfy the requirements?",
   "options": [
-    "A. 110",
-    "B. 143",
-    "C. 587",
-    "D. 636"
+    "110",
+    "143",
+    "587",
+    "636"
   ],
   "correct_answer": 3,
-  "description": "The correct answer is C. Port 587 is used for sending email securely via SMTP (Simple Mail Transfer Protocol) with encryption. \n\n- Port 110 is used for POP3 email retrieval, not sending encrypted email. \n- Port 143 is used for IMAP email retrieval, also not for sending encrypted messages. \n- Port 636 is used for LDAPS, which is unrelated to email transmission."
+  "description": "The correct answer is Port 587 is used for sending email securely via SMTP (Simple Mail Transfer Protocol) with encryption. \n\n- Port 110 is used for POP3 email retrieval, not sending encrypted email. \n- Port 143 is used for IMAP email retrieval, also not for sending encrypted messages. \n- Port 636 is used for LDAPS, which is unrelated to email transmission."
 },
 {
   "question": "Which of the following BEST describes a split-tunnel client-to-server VPN connection?",
   "options": [
-    "A. The client sends all network traffic down the VPN tunnel.",
-    "B. The client has two different IP addresses that can be connected to a remote site from two different ISPs to ensure availability.",
-    "C. The client sends some network traffic down the VPN tunnel and other traffic to the local gateway.",
-    "D. The client connects to multiple remote sites at the same time."
+    "The client sends all network traffic down the VPN tunnel.",
+    "The client has two different IP addresses that can be connected to a remote site from two different ISPs to ensure availability.",
+    "The client sends some network traffic down the VPN tunnel and other traffic to the local gateway.",
+    "The client connects to multiple remote sites at the same time."
   ],
   "correct_answer": 3,
-  "description": "The correct answer is C. In a split-tunnel VPN, some traffic is sent through the encrypted VPN tunnel, while other traffic is sent directly to the local network. \n\n- Full-tunnel VPNs send all traffic through the VPN tunnel, which is different from split-tunnel. \n- Using two different IP addresses or connecting to multiple remote sites is not a feature of split-tunneling."
+  "description": "The correct answer is In a split-tunnel VPN, some traffic is sent through the encrypted VPN tunnel, while other traffic is sent directly to the local network. \n\n- Full-tunnel VPNs send all traffic through the VPN tunnel, which is different from split-tunnel. \n- Using two different IP addresses or connecting to multiple remote sites is not a feature of split-tunneling."
 },
 {
   "question": "Which of the following is the MOST secure connection used to inspect and provide controlled internet access when remote employees are connected to the corporate network?",
   "options": [
-    "A. Site-to-site VPN",
-    "B. Full-tunnel VPN",
-    "C. Split-tunnel VPN",
-    "D. SSH"
+    "Site-to-site VPN",
+    "Full-tunnel VPN",
+    "Split-tunnel VPN",
+    "SSH"
   ],
   "correct_answer": 2,
-  "description": "The correct answer is B. A full-tunnel VPN ensures that all internet traffic from remote employees is routed through the corporate network, allowing for inspection and controlled access. \n\n- Site-to-site VPNs connect entire networks, not individual remote employees. \n- Split-tunnel VPNs allow some traffic to bypass the corporate network, which may not provide as much control over internet access. \n- SSH is used for secure command-line access, not for providing internet access."
+  "description": "The correct answer is A full-tunnel VPN ensures that all internet traffic from remote employees is routed through the corporate network, allowing for inspection and controlled access. \n\n- Site-to-site VPNs connect entire networks, not individual remote employees. \n- Split-tunnel VPNs allow some traffic to bypass the corporate network, which may not provide as much control over internet access. \n- SSH is used for secure command-line access, not for providing internet access."
 },
 {
   "question": "An engineer is troubleshooting poor performance on the network that occurs during work hours. Which of the following should the engineer do to improve performance?",
   "options": [
-    "A. Replace the patch cables.",
-    "B. Create link aggregation.",
-    "C. Create separation rules on the firewall.",
-    "D. Create subinterfaces on the existing port."
+    "Replace the patch cables.",
+    "Create link aggregation.",
+    "Create separation rules on the firewall.",
+    "Create subinterfaces on the existing port."
   ],
   "correct_answer": 2,
-  "description": "The correct answer is B. Link aggregation combines multiple network connections to increase throughput and reduce bottlenecks, improving performance. \n\n- Replacing patch cables may address physical layer issues but not necessarily improve network performance. \n- Separation rules on the firewall could help segment traffic but are not focused on improving throughput. \n- Creating subinterfaces does not directly address performance issues related to network congestion."
+  "description": "The correct answer is Link aggregation combines multiple network connections to increase throughput and reduce bottlenecks, improving performance. \n\n- Replacing patch cables may address physical layer issues but not necessarily improve network performance. \n- Separation rules on the firewall could help segment traffic but are not focused on improving throughput. \n- Creating subinterfaces does not directly address performance issues related to network congestion."
 },
 
 
@@ -850,7 +850,7 @@ questions_set_C = [
         "G"
     ],
     "correct_answer": 2,
-    "description": "The correct answer is AC. The 802.11ac wireless standard supports speeds up to 1.3Gbps on the 5GHz band, making it suitable for the technician’s requirements.\n\n- 802.11b, 802.11g, and 802.11n have slower speeds, with 802.11n capable of up to 600Mbps in optimal conditions but not suitable for 1.3Gbps.\n- 802.11ax (Wi-Fi 6) also supports higher speeds but is overkill for the specific 1.3Gbps requirement and could be a higher-cost option."
+    "description": "The correct answer is AThe 802.11ac wireless standard supports speeds up to 1.3Gbps on the 5GHz band, making it suitable for the technician’s requirements.\n\n- 802.11b, 802.11g, and 802.11n have slower speeds, with 802.11n capable of up to 600Mbps in optimal conditions but not suitable for 1.3Gbps.\n- 802.11ax (Wi-Fi 6) also supports higher speeds but is overkill for the specific 1.3Gbps requirement and could be a higher-cost option."
 },
 {
     "question": "Which of the following devices would be used to extend the range of a wireless network?",
@@ -2708,120 +2708,6 @@ questions_set_C = [
         "correct_answer": 1,
         "description": "The correct answer is captive portal. A captive portal allows for temporary authentication of users on a network, often used in public Wi-Fi hotspots or guest networks. \n\n- Enterprise authentication is used for more permanent and centralized user access control, not for temporary access. \n- An ad hoc network does not offer the same centralized authentication options. \n- WPA3 is a security protocol but is not designed for managing temporary access."
     },
-
-  {
-    "question": "Which of the following would be best suited for use at the access layer in a three-tier architecture system?",
-    "options": [
-      "Router",
-      "Multilayer switch",
-      "Layer 2 switch",
-      "Access point"
-    ],
-    "correct_answer": 3,
-    "description": "The correct answer is Access point. In a three-tier architecture, the access layer is responsible for connecting end devices such as computers and wireless access points to the network. \n\n- A router operates at the core or distribution layer, connecting different networks. \n- A multilayer switch can function at both the access and distribution layers but is not as ideal for end device connection. \n- A Layer 2 switch provides basic switching capabilities, but access points are more appropriate for wireless connectivity at the access layer."
-  },
-  {
-    "question": "Following the implementation of a BYOD policy, some users in a high-density environment report slowness over the wireless connection. Some wireless controller reports indicate high latency and airtime contention. Which of the following is the most probable root cause?",
-    "options": [
-      "The AP is configured with 2.4GHz frequency, which the new personal devices do not support.",
-      "The AP is configured with 2.4GHz frequency without band-steering capabilities.",
-      "The AP is configured with 5GHz frequency with band-steering capabilities.",
-      "The AP is configured with 5GHz frequency, which the new personal devices do not support."
-    ],
-    "correct_answer": 2,
-    "description": "The correct answer is The AP is configured with 2.4GHz frequency without band-steering capabilities. In high-density environments, the 2.4GHz band can become congested, leading to latency and airtime contention. \n\n- Band-steering helps devices connect to the less congested 5GHz band, improving performance. \n- Devices that support 5GHz would benefit more from it, but the lack of band-steering causes issues in choosing the best band."
-  },
-  {
-    "question": "A company’s VoIP phone connection is cutting in and out. Which of the following should be configured to resolve this issue?",
-    "options": [
-      "802.1Q tagging",
-      "Jumbo frames",
-      "Native VLAN",
-      "Link aggregation"
-    ],
-    "correct_answer": 1,
-    "description": "The correct answer is 802.1Q tagging. This helps prioritize VoIP traffic over other types of data, ensuring that voice traffic gets the necessary bandwidth and minimal delay. \n\n- Jumbo frames allow larger packet sizes but do not directly address the issue of VoIP quality. \n- Native VLAN is related to untagged traffic and does not address performance issues specific to VoIP. \n- Link aggregation is used to increase bandwidth but does not directly resolve VoIP issues related to prioritization."
-  },
-  {
-    "question": "A network technician is configuring a wireless network that consists of multiple APs for better coverage and allows roaming between the APs. Which of the following types of SSIDs should the technician configure?",
-    "options": [
-      "Basic Service Set",
-      "Independent Basic Service Set",
-      "Extended Service Set",
-      "Distribution System Service"
-    ],
-    "correct_answer": 3,
-    "description": "The correct answer is Extended Service Set. ESS is used for multiple access points working together to extend coverage and allow clients to roam between them seamlessly. \n\n- Basic Service Set (BSS) is for a single access point and its associated clients. \n- Independent Basic Service Set (IBSS) is used for peer-to-peer wireless networks, not roaming. \n- Distribution System Service is part of the infrastructure but not an SSID type."
-  },
-  {
-    "question": "A network engineer performed a migration to a new mail server. The engineer changed the MX record, verified the change was accurate, and confirmed the new mail server was reachable via the IP address in the A record. However, users are not receiving email. Which of the following should the engineer have done to prevent the issue from occurring?",
-    "options": [
-      "Change the email client configuration to match the MX record.",
-      "Reduce the TTL record prior to the MX record change.",
-      "Perform a DNS zone transfer prior to the MX record change.",
-      "Update the NS record to reflect the IP address change."
-    ],
-    "correct_answer": 2,
-    "description": "The correct answer is Reduce the TTL record prior to the MX record change. Reducing the TTL (Time to Live) for the MX record before making changes helps propagate the new record faster and minimizes email delivery issues. \n\n- Changing the email client configuration is unnecessary if the MX record is properly set up. \n- A DNS zone transfer would update records but would not expedite the propagation of the MX record change. \n- Updating the NS record is unrelated to the MX record change for email delivery."
-  },
-  {
-    "question": "Which of the following network topologies contains a direct connection between every node in the network?",
-    "options": [
-      "Mesh",
-      "Hub-and-spoke",
-      "Star",
-      "Point-to-point"
-    ],
-    "correct_answer": 1,
-    "description": "The correct answer is Mesh. In a mesh topology, every node is directly connected to every other node, offering redundancy and fault tolerance. \n\n- Hub-and-spoke topology involves a central hub connecting to each node. \n- Star topology has a central device (hub/switch) that connects all nodes, not direct connections between them. \n- Point-to-point topology is a single connection between two nodes."
-  },
-  {
-    "question": "Which of the following layers of the OSI model is responsible for end-to-end encryption?",
-    "options": [
-      "Presentation",
-      "Application",
-      "Session",
-      "Transport"
-    ],
-    "correct_answer": 4,
-    "description": "The correct answer is Transport. The transport layer is responsible for end-to-end encryption and error correction, ensuring secure communication between devices. \n\n- The presentation layer is responsible for data representation and encryption but does not handle end-to-end encryption. \n- The application layer deals with data at the user level and is not focused on encryption. \n- The session layer is responsible for maintaining sessions but does not handle encryption directly."
-  },
-  {
-    "question": "A company, which is located in a coastal town, retrofitted an office building for a new data center. The underground fiber optics were brought in and connected to the switches in the basement network MDF. A server data center was built on the fifth floor with the two rooms vertically connected by fiber optics. Which of the following types of environmental sensors is most needed?",
-    "options": [
-      "Temperature sensor in the network MOF",
-      "Water sensor in the network MDF",
-      "Temperature sensor in the data center",
-      "Water sensor in the data center"
-    ],
-    "correct_answer": 4,
-    "description": "The correct answer is Water sensor in the data center. Coastal areas may have high humidity, and water leakage could damage sensitive equipment. A water sensor will help detect leaks early. \n\n- Temperature sensors are necessary, but water leakage poses a more immediate threat in this environment. \n- The network MOF and MDF are not the most critical locations for water monitoring compared to the data center."
-  },
-  {
-    "question": "A network administrator needs to monitor traffic on a specific port on a switch. Which of the following should the administrator configure to accomplish the task?",
-    "options": [
-      "Port security",
-      "Port tagging",
-      "Port mirroring",
-      "Media access control"
-    ],
-    "correct_answer": 3,
-    "description": "The correct answer is Port mirroring. Port mirroring allows the administrator to copy network traffic from one port to another for monitoring purposes. \n\n- Port security is used to secure switch ports but does not monitor traffic. \n- Port tagging is used in VLAN environments to differentiate traffic but does not monitor it. \n- Media access control addresses access control but not monitoring."
-  },
-  {
-    "question": "A company is designing a new complex. The primary and alternate data centers will be in separate buildings 6.2mi (10km) apart and will be connected via fiber. Which of the following types of SFP is the best choice?",
-    "options": [
-      "10GBASE-SR",
-      "10000BASE-LX",
-      "10GBASE-LR",
-      "1000BASE-SX"
-    ],
-    "correct_answer": 3,
-    "description": "The correct answer is 10GBASE-LR. The 10GBASE-LR transceiver is ideal for long-range connections, such as those needed between buildings 6.2 miles apart. \n\n- 10GBASE-SR is designed for short-range connections and would not be suitable for this distance. \n- 1000BASE-SX is for gigabit connections and is also designed for short distances. \n- 10000BASE-LX is a long-range option but not the best match for 10G speeds."
-  },
-
-
-
 
   {
     "question": "Which of the following would be best suited for use at the access layer in a three-tier architecture system?",
