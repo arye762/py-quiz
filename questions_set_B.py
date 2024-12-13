@@ -1643,7 +1643,7 @@ questions_set_B = [
       "Address reservation",
       "IP helper"
     ],
-    "correct_answer": 2,
+    "correct_answer": 3,
     "description": "The correct answer is Address reservation. Address reservation allows the DHCP server to always assign the same IP address to a device based on its MAC address, preventing conflicts with dynamically assigned addresses. \n\n- Dynamic assignment is the default method of allocating IP addresses and is not effective for statically assigned devices.\n- Exclusion range is used to prevent the DHCP server from assigning IP addresses in a specified range, but address reservation is a better solution for ensuring static IP assignments.\n- IP helper is used to forward DHCP requests from clients on remote networks to the DHCP server and is not relevant to preventing IP address conflicts."
   },
   {
@@ -1826,7 +1826,7 @@ questions_set_B = [
             "Escalate the issue.",
             "Document the findings."
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is escalate the issue. After identifying the issue, the next step in troubleshooting is to escalate if necessary, especially if the solution is beyond the technician's scope or expertise. \n\n- Implementing a solution comes after further investigation or escalation. \n- Establishing a theory is an earlier troubleshooting step. \n- Documenting findings is part of closing the issue after resolution."
     },
     {

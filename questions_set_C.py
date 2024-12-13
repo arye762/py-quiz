@@ -383,6 +383,7 @@ questions_set_C = [
     },
 
 
+
     {
         "question": "A computer engineer needs to ensure that only a specific workstation can connect to port 1 on a switch. Which of the following features should the engineer configure on the switch interface?",
         "options": [
@@ -441,13 +442,13 @@ questions_set_C = [
     {
         "question": "A company needs to virtualize a replica of its internal physical network without changing the logical topology and the way that devices behave and are managed. Which of the following technologies meets this requirement?",
         "options": [
-            "NVF.",
+            "NFV.",
             "SDWAN.",
             "VIP.",
             "MPLS."
         ],
         "correct_answer": 1,
-        "description": "The correct answer is NVF (Network Functions Virtualization). This technology allows replication of network functions in a virtual environment without altering the logical topology. \n\n- SDWAN optimizes wide-area network performance but does not replicate internal networks. \n- VIP (Virtual IP) is an addressing mechanism, not a virtualization technology. \n- MPLS is a routing technique, not a virtualization solution."
+        "description": "The correct answer is NFV (Network Functions Virtualization). This technology allows replication of network functions in a virtual environment without altering the logical topology. \n\n- SDWAN optimizes wide-area network performance but does not replicate internal networks. \n- VIP (Virtual IP) is an addressing mechanism, not a virtualization technology. \n- MPLS is a routing technique, not a virtualization solution."
     },
     {
         "question": "A network technician needs to ensure the company’s external mail server can pass reverse lookup checks. Which of the following records would the technician MOST likely configure?",
@@ -1054,7 +1055,7 @@ questions_set_C = [
             "10GBASE-LX4 over multimode fiber",
             "10GBASE-SR"
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is 10GBASE-LX4 over multimode fiber. This transceiver is designed for long-distance connections (up to 10km) and supports high-speed networking. \n\n- 10GBASE-SW is optimized for shorter distances (around 300m) and is not suitable for the 550m distance. \n- 10GBASE-LR supports long-range connections but typically uses single-mode fiber, not ideal for campus installations requiring multimode fiber. \n- 10GBASE-SR is ideal for short-range connections over multimode fiber, but LX4 offers better range."
     },
     {

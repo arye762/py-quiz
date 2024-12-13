@@ -393,7 +393,7 @@ questions_set_D = [
             "Establish a theory.",
             "Document findings."
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is to establish a theory. In troubleshooting, after identifying the problem, the technician formulates a theory of what could have changed or caused the issue. \n\n- Identifying the problem is done at the start of the troubleshooting process. \n- Testing the theory occurs after formulating a hypothesis. \n- Documenting findings happens at the end of the troubleshooting process."
     },
     {
