@@ -1890,7 +1890,7 @@ questions_set_D = [
             "10.10.10.0/27"
         ],
         "correct_answer": 3,
-        "description": "The correct answer is '10.10.10.0/27.' A /27 subnet provides 32 IP addresses, with 30 usable addresses, which is ideal for 31 devices when considering network overhead and broadcast addresses. \n\n- A /24 provides too many addresses (254 usable), wasting IP space. \n- A /25 offers only 126 usable IPs, which is excessive for just 31 devices. \n- A /26 offers 62 usable IPs, which is also more than necessary."
+        "description": "The correct answer is 10.10.10.0/26. A /26 subnet provides 64 IP addresses, with 62 usable addresses, which is sufficient for 31 devices while leaving room for growth or additional devices. \n\n- 10.10.10.0/24 provides too many addresses (254 usable), wasting IP space. \n- 10.10.10.0/27 offers only 30 usable IPs, which is not enough for 31 devices. \n- 10.10.10.0/25 provides 126 usable IPs, which is excessive for just 31 devices."
     },
     {
         "question": "Users at a company will require more bandwidth on their wireless laptops because of a migration to the cloud. The company's current infrastructure contains four 802.11n access points, which are creating a bottleneck. Hardware upgrades are not an option. Which of the following configurations will provide a solution?",
