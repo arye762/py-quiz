@@ -1216,15 +1216,15 @@ questions_set_D = [
         "description": "The correct answer is The host does not have a route to the server. The output shows that the host does not have a proper route to reach the server's IP address, causing connectivity issues. \n\n- A firewall might block access, but there is no indication of a firewall-related issue in the output. \n- The server is not plugged into a trunk port, as there is no evidence of VLAN configuration issues. \n- The SSH daemon is running on the server, as evidenced by the LISTENING state for port 22."
     },
     {
-        "question": "A network technician is configuring a new subnet on the distribution switch to support 15 network printers. Which of the following available subnets is the best choice to support all 15 printers on the LAN?",
-        "options": [
-            "10.1.15.0/27",
-            "10.8.4.0/30",
-            "10.10.8.0/28",
-            "10.15.1.0/29"
-        ],
-        "correct_answer": 3,
-        "description": "The correct answer is 10.10.8.0/28. A /28 subnet provides 16 IP addresses (14 usable), which is sufficient for 15 printers. \n\n- A /27 subnet provides 32 IP addresses (30 usable), which is more than needed. \n- A /30 subnet provides only 4 IP addresses (2 usable), which is not enough for 15 printers. \n- A /29 subnet provides 8 IP addresses (6 usable), which is not enough for 15 printers."
+    "question": "A network technician is configuring a new subnet on the distribution switch to support 15 network printers. Which of the following available subnets is the best choice to support all 15 printers on the LAN?",
+    "options": [
+        "10.1.15.0/27",
+        "10.8.4.0/30",
+        "10.10.8.0/28",
+        "10.15.1.0/29"
+    ],
+    "correct_answer": 1,
+    "description": "The correct answer is 10.1.15.0/27. This subnet provides 32 IP addresses (30 usable), which exceeds the requirement for 15 printers while allowing room for growth or additional devices. \n\n- 10.8.4.0/30 provides only 4 IP addresses (2 usable), which is insufficient for 15 printers. \n- 10.10.8.0/28 provides 16 IP addresses (14 usable), meeting the requirement but leaving no room for additional devices. \n- 10.15.1.0/29 provides 8 IP addresses (6 usable), which is not enough for 15 printers."
     },
 
 
