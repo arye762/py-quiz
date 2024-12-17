@@ -2035,7 +2035,7 @@ questions_set_D = [
     "options": [
       "1000BASE-FX",
       "1000BASE-T",
-      "1000BASE.LR",
+      "1000BASE-LR",
       "1000BASE-SX"
     ],
     "correct_answer": 2,
@@ -2115,7 +2115,7 @@ questions_set_D = [
       "Proxy server",
       "Access point"
     ],
-    "correct_answer": 1,
+    "correct_answer": 4,
     "description": "The correct answer is access point. IoT devices typically connect to wireless networks via access points, allowing them to communicate with other devices on the network. \n\n- Routers provide network routing but are not specifically designed for IoT connections. \n- Firewalls and proxy servers are security devices, not primary connectivity points for IoT devices."
   },
   {
@@ -2172,7 +2172,7 @@ questions_set_D = [
             "trace",
             "route"
         ],
-        "correct_answer": 3,
+        "correct_answer": 4,
         "description": "The correct answer is 'route'. The 'route' command is used to view and manipulate the routing table, which will show whether traffic is using the new route. \n\n- 'ping' checks the connectivity to a destination but does not reveal the specific route taken. \n- 'arp' is used to view or modify the ARP table, which relates to resolving IP addresses to MAC addresses, not routing. \n- 'trace' (or traceroute) can show the path traffic takes, but it may not directly reflect routing table changes."
     },
     {
@@ -2353,7 +2353,7 @@ questions_set_D = [
                 "The IP address on the workstation"
             ],
             "correct_answer": [3, 5],
-            "description": "The correct answers are 'The subnet on the printer' and 'The subnet on the workstation'. The printer and the workstation are on different subnets, which prevents communication between them. \n\n- The router’s gateway and IP addresses are correctly configured. \n- Changing the IP address or subnet on either the printer or the workstation will allow them to communicate with each other."
+            "description": "The correct answers are 'The subnet on the workstation' and 'The subnet on the printer.' The workstation and printer are currently in different subnets, which prevents communication. Here’s a detailed explanation: \n\n1. **Workstation Analysis:**\n   - The workstation IP is 10.0.0.126, and its subnet mask is 255.255.255.192 (/26).\n   - With this subnet mask, the workstation belongs to the network 10.0.0.64/26, which has a usable IP range of 10.0.0.65 to 10.0.0.126. The last usable IP is 10.0.0.126, where the workstation is currently assigned.\n   - This network does not include the router gateway IP (10.0.0.1), which belongs to the 10.0.0.0/25 network. The workstation’s subnet needs to be corrected to match the router’s subnet.\n\n2. **Printer Analysis:**\n   - The printer IP is 10.1.0.60, and its subnet mask is 255.255.255.128 (/25).\n   - This subnet places the printer in the 10.1.0.0/25 network, which has a usable range of 10.1.0.1 to 10.1.0.126.\n   - The printer's network does not match the router’s network (10.0.0.0/25), making it unreachable for the workstation. To resolve this, the printer's IP and subnet must be updated to match the router’s network.\n\n3. **Summary of Fixes:**\n   - The workstation's subnet mask must be updated to 255.255.255.128 (/25) so it aligns with the router’s network.\n   - The printer's IP address and/or subnet mask must also be updated to fall within the same 10.0.0.0/25 network.\n\n- **Router's Configuration:** The router’s IP and subnet are correct (10.0.0.1/25), so no changes are needed here.\n- **IP Address on the Workstation/Printer:** Changing the IP address alone without fixing the subnet mask would still result in communication failure. The subnet mask adjustment ensures they share the same network."
         },
 
 
@@ -2486,19 +2486,19 @@ questions_set_D = [
             "255.255.252.0",
             "255.255.254.0"
         ],
-        "correct_answer": 3,
+        "correct_answer": 4,
         "description": "The correct answer is 255.255.254.0. This subnet mask provides 510 usable IP addresses, which fits the requirement of supporting 500 hosts, while minimizing unused IP addresses. \n\n- 255.255.224.0 provides 2046 hosts, which results in more unused IPs. \n- 255.255.248.0 provides 2046 hosts, which is also more than needed. \n- 255.255.252.0 provides 1022 hosts, which is too large and not efficient for 500 hosts."
     },
-    {
-        "question": "Users are connected to a switch on an Ethernet interface of a campus router. The service provider is connected to the serial 1 interface on the router. The output of the interfaces is:\nE1/0: 192.168.8.1/24 -\nS1: 192.168.7.252/30 -\nAfter router and device configurations are applied, internet access is not possible. Which of the following is the most likely cause?",
+   {
+        "question": "Users are connected to a switch on an Ethernet interface of a campus router. The service provider is connected to the serial 1 interface on the router. The output of the interfaces is:\n\nE1/0: 192.168.8.1/24 -\n\nS1: 192.168.7.252/30 -\n\nAfter router and device configurations are applied, internet access is not possible. Which of the following is the most likely cause?",
         "options": [
             "The Ethernet interface was configured with an incorrect IP address.",
             "The router was configured with an incorrect loopback address.",
             "The router was configured with an incorrect default gateway.",
             "The serial interface was configured with the incorrect subnet mask."
         ],
-        "correct_answer": 3,
-        "description": "The correct answer is the router was configured with an incorrect default gateway. For the devices to route traffic to the internet, the default gateway must be set correctly. \n\n- The Ethernet interface IP address seems correct, as it's in the same subnet as the users. \n- The loopback address configuration is not relevant for routing internet traffic. \n- An incorrect serial interface subnet mask would affect internal routing, but the most common issue is the default gateway configuration."
+        "correct_answer": 4,
+        "description": "The correct answer is the serial interface was configured with the incorrect subnet mask. The serial interface uses the IP range 192.168.7.252/30, which provides only 2 usable addresses (192.168.7.253 for the service provider and 192.168.7.252 for the router). If the subnet mask is misconfigured, the router cannot communicate with the service provider, resulting in no internet access.\n\n- The Ethernet interface IP address (192.168.8.1/24) is correct and allows devices on the LAN to communicate.\n- The loopback address is irrelevant here, as it is typically used for testing or internal routing.\n- The default gateway is necessary for routing traffic, but the misconfigured subnet mask on the serial interface directly impacts connectivity to the upstream provider, which is critical for internet access."
     },
     {
         "question": "A network engineer is installing APs for a SOHO where every staff member uses a cordless phone. Which of the following standards would work best to reduce interference?",
