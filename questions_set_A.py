@@ -22,7 +22,7 @@ questions_set_A = [
             "Internet Message Access Protocol"
         ],
         "correct_answer": 2,
-        "description": "The correct answer is Reverse Address Resolution Protocol (RARP). This protocol helps map MAC addresses to IP addresses, which can assist in identifying inconsistencies caused by MAC spoofing. \n\n- ICMP is used for network diagnostics, not detecting MAC spoofing. \n- DHCP assigns IP addresses dynamically but does not directly detect spoofing. \n- IMAP is unrelated to network layer security."
+        "description": "The correct answer is Reverse Address Resolution Protocol ( RARP). This protocol helps map MAC addresses to IP addresses, which can assist in identifying inconsistencies caused by MAC spoofing. \n\n- ICMP is used for network diagnostics, not detecting MAC spoofing. \n- DHCP assigns IP addresses dynamically but does not directly detect spoofing. \n- IMAP is unrelated to network layer security."
     },
     {
         "question": "A technician receives feedback that some users are experiencing high amounts of jitter while using the wireless network. While troubleshooting the network, the technician uses the ping command with the IP address of the default gateway and verifies large variations in latency. The technician thinks the issue may be interference from other networks and non-802.11 devices. Which of the following tools should the technician use to troubleshoot the issue?",
@@ -1612,7 +1612,7 @@ questions_set_A = [
         "description": "The correct answer is A loop was discovered, and the impact was mitigated. The message indicates that the port has been blocked due to a spanning-tree loop prevention mechanism. \n\n- An incorrectly pinned cable would not typically trigger this syslog message. \n- The link-local address is not related to spanning-tree protocol. \n- If the port was shut down, the message would reflect that state, not blocking due to a loop."
     },
     {
-        "question": "A company just migrated its email service to a cloud solution. After the migration, two-thirds of the internal users were able to connect to their mailboxes, but the connection fails for the other one-third of internal users. Users working externally are not reporting any issues. The network administrator identifies the following output collected from an internal host: c:\\user> nslookup newmail.company.com Non-Authoritative answer: Name: newmail.company.com - IPs: 3.219.13.186, 64.58.225.184, 184.168.131.243 Which of the following verification tasks should the network administrator perform NEXT?",
+        "question": "A company just migrated its email service to a cloud solution. After the migration, two-thirds of the internal users were able to connect to their mailboxes, but the connection fails for the other one-third of internal users. Users working externally are not reporting any issues. The network administrator identifies the following output collected from an internal host: c:\\user> nslookup newmail.company.com \nNon-Authoritative answer: \n\nName: newmail.company.com - \nIPs: 3.219.13.186, 64.58.225.184, 184.168.131.243 \nWhich of the following verification tasks should the network administrator perform NEXT?",
         "options": [
             "Check the firewall ACL to verify all required IP addresses are included.",
             "Verify the required router PAT rules are properly configured.",
@@ -1643,7 +1643,7 @@ questions_set_A = [
             "993",
             "995"
         ],
-        "correct_answer": 3,
+        "correct_answer": [3, 6],
         "description": "The correct answers are 143 and 993. IMAP uses port 143 for standard connections and port 993 for secure IMAP (IMAPS) over SSL/TLS. \n\n- Port 25 is used for SMTP, not IMAP. \n- Port 110 is used for POP3, not IMAP. \n- Port 587 is used for SMTP with STARTTLS."
     },
     {
@@ -1764,7 +1764,7 @@ questions_set_A = [
             "SSID assignment.",
             "AP association time."
         ],
-        "correct_answer": 1,
+        "correct_answer": [1, 3],
         "description": "The correct answers are site survey and AP placement. A site survey will help identify coverage gaps, and proper AP placement ensures good signal strength in all areas of the building. \n\n- EIRP measures transmission power, but AP placement is often the more immediate solution. \n- Captive portals and SSID assignment are not primary causes of connectivity issues. \n- AP association time refers to the time it takes to connect, but AP placement is more crucial."
     },
     {
