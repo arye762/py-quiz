@@ -1059,7 +1059,7 @@ questions_set_B = [
             "19",
             "100"
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is 19. In STP calculations, the default link cost for Fast Ethernet is 19. \n\n- 2 is the cost for a 10 Mbps Ethernet link in STP. \n- 4 is the cost for a 100 Mbps Ethernet link, not for Fast Ethernet. \n- 100 is the cost for a gigabit Ethernet link."
     },
 

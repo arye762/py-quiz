@@ -13,7 +13,7 @@ from questions_set_images import questions_set_images
 
 SAVE_FILE = "quiz_save.json"
 
-def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None):
+def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None, flagged_questions=None):
     os.system('clear')  # Clear the screen before each question
 
     print(f"Score: {score} | Time: {time_elapsed()}")
@@ -45,13 +45,26 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     for idx, option in enumerate(shuffled_options, 1):
         print(f"{idx}. {option}")
     print()
-    
-    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, or 'x' to exit: ").strip()
+
+    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, 'x' to exit, 'f' to flag: ").strip()
 
     if answer.lower() == 'x':
         return 'x', False  # Indicate exit without saving here
     if answer.lower() == '0':
-        return None, False
+        return None, False  
+    if answer.lower() == 'f':  # Flag question
+        flagged_questions.append({
+            "question": question,
+            "options": options,
+            "correct_answer": correct_answer,
+            "description": description,
+            "image": image
+        })
+        with open("flagged_questions.json", "w") as f:
+            json.dump(flagged_questions, f)
+        print("Question flagged and saved!\n")
+        input("Press Enter to continue to the next question...")  # Ensures it continues after flagging
+        return 'f', False  # Return flag indicator without marking answer as correct or wrong
 
     try:
         user_answers = list(map(int, answer.split()))
@@ -70,12 +83,13 @@ def ask_question(question_num, total_questions, question, options, correct_answe
     
     print(f"Description: {description}\n")
 
-    input("Press Enter to continue...")
+    input("Press Enter to continue to the next question...")  # Ensures it moves to the next question
 
     if image_enabled:
         subprocess.call(["osascript", "-e", 'tell application "Preview" to quit'])
 
     return answer, is_correct
+
 
 
 def select_questions_set():
@@ -256,6 +270,49 @@ def load_session():
         print("\nNo saved session found.\n")
         return None
 
+def retry_flagged_questions(flagged_questions):
+    """
+    Allows the user to retry flagged questions and remove them if desired.
+    """
+    global score
+
+    if not flagged_questions:
+        print("\nNo flagged questions to retry.\n")
+        return
+
+    for idx, q in enumerate(flagged_questions):
+        print(f"\nReviewing flagged question {idx + 1} of {len(flagged_questions)}")
+        answer, is_correct = ask_question(
+            idx + 1,
+            len(flagged_questions),
+            q["question"],
+            q["options"],
+            q["correct_answer"],
+            q["description"],
+            q.get("image", None),
+        )
+
+        if answer.lower() == 'x':
+            break
+
+        if is_correct:
+            score += 1
+            print("Correct! Well done!")
+            remove_flagged_question(flagged_questions, idx)  # Remove from flagged list
+        else:
+            print("Still incorrect. Keep practicing!")
+
+    with open("flagged_questions.json", "w") as f:
+        json.dump(flagged_questions, f)
+
+def remove_flagged_question(flagged_questions, index):
+    """
+    Removes a flagged question from the list if the user chooses to.
+    """
+    print("Do you want to remove this question from the flagged list? (y/n): ", end="")
+    if input().strip().lower() == 'y':
+        flagged_questions.pop(index)
+
 
 
 def main():
@@ -268,12 +325,14 @@ def main():
     start_time = time.time()
     selected_questions = []
     image_enabled = False
+    flagged_questions = []
 
     print("Welcome to the Quiz!")
     print("1. Start a New Quiz")
     print("2. Retry Wrong Answers")
     print("3. Resume Last Session")
-    print("4. Exit")
+    print("4. Retry Flagged Questions")  # New option to retry flagged questions
+    print("5. Exit")
     
     choice = input("Choose an option: ").strip()
     
@@ -297,7 +356,17 @@ def main():
         else:
             print("\nNo saved session found. Starting a new session.\n")
 
-    elif choice == '4':  # Exit
+    elif choice == '4':  # Retry flagged questions
+        with open("flagged_questions.json", "r") as f:
+            flagged_questions = json.load(f)
+        
+        if flagged_questions:
+            retry_flagged_questions(flagged_questions)
+        else:
+            print("\nNo flagged questions found.\n")
+        return
+
+    elif choice == '5':  # Exit
         print("Goodbye!")
         return
 
@@ -328,6 +397,7 @@ def main():
             q["correct_answer"],
             q["description"],
             q.get("image", None),
+            flagged_questions  # Pass the flagged_questions list
         )
 
         if answer == 'x':
@@ -356,6 +426,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
