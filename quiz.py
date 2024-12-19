@@ -12,6 +12,7 @@ from questions_set_D import questions_set_D
 from questions_set_images import questions_set_images
 
 SAVE_FILE = "quiz_save.json"
+FLAGGED_FILE = "flagged_questions.json"
 
 def ask_question(question_num, total_questions, question, options, correct_answer, description, image=None, flagged_questions=None):
     os.system('clear')  # Clear the screen before each question
@@ -221,38 +222,6 @@ def load_session():
         return False
 
 
-def retry_wrong_answers(wrong_questions):
-    """
-    Handles retrying incorrectly answered questions.
-    """
-    global score
-
-    if not wrong_questions:
-        print("\nGreat job! You didn't get any questions wrong.\n")
-        return
-
-    print("\nDo you want to retry the questions you got wrong? (y/n): ", end="")
-    if input().strip().lower() != 'y':
-        return
-
-    for idx, q in enumerate(wrong_questions):
-        print(f"\nRetrying question {idx + 1} of {len(wrong_questions)}")
-        answer, is_correct = ask_question(
-            idx + 1,
-            len(wrong_questions),
-            q["question"],
-            q["options"],            q["correct_answer"],
-            q["description"],
-            q.get("image", None),
-        )
-
-        if is_correct:
-            score += 1
-            print("Correct! Well done!")
-        else:
-            print("Still incorrect. Keep practicing!")
-
-
 def load_session():
     global score, current_question, answers, start_time, selected_questions, image_enabled
     try:
@@ -314,10 +283,19 @@ def remove_flagged_question(flagged_questions, index):
         flagged_questions.pop(index)
 
 
+def save_flagged_questions(flagged_questions):
+    with open(FLAGGED_FILE, "w") as f:
+        json.dump(flagged_questions, f)
+    print("\nFlagged questions saved successfully!\n")
 
-def main():
-    global score, current_question, answers, start_time, image_enabled, selected_questions
+def load_flagged_questions():
+    try:
+        with open(FLAGGED_FILE, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
 
+<<<<<<< Updated upstream
     # Initialize variables
     score = 0
     current_question = 0
@@ -389,9 +367,20 @@ def main():
     # Main quiz loop
     while current_question < len(selected_questions):
         q = selected_questions[current_question]
+=======
+def retry_flagged_questions():
+    flagged_questions = load_flagged_questions()
+    if not flagged_questions:
+        print("\nNo flagged questions to review.\n")
+        return
+
+    print("\nReviewing flagged questions:\n")
+    for idx, q in enumerate(flagged_questions[:]):
+        print(f"\nQuestion {idx + 1} of {len(flagged_questions)}:")
+>>>>>>> Stashed changes
         answer, is_correct = ask_question(
-            current_question + 1,
-            len(selected_questions),
+            idx + 1,
+            len(flagged_questions),
             q["question"],
             q["options"],
             q["correct_answer"],
@@ -400,26 +389,128 @@ def main():
             flagged_questions  # Pass the flagged_questions list
         )
 
-        if answer == 'x':
-            save_session(wrong_questions)  # Save session
+        if input("Remove this question from flagged list? (y to remove, Enter to keep): ").strip().lower() == 'y':
+            flagged_questions.remove(q)
+
+    save_flagged_questions(flagged_questions)
+    print("\nFlagged questions updated.\n")
+
+def retry_wrong_answers(wrong_questions):
+    global score
+
+    if not wrong_questions:
+        print("\nGreat job! You didn't get any questions wrong.\n")
+        return
+
+    flagged_questions = load_flagged_questions()
+
+    print("\nRetrying wrong answers:\n")
+    for idx, q in enumerate(wrong_questions):
+        print(f"\nRetrying question {idx + 1} of {len(wrong_questions)}:")
+        answer, is_correct = ask_question(
+            idx + 1,
+            len(wrong_questions),
+            q["question"],
+            q["options"],
+            q["correct_answer"],
+            q["description"],
+            q.get("image", None),
+        )
+
+        if is_correct:
+            score += 1
+            print("Correct! Well done!")
+        else:
+            print("Still incorrect. Keep practicing!")
+
+            if input("Flag this question for later review? (y/n): ").strip().lower() == 'y':
+                if q not in flagged_questions:
+                    flagged_questions.append(q)
+
+    save_flagged_questions(flagged_questions)
+
+def main():
+    global score, current_question, answers, start_time, image_enabled, selected_questions
+
+    score = 0
+    current_question = 0
+    answers = []
+    start_time = time.time()
+    selected_questions = []
+    image_enabled = False
+
+    while True:
+        print("\nWelcome to the Quiz!")
+        print("1. Start a New Quiz")
+        print("2. Retry Wrong Answers")
+        print("3. Resume Last Session")
+        print("4. Retry Flagged Questions")
+        print("5. Exit")
+
+        choice = input("Choose an option: ").strip()
+
+        if choice == '2':  # Retry wrong answers
+            session_data = load_session()
+            if session_data and "wrong_questions" in session_data:
+                retry_wrong_answers(session_data["wrong_questions"])
+            else:
+                print("\nNo saved wrong questions found.\n")
+
+        elif choice == '3':  # Resume the last session
+            session_data = load_session()
+            if session_data:
+                score = session_data["score"]
+                current_question = session_data["current_question"]
+                answers = session_data["answers"]
+                start_time = session_data["start_time"]
+                selected_questions = session_data["selected_questions"]
+                image_enabled = session_data.get("image_enabled", False)
+            else:
+                print("\nNo saved session found.\n")
+
+        elif choice == '4':  # Retry flagged questions
+            retry_flagged_questions()
+
+        elif choice == '5':  # Exit
+            print("Goodbye!")
             break
 
-        if answer is not None:
-            if answers[current_question] is None:
-                if is_correct:
-                    score += 1
-                else:
+        else:  # Start a new quiz
+            selected_questions = select_questions_set()
+            randomize_order = choose_ordering()
+            image_enabled = enable_images()
+
+            if randomize_order:
+                random.shuffle(selected_questions)
+
+            total_questions = len(selected_questions)
+            start, end = select_question_range(total_questions)
+            selected_questions = selected_questions[start - 1:end]
+            answers = [None] * len(selected_questions)
+
+            wrong_questions = []
+            while current_question < len(selected_questions):
+                q = selected_questions[current_question]
+                answer, is_correct = ask_question(
+                    current_question + 1,
+                    len(selected_questions),
+                    q["question"],
+                    q["options"],
+                    q["correct_answer"],
+                    q["description"],
+                    q.get("image", None),
+                )
+
+                if answer == 'x':  # Exit
+                    save_session(wrong_questions)
+                    return
+
+                if not is_correct:
                     wrong_questions.append(q)
-            answers[current_question] = answer
-            current_question += 1
-        elif current_question > 0:
-            current_question -= 1
 
-    if answer != 'x':  # Save session if not already saved during exit
-        save_session(wrong_questions)
+                current_question += 1
 
-    print(f"\nYour final score is {score}/{len(selected_questions)}")
-    retry_wrong_answers(wrong_questions)
+            save_session(wrong_questions)
 
 
 
