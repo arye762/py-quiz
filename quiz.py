@@ -204,22 +204,6 @@ def save_session(wrong_questions=None):
 
 
 
-def load_session():
-    global score, current_question, answers, start_time, selected_questions, image_enabled
-    try:
-        with open(SAVE_FILE, "r") as f:
-            session_data = json.load(f)
-        score = session_data["score"]
-        current_question = session_data["current_question"]
-        answers = session_data["answers"]
-        start_time = session_data["start_time"]
-        selected_questions = session_data["selected_questions"]
-        image_enabled = session_data.get("image_enabled", False)  # Load the image setting
-        print("\nSession loaded successfully!\n")
-        return True
-    except FileNotFoundError:
-        print("\nNo saved session found.\n")
-        return False
 
 
 def load_session():
@@ -295,7 +279,6 @@ def load_flagged_questions():
     except FileNotFoundError:
         return []
 
-<<<<<<< Updated upstream
     # Initialize variables
     score = 0
     current_question = 0
@@ -367,7 +350,7 @@ def load_flagged_questions():
     # Main quiz loop
     while current_question < len(selected_questions):
         q = selected_questions[current_question]
-=======
+
 def retry_flagged_questions():
     flagged_questions = load_flagged_questions()
     if not flagged_questions:
@@ -377,7 +360,7 @@ def retry_flagged_questions():
     print("\nReviewing flagged questions:\n")
     for idx, q in enumerate(flagged_questions[:]):
         print(f"\nQuestion {idx + 1} of {len(flagged_questions)}:")
->>>>>>> Stashed changes
+
         answer, is_correct = ask_question(
             idx + 1,
             len(flagged_questions),
