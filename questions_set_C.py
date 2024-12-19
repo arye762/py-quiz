@@ -678,7 +678,7 @@ questions_set_C = [
     "Identify the symptoms.",
     "Question users for additional information."
   ],
-  "correct_answer": 3,
+  "correct_answer": 4,
   "description": "The correct answer is to question users for additional information. Since the router is functional but users still cannot access resources on the internet, the technician should gather more information from the users to identify other potential issues. \n\n- Documenting lessons learned comes after resolving the issue. \n- Escalating the issue might not be necessary if more information can help troubleshoot. \n- Identifying the symptoms has already been done."
 },
 {
@@ -2034,78 +2034,7 @@ questions_set_C = [
         "description": "The correct answer is 'ICMP'. ICMP (Internet Control Message Protocol) is used for pinging, and if a ping fails but Telnet works, it indicates that ICMP traffic is being blocked by the firewall. \n\n- ARP is used for mapping IP addresses to MAC addresses and does not directly affect ping or Telnet. \n- UDP and TCP protocols are related to transport-layer communication, which is unaffected in this case since Telnet works."
     },
 
-
-
-
-
-    {
-        "question": "A network administrator is configuring a firewall to allow for a new cloud-based email server. The company standard is to use SMTP to route email traffic. Which of the following ports, by default, should be reserved for this purpose?",
-        "options": [
-            "23",
-            "25",
-            "53",
-            "110"
-        ],
-        "correct_answer": 2,
-        "description": "The correct answer is port 25. SMTP (Simple Mail Transfer Protocol) uses port 25 by default to route email traffic. \n\n- Port 23 is used by Telnet, a protocol for command-line interface access. \n- Port 53 is used by DNS for resolving domain names. \n- Port 110 is used by POP3 for retrieving email, not for sending it."
-    },
-    {
-        "question": "Which of the following demarcation connections would be MOST appropriate to use with a cable modem being installed in a SOHO situation?",
-        "options": [
-            "RG6",
-            "Cat 6",
-            "RJ11",
-            "Multimode fiber"
-        ],
-        "correct_answer": 1,
-        "description": "The correct answer is RG6. RG6 is a coaxial cable commonly used in cable modem installations, as it is designed to handle higher frequencies and provide better signal quality. \n\n- Cat 6 is used for Ethernet networking, not for cable modem connections. \n- RJ11 is used for telephone lines, not broadband data. \n- Multimode fiber is typically used for high-speed networking over longer distances and is not needed for SOHO cable modem setups."
-    },
-    {
-        "question": "A technician needs to allow a device to maintain the same IP address lease based on the physical address of a network card. Which of the following should the technician use?",
-        "options": [
-            "MAC address reservation",
-            "Static IP address",
-            "Custom DNS server entry",
-            "IP address exclusion"
-        ],
-        "correct_answer": 1,
-        "description": "The correct answer is MAC address reservation. This allows the device to always receive the same IP address from the DHCP server by associating it with the device's MAC address. \n\n- A static IP address manually configures an IP but does not involve the DHCP process. \n- Custom DNS server entries deal with domain name resolution, not IP address assignment. \n- IP address exclusion prevents certain IPs from being assigned by DHCP, but it doesn't ensure the same IP for a device."
-    },
-    {
-        "question": "A network technician is investigating why a core switch is logging excessive amounts of data to the syslog server. The running configuration of the switch showed the following logging information:\n\nip ssh logging events\nlogging level debugging\nlogging host 192.168.1.100\nlogging synchronous\n\nWhich of the following changes should the technician make to BEST fix the issue?",
-        "options": [
-            "Update the logging host IP.",
-            "Change to asynchronous logging.",
-            "Stop logging SSH events.",
-            "Adjust the logging level."
-        ],
-        "correct_answer": 4,
-        "description": "The correct answer is to adjust the logging level. The 'debugging' level is very detailed and can produce excessive log data. Changing it to a less verbose level (such as 'informational') would reduce the log volume. \n\n- Updating the logging host IP won't address the excessive logging itself. \n- Asynchronous logging would not solve the problem, as it does not impact the verbosity of the logs. \n- Stopping SSH event logging could reduce the data, but this may not be desirable, as monitoring SSH events is important for security."
-    },
-    {
-        "question": "A network technician wants to find the shortest path from one node to every other node in the network. Which of the following algorithms will provide the FASTEST convergence time?",
-        "options": [
-            "A static algorithm",
-            "A link-state algorithm",
-            "A distance-vector algorithm",
-            "A path-vector algorithm"
-        ],
-        "correct_answer": 2,
-        "description": "The correct answer is a link-state algorithm. Link-state algorithms, such as OSPF, provide faster convergence times as they exchange detailed information about the network's state and compute the shortest path more quickly. \n\n- A static algorithm is not dynamic and does not adjust to network changes, making it slower to converge. \n- A distance-vector algorithm, such as RIP, converges more slowly compared to link-state algorithms because it relies on periodic updates. \n- A path-vector algorithm, like BGP, is used for inter-domain routing and has slower convergence times compared to link-state algorithms."
-    },
-    {
-        "question": "After upgrading to a SOHO router that supports Wi-Fi 6, the user determines throughput has not increased. Which of the following is the MOST likely cause of the issue?",
-        "options": [
-            "The wireless router is using an incorrect antenna type.",
-            "The user's workstation does not support 802.11ax.",
-            "The encryption protocol is mismatched.",
-            "The network is experiencing interference."
-        ],
-        "correct_answer": 2,
-        "description": "The correct answer is that the user's workstation does not support 802.11ax. For Wi-Fi 6 (802.11ax) to provide improved throughput, both the router and the connected devices must support this standard. \n\n- The antenna type could affect performance, but it is less likely to be the main issue when Wi-Fi 6 compatibility is not present on the client device. \n- Encryption mismatches might cause connection issues, but they are less likely to result in throughput problems. \n- Network interference can affect speeds, but if the device does not support Wi-Fi 6, it will not benefit from the router's improved throughput capabilities."
-    },
-
-
+ 
 
     {
         "question": "A network administrator is configuring a firewall to allow for a new cloud-based email server. The company standard is to use SMTP to route email traffic. Which of the following ports, by default, should be reserved for this purpose?",
@@ -2180,7 +2109,7 @@ questions_set_C = [
 
     
     {
-        "question": "Which of the following is the cause of the connection issue?",
+        "question": "Which of the following is the cause of the connection issue? \n\nTracing route to 10.10.0.22 over a maximum of 30 hops:\n\n1     14ms     20ms     15ms  192.168.1.253\n2     10ms     15ms     12ms  172.16.0.21\n3      5ms     10ms     10ms  10.10.5.3\n4     10ms     15ms     12ms  10.12.2.1\n5      5ms     10ms     10ms  10.10.5.3\n6     10ms     15ms     12ms  10.12.2.1\n7      5ms     10ms     10ms  10.10.5.3\n8     10ms     15ms     12ms  10.12.2.1\n9",
         "options": [
             "Routing loop.",
             "Asymmetrical routing.",
@@ -2226,7 +2155,7 @@ questions_set_C = [
         "description": "The correct answers are hostname and ipconfig. The hostname command provides the name of the PC, and ipconfig provides the IP address necessary for network sharing. \n\n- The arp command shows the ARP table but does not help in identifying the PC or its IP. \n- The route command displays routing tables but is unrelated to printer sharing. \n- netstat and tcpdump focus on active connections and network traffic, respectively, and do not provide the required information for setting up shared printers."
     },
     {
-        "question": "Which of the following was the agent trying to accomplish with this exchange?",
+        "question": "A help desk supervisor reviews the following excerpt of a call transcript:   \n\nAgent: Thanks for calling the help desk. What can I help you with today?\nCustomer: I have been trying to connect to www.awesome-website.com all morning, but I can't get to it.\nAgent: Let me see if I can reach it from my end. Give me a moment, please.  \nCustomer: Sure. Thanks for helping.\nAgent: It's my pleasure. And indeed, it seems like I can't reach that website either.\nCustomer: I guess that means that it isn't just me, then.\n\nWhich of the following was the agent trying to accomplish with this exchange?",
         "options": [
             "The agent was questioning the obvious.",
             "The agent was verifying full system functionality.",
@@ -2433,12 +2362,12 @@ questions_set_C = [
         "description": "The correct answer is arp. The `arp` command maps IP addresses to MAC addresses, allowing the technician to find the router's MAC address. \n\n- Traceroute tracks the path packets take to a destination but does not show MAC addresses. \n- Nslookup resolves domain names to IP addresses. \n- Ping checks connectivity but does not provide MAC address information."
     },
     {
-        "question": "A network engineer is installing hardware in a newly renovated data center. Major concerns that were addressed during the renovation included air circulation, building power redundancy, and the need for continuous monitoring. The network engineer is creating alerts based on the following operation specifications:\n\n- Environmental monitoring alerts for humidity greater than 95%.\n- SIEM to parse syslog events for a failed power supply.\n- SNMP traps to report when the chassis temperature exceeds 95°F (35°C).\n- UPS monitoring to report when input voltage drops below 220VAC.",
+        "question": "A network engineer is installing hardware in a newly renovated data center. Major concerns that were addressed during the renovation included air circulation, building power redundancy, and the need for continuous monitoring. The network engineer is creating alerts based on the following operation specifications:\n\nAC input voltage\t\t100 to 240VAC\nAC maximum input current\t<2.7A at 100V\nRedundant power supply\t\tYes\nOperating temperature\t\t32-104°F (0-40°C)\nStorage temperature\t\t-4-149°F (-20-65°C)\nOperating humidity\t\t10-85%\nStorage humidity\t\t5-95%",
         "options": [
-            "Environmental monitoring alerts for humidity greater than 95%.",
-            "SIEM to parse syslog events for a failed power supply.",
-            "SNMP traps to report when the chassis temperature exceeds 95°F (35°C).",
-            "UPS monitoring to report when input voltage drops below 220VAC."
+            "Environmental monitoring alerts for humidity greater than 95%",
+            "SIEM to parse syslog events for a failed power supply",
+            "SNMP traps to report when the chassis temperature exceeds 95°F (35°C)",
+            "UPS monitoring to report when input voltage drops below 220VAC"
         ],
         "correct_answer": 3,
         "description": "The correct answer is SNMP traps to report when the chassis temperature exceeds 95°F (35°C). Temperature monitoring is crucial to prevent hardware failure due to overheating. \n\n- Humidity monitoring is important but secondary to temperature concerns. \n- Parsing syslog events for power supply failures ensures reliability but does not address immediate operational risks. \n- UPS monitoring for voltage drops ensures power reliability but does not prevent overheating."
@@ -2458,10 +2387,10 @@ questions_set_C = [
     {
         "question": "Users have reported an issue connecting to a server over the network. A workstation was recently added to the network and configured with a shared USB printer. Which of the following is most likely causing the issue?",
         "options": [
-            "The switch is oversubscribed and cannot handle the additional throughput.",
-            "The printer is tying up the server with DHCP discover messages.",
-            "The web server's back end was designed for only single-threaded applications.",
-            "The workstation was configured with a static IP that is the same as the server."
+            "The switch is oversubscribed and cannot handle the additional throughput",
+            "The printer is tying up the server with DHCP discover messages",
+            "The web server's back end was designed for only single-threaded applications",
+            "The workstation was configured with a static IP that is the same as the server"
         ],
         "correct_answer": 4,
         "description": "The correct answer is that the workstation was configured with a static IP that is the same as the server. IP address conflicts prevent devices from communicating properly on the network, causing connectivity issues for the server. \n\n- The switch being oversubscribed could cause throughput problems but not specifically prevent server access. \n- DHCP discover messages are broadcast traffic and unlikely to tie up the server. \n- A single-threaded web server back end would not result in network-wide connection issues caused by a new workstation."
@@ -2616,7 +2545,7 @@ questions_set_C = [
             "NFV",
             "IaaS"
         ],
-        "correct_answer": 3,
+        "correct_answer": 4,
         "description": "The correct answer is IaaS (Infrastructure as a Service). IaaS provides the necessary networking capabilities to implement routing in a virtualized environment. \n\n- VPC (Virtual Private Cloud) is a cloud networking feature but doesn’t provide routing by itself. \n- Firewall is used for security and traffic control, not specifically for routing. \n- NFV (Network Function Virtualization) focuses on virtualizing network functions, but is not directly concerned with implementing routing."
     },
     {
@@ -2713,14 +2642,14 @@ questions_set_C = [
   {
     "question": "Which of the following would be best suited for use at the access layer in a three-tier architecture system?",
     "options": [
-      "Router",
-      "Multilayer switch",
-      "Layer 2 switch",
-      "Access point"
+        "Router",
+        "Multilayer switch",
+        "Layer 2 switch",
+        "Access point"
     ],
     "correct_answer": 3,
-    "description": "The correct answer is Access point. In a three-tier architecture, the access layer is responsible for connecting end devices such as computers and wireless access points to the network. \n\n- A router operates at the core or distribution layer, connecting different networks. \n- A multilayer switch can function at both the access and distribution layers but is not as ideal for end device connection. \n- A Layer 2 switch provides basic switching capabilities, but access points are more appropriate for wireless connectivity at the access layer."
-  },
+    "description": "The correct answer is Layer 2 switch. These switches operate at the access layer of a three-tier architecture, providing connectivity for end devices like computers and printers. \n\n- Routers are typically used at the network's edge or in the core layer for directing traffic between networks. \n- Multilayer switches combine the functionality of Layer 2 switches and routers, but they are more commonly used in the distribution or core layers. \n- Access points are used to connect wireless devices to the network and are not a direct substitute for Layer 2 switches."
+},
   {
     "question": "Following the implementation of a BYOD policy, some users in a high-density environment report slowness over the wireless connection. Some wireless controller reports indicate high latency and airtime contention. Which of the following is the most probable root cause?",
     "options": [
