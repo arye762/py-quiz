@@ -1818,16 +1818,16 @@ questions_set_B = [
         "correct_answer": 3,
         "description": "The correct answer is a top-to-bottom approach. In the OSI model, this troubleshooting approach starts from the network layer and moves down to the physical layer, checking basic connectivity like the gateway and DNS server. \n\n- A divide-and-conquer approach splits the problem into smaller sections and tackles each individually, which doesn't match the scenario. \n- The bottom-up approach starts with the physical layer and moves up, which is the opposite of the approach taken here."
     },
-    {
-        "question": "Which of the following is the NEXT step to perform network troubleshooting after identifying an issue?",
-        "options": [
-            "Implement a solution.",
-            "Establish a theory.",
-            "Escalate the issue.",
-            "Document the findings."
-        ],
-        "correct_answer": 3,
-        "description": "The correct answer is escalate the issue. After identifying the issue, the next step in troubleshooting is to escalate if necessary, especially if the solution is beyond the technician's scope or expertise. \n\n- Implementing a solution comes after further investigation or escalation. \n- Establishing a theory is an earlier troubleshooting step. \n- Documenting findings is part of closing the issue after resolution."
+   {
+    "question": "Which of the following is the NEXT step to perform network troubleshooting after identifying an issue?",
+    "options": [
+        "Implement a solution.",
+        "Establish a theory.",
+        "Escalate the issue.",
+        "Document the findings."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is establish a theory. After identifying an issue, the next step in the network troubleshooting process is to establish a theory of probable cause, which helps guide further investigation and resolution efforts. \n\n- Implementing a solution comes after confirming the theory and selecting the best course of action. \n- Escalating the issue is done only if the issue cannot be resolved within the technician's scope or expertise. \n- Documenting findings is a final step taken after the issue has been resolved."
     },
     {
         "question": "A network team is getting reports that air conditioning is out in an IDF. The team would like to determine whether additional network issues are occurring. Which of the following should the network team do?",
