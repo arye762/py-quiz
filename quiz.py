@@ -47,25 +47,12 @@ def ask_question(question_num, total_questions, question, options, correct_answe
         print(f"{idx}. {option}")
     print()
 
-    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, 'x' to exit, 'f' to flag: ").strip()
+    answer = input("Choose the correct option (e.g., '1 4' for multiple answers), '0' to go back, 'x' to exit: ").strip()
 
     if answer.lower() == 'x':
         return 'x', False  # Indicate exit without saving here
     if answer.lower() == '0':
         return None, False  
-    if answer.lower() == 'f':  # Flag question
-        flagged_questions.append({
-            "question": question,
-            "options": options,
-            "correct_answer": correct_answer,
-            "description": description,
-            "image": image
-        })
-        with open("flagged_questions.json", "w") as f:
-            json.dump(flagged_questions, f)
-        print("Question flagged and saved!\n")
-        input("Press Enter to continue to the next question...")  # Ensures it continues after flagging
-        return 'f', False  # Return flag indicator without marking answer as correct or wrong
 
     try:
         user_answers = list(map(int, answer.split()))
@@ -223,6 +210,16 @@ def load_session():
         print("\nNo saved session found.\n")
         return None
 
+
+
+
+
+
+
+
+
+        
+
 def retry_flagged_questions(flagged_questions):
     """
     Allows the user to retry flagged questions and remove them if desired.
@@ -262,8 +259,8 @@ def remove_flagged_question(flagged_questions, index):
     """
     Removes a flagged question from the list if the user chooses to.
     """
-    print("Do you want to remove this question from the flagged list? (y/n): ", end="")
-    if input().strip().lower() == 'y':
+    print("Do you want to remove this question from the flagged list? '1' for yes '0' for No(1/0): ", end="")
+    if input().strip().lower() == '1':
         flagged_questions.pop(index)
 
 

@@ -466,12 +466,12 @@ questions_set_C = [
 {
   "question": "A network administrator views a network pcap and sees a packet containing the following:\n\ncommunity: public\nrequest-id: 13438\nget-response 1.3.6.1.2.1.1.3.0 Value: 206801150\n\nWhich of the following are the BEST ways for the administrator to secure this type of traffic? (Choose two.)",
   "options": [
-    "Migrate the network to IPv6.",
-    "Implement 802.1 X authentication.",
-    "Set a private community string.",
-    "Use SNMPv3.",
-    "E. Incorporate SSL encryption.",
-    "F. Utilize IPSec tunnelling."
+    "Migrate the network to IPv6",
+    "Implement 802.1 X authentication",
+    "Set a private community string",
+    "Use SNMPv3",
+    "Incorporate SSL encryption",
+    "Utilize IPSec tunnelling"
   ],
   "correct_answer": [3, 4],
   "description": "The correct answers are C and SNMPv3 provides stronger security with encryption and authentication, which is more secure than the older SNMPv1 and SNMPv2 protocols that use community strings. \n\n- Setting a private community string is an improvement over using 'public', but it doesn't provide the same level of security as SNMPv3. \n- IPv6 migration doesn't directly address SNMP security. \n- 802.1X is a network access control method, not directly related to securing SNMP traffic. \n- SSL encryption is relevant for securing web traffic but not for SNMP."

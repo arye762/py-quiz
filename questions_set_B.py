@@ -373,7 +373,7 @@ questions_set_B = [
             "Simplified network management.",
             "Eliminated need for inter-VLAN routing."
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is simplified network management. The spine-and-leaf topology is designed for ease of management by providing a predictable, flat architecture where each device connects to both spine switches, ensuring efficient routing. \n\n- Increased network security is not a direct benefit of the spine-and-leaf topology; security is generally managed through additional network configurations. \n- Stable network latency is not inherent to the topology itself, as it depends on network traffic and infrastructure. \n- Inter-VLAN routing is still required in spine-and-leaf topologies, as VLANs need to be routed between switches."
     },
     {
