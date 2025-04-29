@@ -1123,16 +1123,17 @@ questions_set_D = [
         "description": "The correct answer is single-mode fiber. This type of fiber optic cable is ideal for long-distance connections, as it supports high-speed data transmission over long distances, such as the 492ft (150m) distance in this case. \n\n- Coaxial cable is suitable for shorter distances and lower bandwidth requirements. \n- DAC (Direct Attach Copper) is typically used for short distances and lower-speed connections, not for 492ft distances. \n- STP (Shielded Twisted Pair) is suitable for shorter distances but does not offer the same performance as fiber optic cable over long distances."
     },
     {
-        "question": "A systems administrator is investigating why users cannot reach a Linux web server with a browser but can ping the server IP. The server is online, the web server process is running, and the link to the switch is up. Which of the following commands should the administrator run on the server first?",
-        "options": [
-            "traceroute",
-            "netstat",
-            "tcpdump",
-            "arp"
-        ],
-        "correct_answer": 3,
-        "description": "The correct answer is tcpdump. This tool allows the administrator to capture and analyze network traffic, helping identify if the server is receiving HTTP requests and if any network issues are causing the browser to fail to load the page. \n\n- Traceroute helps trace the network path but is not useful for analyzing traffic on the server itself. \n- Netstat shows active connections but does not provide information about traffic reaching the server. \n- ARP is used for resolving IP addresses to MAC addresses, but it is not relevant to the issue of web server access."
+    "question": "A systems administrator is investigating why users cannot reach a Linux web server with a browser but can ping the server IP. The server is online, the web server process is running, and the link to the switch is up. Which of the following commands should the administrator run on the server first?",
+    "options": [
+        "traceroute",
+        "netstat",
+        "tcpdump",
+        "arp"
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is netstat. This tool allows the administrator to view the active connections and listening ports on the server, helping verify if the web server is properly bound to the expected port (e.g., port 80 for HTTP or 443 for HTTPS). \n\n- Traceroute helps trace the network path but does not provide information about the server's listening ports or connections. \n- Tcpdump captures and analyzes network traffic but is typically used after confirming that the server's network services are correctly configured. \n- ARP is used for resolving IP addresses to MAC addresses and is not relevant to verifying web server access."
     },
+
 
 
 
@@ -1205,7 +1206,7 @@ questions_set_D = [
         "description": "The correct answer is SLAAC (Stateless Address Autoconfiguration). SLAAC allows devices to automatically assign themselves an IPv6 address without needing a DHCP server. \n\n- APIPA is used for automatic IPv4 addressing when DHCP is not available. \n- MAC reservation is used for assigning static IP addresses to devices based on their MAC address, but it only works for IPv4. \n- IPv4 to IPv6 tunnel is used to tunnel IPv6 traffic over IPv4 networks, not for assigning IPv6 addresses."
     },
     {
-        "question": "A network technician is troubleshooting an issue that involves connecting to a server via SSH. The server has one network interface that does not support subinterfaces. The technician runs a command on the server and receives the following output: Proto Local address Foreign address State TCP 0.0.0.0:22 0.0.0.0 LISTENING TCP 0.0.0.0:23 0.0.0.0 LISTENING TCP 0.0.0.0:443 0.0.0.0 LISTENING TCP 10.10.10.15:22 10.10.10.42:21231 ESTABLISHED On the host, the technician runs another command and receives the following: Destination Gateway Genmask Flags Iface default 31.242.12.9 0.0.0.0 UG eth0 192.168.1.0 0.0.0.0 255.255.255.0 UG eth1 Which of the following best explains the issue?",
+        "question": "A network technician is troubleshooting an issue that involves connecting to a server via SSH. The server has one network interface that does not support subinterfaces. \nThe technician runs a command on the server and receives the following output: \n\nProto \tLocal address \tForeign address \tState \nTCP \t0.0.0.0:22 \t0.0.0.0 \t\tLISTENING \nTCP \t0.0.0.0:23 \t0.0.0.0 \t\tLISTENING \nTCP \t0.0.0.0:443 \t0.0.0.0 \t\tLISTENING \nTCP \t10.10.10.15:22 \t10.10.10.42:21231 \tESTABLISHED \n\nOn the host, the technician runs another command and receives the following: \n\nDestination \tGateway \tGenmask \tFlags \tIface \ndefault \t31.242.12.9 \t0.0.0.0 \tG \teth0 \n192.168.1.0 \t0.0.0.0 \t255.255.255.0 \tUG \teth1 \n\nWhich of the following best explains the issue?",
         "options": [
             "A firewall is blocking access to the server.",
             "The server is plugged into a trunk port.",
@@ -1309,7 +1310,7 @@ questions_set_D = [
         "description": "The correct answers are brute-force and phishing. Techniques such as CAPTCHAs or behavioral analysis can help distinguish human users from automated attacks, making it harder for brute-force or phishing attacks to succeed. \n\n- Dictionary attacks rely on trying many passwords from a predefined list, and although checking for human interaction can help, it is not the primary defense. \n- On-path attacks involve intercepting communications and are not necessarily stopped by checking human users. \n- Shoulder surfing is a physical attack where an attacker observes someone entering sensitive information, which is not directly related to human verification methods. \n- Evil twin attacks involve rogue access points and do not directly relate to checking for human user connections."
     },
     {
-        "question": "A network administrator is investigating a network connectivity issue. The administrator runs a command to view the status of the network cards. The administrator receives the following output: RX packets:45332 errors: 45332 dropped:0 overruns 0 frame:0. Which of the following should the administrator troubleshoot based on the output?",
+        "question": "A network administrator is investigating a network connectivity issue. The administrator runs a command to view the status of the network cards. \nThe administrator receives the following output: \n\nRX packets:45332 errors: 45332 dropped:0 overruns 0 frame:0. \nWhich of the following should the administrator troubleshoot based on the output?",
         "options": [
             "Physical layer components",
             "VLAN tagging configuration",

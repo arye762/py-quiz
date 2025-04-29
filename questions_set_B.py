@@ -373,7 +373,7 @@ questions_set_B = [
             "Simplified network management.",
             "Eliminated need for inter-VLAN routing."
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is simplified network management. The spine-and-leaf topology is designed for ease of management by providing a predictable, flat architecture where each device connects to both spine switches, ensuring efficient routing. \n\n- Increased network security is not a direct benefit of the spine-and-leaf topology; security is generally managed through additional network configurations. \n- Stable network latency is not inherent to the topology itself, as it depends on network traffic and infrastructure. \n- Inter-VLAN routing is still required in spine-and-leaf topologies, as VLANs need to be routed between switches."
     },
     {
@@ -1059,7 +1059,7 @@ questions_set_B = [
             "19",
             "100"
         ],
-        "correct_answer": 2,
+        "correct_answer": 3,
         "description": "The correct answer is 19. In STP calculations, the default link cost for Fast Ethernet is 19. \n\n- 2 is the cost for a 10 Mbps Ethernet link in STP. \n- 4 is the cost for a 100 Mbps Ethernet link, not for Fast Ethernet. \n- 100 is the cost for a gigabit Ethernet link."
     },
 
@@ -1818,16 +1818,16 @@ questions_set_B = [
         "correct_answer": 3,
         "description": "The correct answer is a top-to-bottom approach. In the OSI model, this troubleshooting approach starts from the network layer and moves down to the physical layer, checking basic connectivity like the gateway and DNS server. \n\n- A divide-and-conquer approach splits the problem into smaller sections and tackles each individually, which doesn't match the scenario. \n- The bottom-up approach starts with the physical layer and moves up, which is the opposite of the approach taken here."
     },
-    {
-        "question": "Which of the following is the NEXT step to perform network troubleshooting after identifying an issue?",
-        "options": [
-            "Implement a solution.",
-            "Establish a theory.",
-            "Escalate the issue.",
-            "Document the findings."
-        ],
-        "correct_answer": 3,
-        "description": "The correct answer is escalate the issue. After identifying the issue, the next step in troubleshooting is to escalate if necessary, especially if the solution is beyond the technician's scope or expertise. \n\n- Implementing a solution comes after further investigation or escalation. \n- Establishing a theory is an earlier troubleshooting step. \n- Documenting findings is part of closing the issue after resolution."
+   {
+    "question": "Which of the following is the NEXT step to perform network troubleshooting after identifying an issue?",
+    "options": [
+        "Implement a solution.",
+        "Establish a theory.",
+        "Escalate the issue.",
+        "Document the findings."
+    ],
+    "correct_answer": 2,
+    "description": "The correct answer is establish a theory. After identifying an issue, the next step in the network troubleshooting process is to establish a theory of probable cause, which helps guide further investigation and resolution efforts. \n\n- Implementing a solution comes after confirming the theory and selecting the best course of action. \n- Escalating the issue is done only if the issue cannot be resolved within the technician's scope or expertise. \n- Documenting findings is a final step taken after the issue has been resolved."
     },
     {
         "question": "A network team is getting reports that air conditioning is out in an IDF. The team would like to determine whether additional network issues are occurring. Which of the following should the network team do?",
